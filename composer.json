@@ -1,0 +1,21 @@
+{
+    "name": "onedesigns/enlightenment",
+    "type": "wordpress-theme",
+    "description": "Enlightenment WordPress Theme",
+    "keywords": [
+        "WordPress",
+        "Theme"
+    ],
+    "homepage": "https://onedesigns.com/themes/enlightenment/",
+    "license": "GPL-2.0-or-later",
+    "authors": [
+        {
+            "name": "One Designs",
+            "homepage": "https://onedesigns.com/",
+            "role": "Developer"
+        }
+    ],
+    "require": {
+        "php": ">=5.6"
+    }
+}
