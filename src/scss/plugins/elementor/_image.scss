@@ -1,0 +1,13 @@
+.elementor-image {
+    .wp-caption-text {
+        margin: .5rem auto 0;
+        color: var(--enlightenment-accent-color);
+        font-family: var(--enlightenment-body-font-family);
+        font-size: var(--enlightenment-font-size-sm);
+        text-align: center;
+    }
+}
+
+a[data-elementor-open-lightbox="yes"] {
+    cursor: zoom-in;
+}

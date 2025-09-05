@@ -1,0 +1,21 @@
+[data-type="core/audio"][data-align="full"] {
+    .wp-block-audio {
+        padding-left: 1rem;
+        padding-right: 1rem;
+    }
+}
+
+.wp-block-audio {
+    audio {
+        display: block;
+    }
+
+    figcaption {
+        margin-top: .5rem;
+        margin-bottom: 0;
+        color: var(--enlightenment-accent-color);
+        font-family: var(--enlightenment-body-font-family);
+        font-size: var(--enlightenment-font-size-sm);
+        text-align: center;
+    }
+}

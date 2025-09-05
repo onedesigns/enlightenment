@@ -1,0 +1,9 @@
+.wp-block[data-type="tribe/event-website"] {
+	.tribe-editor__event-website__label-text {
+	    input {
+	        padding: var(--enlightenment-btn-padding-y) var(--enlightenment-btn-padding-x);
+			border-radius: var(--enlightenment-btn-border-radius);
+	        font-size: var(--enlightenment-font-size-sm);
+	    }
+	}
+}

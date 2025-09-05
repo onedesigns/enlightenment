@@ -1,0 +1,32 @@
+.wc-block-product-search {
+    font-family: var(--enlightenment-body-font-family);
+    font-size: var(--enlightenment-body-font-size);
+
+    .wc-block-product-search__label {
+        font-size: 1.25rem;
+        font-weight: 700;
+    }
+
+    .wc-block-product-search__fields {
+        flex: 0 0 100%;
+    }
+
+    .wc-block-product-search__field {
+        font-family: var(--enlightenment-body-font-family);
+    }
+
+    .wc-block-product-search__button {
+		padding: var(--enlightenment-btn-padding-y) var(--enlightenment-btn-padding-x);
+        font-family: var(--enlightenment-body-font-family);
+        font-size: var(--enlightenment-font-size-sm);
+    }
+}
+
+[data-type="woocommerce/product-search"] {
+    &[data-align="wide"],
+    &[data-align="full"] {
+        .wc-block-product-search__field {
+            max-width: none;
+        }
+    }
+}

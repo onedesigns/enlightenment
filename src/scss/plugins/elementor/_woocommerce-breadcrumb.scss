@@ -1,0 +1,22 @@
+.elementor-widget-woocommerce-breadcrumb {
+	.woocommerce-breadcrumb {
+		color: var(--enlightenment-accent-color);
+		font-size: var(--enlightenment-font-size-sm);
+		line-height: 2rem;
+	}
+
+	.breadcrumb {
+		--bs-breadcrumb-item-active-color: inherit;
+		--bs-breadcrumb-font-size: inherit;
+	}
+
+    .breadcrumb-item {
+        margin-bottom: 0;
+		line-height: inherit;
+
+		& + .breadcrumb-item::before {
+			letter-spacing: 0;
+		    word-spacing: 0;
+		}
+    }
+}

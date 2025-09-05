@@ -1,0 +1,16 @@
+.elementor-widget-icon-list .elementor-icon-list-icon + .elementor-icon-list-text:empty {
+	padding-left: 0;
+}
+
+.elementor-widget .elementor-icon-list-icon i {
+	text-align: center;
+}
+
+.elementor-widget .elementor-icon-list-icon + .elementor-icon-list-text {
+	padding-left: .25rem;
+}
+
+.elementor-widget-icon-list > .elementor-widget-container,
+.elementor-icon-list-item:not(:last-child)::after {
+	border-color: var(--bs-border-color);
+}

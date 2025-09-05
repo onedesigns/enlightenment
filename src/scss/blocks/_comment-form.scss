@@ -1,0 +1,14 @@
+.wp-block-comment-respond {
+	margin-top: 0;
+	font-family: var(--bs-body-font-family);
+	font-size: var(--bs-body-font-size);
+	line-height: var(--bs-body-line-height);
+
+	.wp-block-comment-template & {
+		margin-top: 2rem;
+
+		& + .comment {
+			margin-top: 2rem;
+		}
+	}
+}

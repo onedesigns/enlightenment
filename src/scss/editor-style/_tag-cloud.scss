@@ -1,0 +1,28 @@
+.wp-block-tag-cloud {
+	display: flex;
+    flex-wrap: wrap;
+    margin-top: -.25rem;
+    margin-left: -.25rem;
+    margin-right: -.25rem;
+    font-family: var(--enlightenment-body-font-family);
+
+	.tag-cloud-link {
+		padding: .25rem .5rem .125rem;
+        margin-top: .25rem;
+	    margin-left: .25rem;
+        margin-right: .25rem;
+        margin-bottom: .25rem;
+	    border: var(--bs-border-width) var(--bs-border-style) var(--bs-border-color);
+	    border-radius: var(--bs-border-radius);
+		background-color: #fff;
+	    color: var(--enlightenment-accent-color);
+	    font-size: .875rem !important;
+	    line-height: 1rem;
+	    text-decoration-line: none;
+		transition: box-shadow .15s ease-in-out, background-color .25s ease;
+
+		&:hover {
+			background-color: #f3f3f3;
+		}
+	}
+}

@@ -1,0 +1,60 @@
+@media (min-width: 992px) and (max-width: 1199.98px) {
+	.layout-content-sidebar:where(:not(.layout-sm-full-width, .layout-sm-sidebar-content, .layout-sm-sidebar-content-sidebar, .layout-md-full-width, .layout-md-sidebar-content, .layout-md-sidebar-content-sidebar, .layout-lg-full-width, .layout-lg-sidebar-content, .layout-lg-sidebar-content-sidebar)),
+    .layout-sm-content-sidebar:where(:not(.layout-md-full-width, .layout-md-sidebar-content, .layout-md-sidebar-content-sidebar, .layout-lg-full-width, .layout-lg-sidebar-content, .layout-lg-sidebar-content-sidebar)),
+    .layout-md-content-sidebar:where(:not(.layout-lg-full-width, .layout-lg-sidebar-content, .layout-lg-sidebar-content-sidebar)),
+    .layout-lg-content-sidebar {
+		.row > div > .sidebar-primary {
+			margin-left: 40px;
+		}
+	}
+
+	.layout-sidebar-content:where(:not(.layout-sm-full-width, .layout-sm-content-sidebar, .layout-sm-sidebar-content-sidebar, .layout-md-full-width, .layout-md-content-sidebar, .layout-md-sidebar-content-sidebar, .layout-lg-full-width, .layout-lg-content-sidebar, .layout-lg-sidebar-content-sidebar)),
+    .layout-sm-sidebar-content:where(:not(.layout-md-full-width, .layout-md-content-sidebar, .layout-md-sidebar-content-sidebar, .layout-lg-full-width, .layout-lg-content-sidebar, .layout-lg-sidebar-content-sidebar)),
+    .layout-md-sidebar-content:where(:not(.layout-lg-full-width, .layout-lg-content-sidebar, .layout-lg-sidebar-content-sidebar)),
+    .layout-lg-sidebar-content {
+		.row > div > .sidebar-primary {
+			margin-right: 40px;
+		}
+	}
+}
+
+@media (min-width: 1200px) {
+	.layout-content-sidebar:where(:not(.layout-sm-full-width, .layout-sm-sidebar-content, .layout-sm-sidebar-content-sidebar, .layout-md-full-width, .layout-md-sidebar-content, .layout-md-sidebar-content-sidebar, .layout-lg-full-width, .layout-lg-sidebar-content, .layout-lg-sidebar-content-sidebar, .layout-xl-full-width, .layout-xl-sidebar-content, .layout-xl-sidebar-content-sidebar)),
+    .layout-sm-content-sidebar:where(:not(.layout-md-full-width, .layout-md-sidebar-content, .layout-md-sidebar-content-sidebar, .layout-lg-full-width, .layout-lg-sidebar-content, .layout-lg-sidebar-content-sidebar, .layout-xl-full-width, .layout-xl-sidebar-content, .layout-xl-sidebar-content-sidebar)),
+    .layout-md-content-sidebar:where(:not(.layout-lg-full-width, .layout-lg-sidebar-content, .layout-lg-sidebar-content-sidebar, .layout-xl-full-width, .layout-xl-sidebar-content, .layout-xl-sidebar-content-sidebar)),
+    .layout-lg-content-sidebar:where(:not(.layout-xl-full-width, .layout-xl-sidebar-content, .layout-xl-sidebar-content-sidebar)),
+	.layout-xl-content-sidebar {
+		.row > div > .sidebar-primary {
+			margin-left: 50px;
+		}
+	}
+
+	.layout-sidebar-content:where(:not(.layout-sm-full-width, .layout-sm-content-sidebar, .layout-sm-sidebar-content-sidebar, .layout-md-full-width, .layout-md-content-sidebar, .layout-md-sidebar-content-sidebar, .layout-lg-full-width, .layout-lg-content-sidebar, .layout-lg-sidebar-content-sidebar, .layout-xl-full-width, .layout-xl-content-sidebar, .layout-xl-sidebar-content-sidebar)),
+    .layout-sm-sidebar-content:where(:not(.layout-md-full-width, .layout-md-content-sidebar, .layout-md-sidebar-content-sidebar, .layout-lg-full-width, .layout-lg-content-sidebar, .layout-lg-sidebar-content-sidebar, .layout-xl-full-width, .layout-xl-content-sidebar, .layout-xl-sidebar-content-sidebar)),
+    .layout-md-sidebar-content:where(:not(.layout-lg-full-width, .layout-lg-content-sidebar, .layout-lg-sidebar-content-sidebar, .layout-xl-full-width, .layout-xl-content-sidebar, .layout-xl-sidebar-content-sidebar)),
+    .layout-lg-sidebar-content:where(:not(.layout-xl-full-width, .layout-xl-content-sidebar, .layout-xl-sidebar-content-sidebar)),
+	.layout-xl-sidebar-content {
+		.row > div > .sidebar-primary {
+			margin-right: 50px;
+		}
+	}
+}
+
+.single-post-has-thumbnail-cover,
+.single-post-has-thumbnail-full-screen {
+	.sidebar-primary {
+		margin-top: 3rem;
+	}
+}
+
+.sidebar-footer {
+	padding-top: 3rem;
+	padding-bottom: 3rem;
+	// background-color: #1f1f1f;
+	// color: #fff;
+	font-size: var(--enlightenment-font-size-sm);
+}
+
+.widget-area + .widget-area {
+	margin-top: 5rem;
+}

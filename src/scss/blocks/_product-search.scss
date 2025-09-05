@@ -1,0 +1,16 @@
+.wc-block-product-search {
+    font-family: var(--enlightenment-body-font-family);
+    font-size: var(--enlightenment-body-font-size);
+
+    .wc-block-product-search__label {
+        font-size: 1.25rem;
+        font-weight: 700;
+    }
+
+    &.alignwide,
+    &.alignfull {
+        .form-control {
+            max-width: none;
+        }
+    }
+}

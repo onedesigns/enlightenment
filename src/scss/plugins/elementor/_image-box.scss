@@ -1,0 +1,11 @@
+.elementor-widget-image-box {
+    .elementor-image-box-title a {
+        &:hover {
+            color: var(--bs-link-color);
+        }
+
+        &:active {
+            color: var(--bs-link-hover-color);
+        }
+    }
+}

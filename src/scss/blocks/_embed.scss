@@ -1,0 +1,20 @@
+.wp-block-embed {
+	iframe {
+		display: block;
+	}
+
+    figcaption {
+        flex-basis: 100%;
+        margin-top: .5rem;
+        margin-bottom: 0;
+        color: var(--enlightenment-accent-color);
+        font-family: var(--enlightenment-body-font-family);
+        font-size: var(--enlightenment-font-size-sm);
+        text-align: center;
+    }
+}
+
+.wp-block-embed-spotify iframe {
+	color-scheme: light;
+    width: 100%;
+}

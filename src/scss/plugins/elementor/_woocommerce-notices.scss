@@ -1,0 +1,28 @@
+.elementor-widget-woocommerce-notices {
+	font-size: var(--bs-body-font-size);
+	line-height: var(--bs-body-line-height);
+
+	.woocommerce-info.e-notices-demo-notice {
+		--bs-alert-padding-x: 1rem;
+		--bs-alert-padding-y: 1rem;
+		--bs-alert-margin-bottom: 1rem;
+		--bs-alert-border: var(--bs-border-width) var(--bs-border-style) var(--bs-alert-border-color);
+		--bs-alert-border-color: #9eeaf9;
+		--bs-alert-border-radius: var(--bs-border-radius);
+		--bs-alert-bg: #cff4fc;
+		--bs-alert-color: #055160;
+		position: relative;
+		padding: var(--bs-alert-padding-y) var(--bs-alert-padding-x);
+		margin-bottom: var(--bs-alert-margin-bottom);
+		color: var(--bs-alert-color);
+		background-color: var(--bs-alert-bg);
+		border: var(--bs-alert-border);
+		border-radius: var(--bs-alert-border-radius);
+
+		[data-bs-theme="dark"] & {
+			--bs-alert-border-color: 087990;
+			--bs-alert-bg: #032830;
+			--bs-alert-color: #6edff6;
+		}
+	}
+}

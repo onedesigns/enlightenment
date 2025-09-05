@@ -1,0 +1,35 @@
+.wc-block-components-product-sku {
+	font-weight: 700;
+
+	&.has-background {
+		padding: .5rem;
+	}
+
+	strong {
+		font-weight: 400;
+	}
+}
+
+.wp-block-post-template > li {
+	& > .wc-block-components-product-sku {
+		margin-top: .5rem;
+	    margin-bottom: .5rem;
+
+		& + .wp-block-post-title {
+			margin-top: .5rem;
+		}
+
+		& + .wp-block-spacer {
+			margin-top: -.5rem !important;
+
+			&.is-selected {
+				margin-top: .5rem !important;
+			}
+		}
+	}
+
+	& > .wp-block-post-title:not(.has-background) + .wc-block-components-product-sku,
+	& > .wp-block-spacer + .wc-block-components-product-sku {
+		margin-top: 1rem;
+	}
+}

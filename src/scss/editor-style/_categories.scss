@@ -1,0 +1,50 @@
+.wp-block-categories {
+    font-size: var(--enlightenment-body-font-size);
+
+    .wp-block-categories__list {
+        margin-left: 0;
+        font-family: var(--enlightenment-body-font-family);
+
+        li {
+            line-height: 1.5rem;
+
+            .wp-block-categories__list {
+                margin-top: .75rem;
+
+                li {
+                    position: relative;
+
+                    &::before,
+                    &::after {
+                        content: "";
+                        position: absolute;
+                        left: 7.5px;
+                        width: 8px;
+                        height: 8px;
+                        margin-left: -1.5rem;
+                        border-width: 1px;
+                        border-style: solid;
+                    }
+
+                    &::before {
+                        top: 2px;
+                        border-color: transparent transparent rgba(0, 0, 0, 0.15) rgba(0, 0, 0, 0.15);
+                    }
+
+                    &::after {
+                        top: 9px;
+                        border-color: transparent transparent transparent rgba(0, 0, 0, 0.15);
+                    }
+
+                    &:last-child::after {
+                        content: none;
+                    }
+                }
+            }
+
+			a {
+				text-decoration-line: none;
+			}
+        }
+    }
+}

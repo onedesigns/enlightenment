@@ -1,0 +1,91 @@
+.wp-block-query .row > .wp-block-post.type-product > .wc-block-components-product-image {
+	margin-bottom: 1.25rem;
+
+	& + .wp-block-spacer {
+		margin-top: -1.25rem;
+	}
+}
+
+.wc-block-components-product-image {
+	a {
+		position: relative;
+		display: block;
+	    background-color: #000;
+	    overflow: hidden;
+	    transition: background-color .25s ease-out;
+
+		img {
+			transition: opacity .5s ease-out, transform .5s ease-out;
+		}
+
+		&:hover img {
+			opacity: .8;
+		    transform: scale(1.05);
+		}
+	}
+
+	.wc-block-components-product-sale-badge {
+		&,
+		&.wc-block-grid__product-onsale {
+			position: absolute;
+			top: 0.75rem;
+			padding: 0.3077em 0.6154em 0.154em 0.6154em;
+			box-shadow: none;
+			border: none;
+			border-radius: var(--bs-border-radius-sm);
+			background-color: #fd000d;
+			color: #fff;
+			font-size: 0.8125rem;
+			font-weight: 700;
+			line-height: 1.077;
+			text-transform: uppercase;
+		}
+
+		&.wc-block-grid__product-onsale--aligncenter,
+		&.wc-block-components-product-sale-badge--align-center {
+			left: 50%;
+			right: auto;
+			transform: translate3d(-50%, 0, 0);
+		}
+
+		&.wc-block-grid__product-onsale--alignleft,
+		&.wc-block-components-product-sale-badge--align-left {
+			left: 0.75rem;
+			right: auto;
+		}
+
+		&.wc-block-grid__product-onsale--alignright,
+		&.wc-block-components-product-sale-badge--align-right {
+			right: 0.75rem;
+			left: auto;
+		}
+
+		&:not([class*="-font-size"], [style*="font-size:"]) {
+			&.wc-block-grid__product-onsale--alignleft,
+			&.wc-block-components-product-sale-badge--align-left,
+			&.wc-block-grid__product-onsale--alignright,
+			&.wc-block-components-product-sale-badge--align-right {
+				top: 26px;
+				padding-left: 32px;
+				padding-right: 32px;
+				border-radius: 0;
+			}
+
+			&.wc-block-grid__product-onsale--alignleft,
+			&.wc-block-components-product-sale-badge--align-left {
+				left: 26px;
+				transform: translate3d(-50%, -50%, 0) rotate(-45deg);
+			}
+
+			&.wc-block-grid__product-onsale--alignright,
+			&.wc-block-components-product-sale-badge--align-right {
+				right: 26px;
+				transform: translate3d(50%, -50%, 0) rotate(45deg);
+			}
+		}
+
+		span {
+			display: block;
+		}
+	}
+}

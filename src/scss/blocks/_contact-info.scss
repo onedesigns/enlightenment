@@ -1,0 +1,20 @@
+.wp-block-jetpack-contact-info {
+    font-family: var(--enlightenment-body-font-family);
+    font-size: var(--enlightenment-body-font-size);
+
+    & > div {
+        margin-bottom: 1rem;
+    }
+
+    & > :last-child {
+        margin-bottom: 0;
+    }
+}
+
+.wp-block-jetpack-address,
+.wp-block-jetpack-phone,
+.wp-block-jetpack-email {
+	a {
+		text-decoration-line: none;
+	}
+}

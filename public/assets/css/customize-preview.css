@@ -1,0 +1,7 @@
+.site-header[data-bs-theme="light"] .customize-partial-edit-shortcut-custom_logo_alt {
+    display: none;
+}
+
+.site-header[data-bs-theme="dark"] .customize-partial-edit-shortcut-custom_logo_alt {
+    z-index: 6;
+}

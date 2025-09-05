@@ -1,0 +1,99 @@
+.tribe-editor__event-details {
+    border: none;
+    background-color: transparent;
+
+    .tribe-editor__terms__label::after {
+        content: none;
+    }
+
+    .tribe-editor__meta-group {
+        .tribe-editor__events-section__headline {
+            padding: 0;
+            margin-bottom: .5rem;
+            font-size: 1.75rem;
+            line-height: 1.2;
+
+            input {
+                margin: 0;
+                font-size: inherit;
+                line-height: inherit;
+
+                &:focus {
+                    outline: none;
+                }
+
+                &::-webkit-input-placeholder {
+                    color: inherit;
+                }
+
+                &::-moz-placeholder {
+                    color: inherit;
+                }
+
+                &:-ms-input-placeholder {
+                    color: inherit;
+                }
+
+                &:-moz-placeholder {
+                    color: inherit;
+                }
+            }
+        }
+
+        & > div:not([class]),
+        .tribe-editor__event-cost {
+            & + div {
+                margin-top: .75rem;
+            }
+        }
+
+        .tribe-editor__btn--label {
+            width: 100%;
+            line-height: 1.5rem;
+
+            &:focus {
+                outline: none;
+            }
+
+            strong {
+                display: inline-block;
+                min-width: 31.4%;
+                padding-right: 1rem;
+                font-weight: 700;
+            }
+        }
+
+        & > div:not([class]),
+        .tribe-editor__event-cost {
+            strong {
+                display: inline-block;
+                min-width: 31.4%;
+                padding-right: 1rem;
+                font-weight: 700;
+            }
+
+            br {
+                display: none;
+            }
+
+            .block-editor-plain-text {
+                width: auto;
+                height: auto !important;
+                vertical-align: bottom;
+            }
+        }
+
+        .tribe-editor__organizer__list {
+            padding: 0;
+            margin: 0;
+
+            li {
+                line-height: 1.5rem;
+
+                & + li {
+                    margin-top: .75rem;
+                }
+            }
+        }
+    }
+}

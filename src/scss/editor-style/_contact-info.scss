@@ -1,0 +1,38 @@
+.jetpack-contact-info-block {
+    font-family: var(--enlightenment-body-font-family);
+    font-size: var(--enlightenment-body-font-size);
+
+    .block-editor-block-list__layout {
+        & > .wp-block {
+            margin-top: 0;
+            margin-bottom: 1rem;
+
+            & > div {
+                display: flex;
+                flex-direction: column;
+            }
+        }
+
+        & > .wp-block:last-of-type {
+            margin-bottom: 0;
+        }
+    }
+}
+
+@media (min-width: 1200px) {
+    .jetpack-contact-info-block {
+        .block-editor-block-list__layout {
+            & > .wp-block.is-selected {
+                margin-bottom: 2rem;
+            }
+        }
+    }
+}
+
+.wp-block-jetpack-address,
+.wp-block-jetpack-phone,
+.wp-block-jetpack-email {
+	a {
+		text-decoration-line: none;
+	}
+}

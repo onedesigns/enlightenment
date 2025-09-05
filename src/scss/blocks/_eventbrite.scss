@@ -1,0 +1,26 @@
+.wp-block-jetpack-eventbrite {
+    &.alignleft,
+    &.alignright {
+        margin-top: .5rem;
+        margin-bottom: 1rem;
+    }
+
+    &.alignleft {
+        margin-right: 1.5rem;
+    }
+
+    &.alignright {
+        margin-left: 1.5rem;
+    }
+
+    & > .wp-block-jetpack-button {
+        border-radius: 1rem;
+    }
+}
+
+.single .entry-content > .wp-block-jetpack-eventbrite {
+    &.alignleft,
+    &.alignright {
+        margin-bottom: 1rem;
+    }
+}

@@ -1,0 +1,32 @@
+.wp-block-calendar {
+    .wp-calendar-table {
+        caption {
+            caption-side: top;
+            padding: 0;
+            margin-bottom: .5rem;
+            font-size: 1.25rem;
+            font-weight: 700;
+            text-align: center;
+        }
+    }
+
+    .wp-calendar-nav {
+        display: flex;
+        margin-top: .5rem;
+        font-family: var(--enlightenment-body-font-family);
+        font-size: var(--enlightenment-body-font-size);
+        line-height: 1.25rem;
+
+        .wp-calendar-nav-next {
+            margin-left: auto;
+        }
+
+        .pad {
+            display: none;
+        }
+    }
+
+    a {
+        text-decoration-line: none;
+    }
+}

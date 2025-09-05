@@ -1,0 +1,34 @@
+.elementor-widget-price-table {
+    .elementor-widget-container.elementor-widget-container {
+        border: var(--bs-border-width) var(--bs-border-style) var(--bs-border-color-translucent);
+        border-radius: var(--bs-border-radius);
+        background-color: var(--bs-body-bg);
+    }
+
+    .elementor-price-table {
+		.elementor-price-table__header {
+	        background-color: var(--e-price-table-header-background-color, rgba(var(--bs-body-color-rgb), 0.03));
+	        border-bottom: var(--bs-border-width) var(--bs-border-style) var(--bs-border-color-translucent);
+	    }
+
+	    .elementor-price-table__heading,
+	    .elementor-price-table__price {
+	        color: var(--bs-heading-color);
+	    }
+
+	    .elementor-price-table__subheading,
+	    .elementor-price-table__period,
+	    .elementor-price-table__additional_info {
+	        color: #6c757d;
+	    }
+
+	    .elementor-price-table__features-list li::before {
+	        border-color: var(--bs-border-color);
+	    }
+	}
+
+	.elementor-ribbon-inner,
+	.elementor-price-table__ribbon-inner {
+		background-color: #fd000d;
+	}
+}

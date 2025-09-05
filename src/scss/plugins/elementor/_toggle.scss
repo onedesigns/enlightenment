@@ -1,0 +1,23 @@
+.elementor-toggle {
+    .elementor-tab-title {
+        padding-left: 0;
+        padding-right: 0;
+        border-color: var(--bs-border-color);
+        font-weight: 400;
+    }
+
+    .elementor-tab-content {
+        padding-left: 0;
+        padding-right: 0;
+        border-color: var(--bs-border-color);
+
+        &:not(.elementor-active) {
+            margin-top: -1px !important;
+            background-color: var(--bs-body-bg);
+        }
+
+        &[style^="display: block;"][hidden="hidden"] {
+            display: block !important;
+        }
+    }
+}

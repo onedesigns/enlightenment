@@ -1,0 +1,26 @@
+.tribe-editor__events-link {
+    margin-left: -.25rem;
+    margin-right: -.25rem;
+}
+
+.tribe-editor__btn--link {
+	padding: var(--enlightenment-btn-padding-y) var(--enlightenment-btn-padding-x);
+    margin: 0 0.25rem;
+	border-radius: var(--enlightenment-btn-border-radius);
+    background-color: #fff;
+    color: #6c757d;
+    font-size: var(--enlightenment-font-size-sm);
+
+    svg {
+        display: none;
+    }
+}
+
+.tribe-editor__events-link {
+    .tribe-editor__btn--link {
+        input {
+            color: #6c757d;
+            font-size: var(--enlightenment-font-size-sm);
+        }
+    }
+}

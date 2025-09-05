@@ -1,0 +1,46 @@
+@media (min-width: 992px) and (max-width: 1199.98px) {
+    .enlightenment-layout-full-width:where(:not(.enlightenment-layout-sm-content-sidebar, .enlightenment-layout-sm-sidebar-content, .enlightenment-layout-sm-sidebar-content-sidebar, .enlightenment-layout-md-content-sidebar, .enlightenment-layout-md-sidebar-content, .enlightenment-layout-md-sidebar-content-sidebar, .enlightenment-layout-lg-content-sidebar, .enlightenment-layout-lg-sidebar-content, .enlightenment-layout-lg-sidebar-content-sidebar)),
+    .enlightenment-layout-sm-full-width:where(:not(.enlightenment-layout-md-content-sidebar, .enlightenment-layout-md-sidebar-content, .enlightenment-layout-md-sidebar-content-sidebar, .enlightenment-layout-lg-content-sidebar, .enlightenment-layout-lg-sidebar-content, .enlightenment-layout-lg-sidebar-content-sidebar)),
+    .enlightenment-layout-md-full-width:where(:not(.enlightenment-layout-lg-content-sidebar, .enlightenment-layout-lg-sidebar-content, .enlightenment-layout-lg-sidebar-content-sidebar)),
+    .enlightenment-layout-lg-full-width {
+        &.post-type-post .editor-styles-wrapper {
+            .wp-block {
+                &[data-align="left"] {
+                    .wp-block-pullquote {
+                        margin-left: -105px;
+                    }
+                }
+
+                &[data-align="right"] {
+                    .wp-block-pullquote {
+                        margin-right: -105px;
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media (min-width: 1200px) {
+    .enlightenment-layout-md-full-width:where(:not(.enlightenment-layout-lg-content-sidebar, .enlightenment-layout-lg-sidebar-content, .enlightenment-layout-lg-sidebar-content-sidebar)),
+    .enlightenment-layout-sm-full-width:where(:not(.enlightenment-layout-md-content-sidebar, .enlightenment-layout-md-sidebar-content, .enlightenment-layout-md-sidebar-content-sidebar, .enlightenment-layout-lg-content-sidebar, .enlightenment-layout-lg-sidebar-content, .enlightenment-layout-lg-sidebar-content-sidebar, .enlightenment-layout-xl-content-sidebar, .enlightenment-layout-xl-sidebar-content, .enlightenment-layout-xl-sidebar-content-sidebar)),
+    .enlightenment-layout-md-full-width:where(:not(.enlightenment-layout-lg-content-sidebar, .enlightenment-layout-lg-sidebar-content, .enlightenment-layout-lg-sidebar-content-sidebar, .enlightenment-layout-xl-content-sidebar, .enlightenment-layout-xl-sidebar-content, .enlightenment-layout-xl-sidebar-content-sidebar)),
+    .enlightenment-layout-lg-full-width:where(:not(.enlightenment-layout-xl-content-sidebar, .enlightenment-layout-xl-sidebar-content, .enlightenment-layout-xl-sidebar-content-sidebar)),
+    .enlightenment-layout-xl-full-width {
+        &.post-type-post .editor-styles-wrapper {
+            .wp-block {
+                &[data-align="left"] {
+                    .wp-block-pullquote {
+                        margin-left: -195px;
+                    }
+                }
+
+                &[data-align="right"] {
+                    .wp-block-pullquote {
+                        margin-right: -195px;
+                    }
+                }
+            }
+        }
+    }
+}

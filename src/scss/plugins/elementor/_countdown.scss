@@ -1,0 +1,24 @@
+.elementor-widget-countdown {
+    .elementor-countdown-item {
+        background-color: rgba(var(--bs-emphasis-color-rgb), 0.03);
+        color: inherit;
+        border-radius: var(--bs-border-radius);
+    }
+
+	.elementor-countdown-digits {
+		color: var(--bs-heading-color);
+	}
+
+	.elementor-countdown-label {
+		color: var(--enlightenment-accent-color);
+	}
+
+    .elementor-countdown-expire--message {
+        padding: .75rem 1.25rem;
+        margin-top: 1rem;
+        border: 1px solid #c3e6cb;
+        border-radius: var(--bs-border-radius);
+        background-color: #d1e7dd;
+        color: #155724;
+    }
+}

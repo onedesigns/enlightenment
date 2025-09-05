@@ -1,0 +1,29 @@
+.wc-block-components-product-sku {
+	font-weight: 700;
+
+	&.product_meta {
+		position: static;
+		padding-top: 0;
+
+		&::before {
+			content: none;
+		}
+	}
+
+	&.has-background {
+		padding: .5rem;
+	}
+
+	strong {
+		font-weight: 400;
+	}
+}
+
+.wp-block-query .row > .wp-block-post.type-product > .wc-block-components-product-sku {
+	margin-bottom: .5rem;
+
+	& + .wp-block-spacer {
+		margin-top: -.5rem;
+		margin-bottom: 0;
+	}
+}

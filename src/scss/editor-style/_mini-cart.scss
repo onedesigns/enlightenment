@@ -1,0 +1,20 @@
+.wc-block-mini-cart {
+	display: block;
+	font-family: var(--enlightenment-body-font-family);
+    font-size: var(--enlightenment-body-font-size);
+
+	&__button {
+		padding: 0;
+		font-size: inherit;
+	}
+
+	&__amount {
+		font-weight: 400;
+	}
+
+	&__badge {
+	    background-color: #fd000d;
+	    color: var(--bs-white);
+		font-weight: 400;
+	}
+}

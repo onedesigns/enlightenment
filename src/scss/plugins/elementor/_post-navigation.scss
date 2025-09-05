@@ -1,0 +1,89 @@
+.elementor-post-navigation {
+    overflow: visible;
+
+    .elementor-post-navigation__link {
+        position: relative;
+        overflow: visible;
+
+        a {
+            color: inherit;
+            transition: opacity .25s ease;
+
+            &:hover {
+                opacity: .8;
+            }
+
+            &:active {
+                opacity: .6;
+            }
+        }
+    }
+
+    .post-navigation__arrow-wrapper,
+    .post-navigation__prev--label,
+    .post-navigation__next--label,
+    .post-navigation__prev--title,
+    .post-navigation__next--title {
+        transition: color .25s ease;
+    }
+
+    .post-navigation__arrow-wrapper {
+        position: absolute;
+        top: 0;
+        bottom: 0;
+        display: flex;
+        align-items: center;
+        color: inherit;
+        line-height: 1;
+
+        &.post-navigation__arrow-prev {
+            right: 100%;
+            padding-right: .75rem;
+            font-size: 1.25rem;
+        }
+
+        &.post-navigation__arrow-next {
+            left: 100%;
+            padding-left: .75rem;
+            font-size: 1.25rem;
+        }
+    }
+
+    .post-navigation__prev--label,
+    .post-navigation__next--label {
+        font-size: var(--enlightenment-body-font-size);
+        font-weight: 600;
+        line-height: 1.2;
+        text-transform: none;
+
+        &:not(:only-child) {
+            margin-bottom: .125rem;
+            color: var(--enlightenment-accent-color);
+            font-size: 11px;
+            font-weight: 700;
+            line-height: .875rem;
+            letter-spacing: 1.1px;
+            text-transform: uppercase;
+        }
+    }
+
+    .post-navigation__prev--title,
+    .post-navigation__next--title {
+		color: var(--bs-heading-color);
+        font-size: var(--enlightenment-body-font-size);
+        font-weight: 600;
+        line-height: 1.2;
+    }
+
+	&-borders-yes .elementor-post-navigation__separator {
+		background-color: var(--bs-border-color);
+	}
+}
+
+@media (max-width: 575.98px) {
+    .elementor-post-navigation {
+        .post-navigation__arrow-wrapper {
+            display: none;
+        }
+    }
+}

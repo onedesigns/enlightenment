@@ -1,0 +1,29 @@
+.wp-block-site-title {
+	font-weight: 500;
+
+	&.alignfull {
+		padding-left: 15px;
+	    padding-right: 15px;
+	}
+
+	&:not([class*="-font-size"]) {
+		font-size: 1.25rem;
+	}
+
+	a {
+		color: rgba(0,0,0,.9);
+		transition: opacity .25s ease;
+
+		&:hover {
+			opacity: .75;
+		}
+
+		&:active {
+			opacity: .5;
+		}
+	}
+}
+
+.entry-content .wp-block-site-title.wp-block-site-title {
+	margin-top: 0;
+}

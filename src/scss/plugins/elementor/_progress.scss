@@ -1,0 +1,31 @@
+.elementor-progress-wrapper {
+    display: flex;
+    overflow: hidden;
+    background-color: var(--bs-secondary-bg);
+    border-radius: var(--bs-border-radius);
+}
+
+.elementor-progress-bar {
+	height: 1rem;
+    border-radius: 0;
+    background-color: var(--bs-primary);
+    font-size: 0.75rem;
+    line-height: 1rem;
+}
+
+.elementor-widget-progress .elementor-progress-wrapper.progress-info .elementor-progress-bar {
+    background-color: var(--bs-info);
+}
+
+.elementor-widget-progress .elementor-progress-wrapper.progress-success .elementor-progress-bar {
+    background-color: var(--bs-success);
+}
+
+.elementor-widget-progress .elementor-progress-wrapper.progress-warning .elementor-progress-bar {
+    color: var(--bs-dark);
+    background-color: var(--bs-warning);
+}
+
+.elementor-widget-progress .elementor-progress-wrapper.progress-danger .elementor-progress-bar {
+    background-color: var(--bs-danger);
+}

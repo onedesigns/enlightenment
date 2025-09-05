@@ -1,0 +1,17 @@
+.wp-block-post-excerpt {
+	&.has-background {
+		padding: 1rem;
+
+		& > :first-child {
+			margin-top: 0;
+		}
+
+		& > :last-child {
+			margin-bottom: 0;
+		}
+	}
+
+	&__more-text a {
+		text-decoration-line: none;
+	}
+}

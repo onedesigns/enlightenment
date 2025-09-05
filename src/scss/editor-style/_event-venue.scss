@@ -1,0 +1,57 @@
+.tribe-editor__venue {
+    &.tribe-editor__venue--has-map {
+        flex-wrap: wrap;
+        justify-content: flex-start;
+        width: auto;
+        margin-right: -15px;
+        margin-left: -15px;
+
+        .tribe-editor__venue--current,
+        .tribe-editor__map {
+            flex: 1 1 0;
+            max-width: 100%;
+            width: 100%;
+            padding-right: 15px;
+            padding-left: 15px;
+        }
+    }
+
+    .tribe-editor__venue__name {
+        h3.tribe-editor__venue__name-heading {
+            margin-bottom: .5rem;
+            font-family: var(--enlightenment-body-font-family);
+            font-size: 1.25rem;
+        }
+    }
+}
+
+.tribe-editor__venue__address,
+.tribe-editor__venue__phone,
+.tribe-editor__venue__website {
+    color: inherit;
+    font-family: inherit;
+    line-height: inherit;
+    letter-spacing: 0;
+}
+
+.tribe-editor__venue__address,
+.tribe-editor__venue__phone {
+    margin-bottom: 1rem;
+}
+
+.tribe-editor__map {
+    background-color: transparent;
+}
+
+.tribe-editor__map--interactive {
+    position: relative;
+    height: 0;
+    padding-bottom: 100%;
+}
+
+.tribe-editor__map--dynamic {
+    position: absolute !important;
+    top: 0;
+    left: 0;
+    background-color: rgb(229, 227, 223);
+}

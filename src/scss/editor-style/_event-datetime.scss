@@ -1,0 +1,66 @@
+.tribe-editor__date-time {
+    font-size: var(--enlightenment-body-font-size);
+
+    .tribe-editor__subtitle__headline {
+        margin-bottom: 0;
+        font-family: inherit;
+        font-size: 1.25rem;
+        font-weight: 500;
+    }
+
+    .tribe-editor__btn--label {
+        font-family: inherit;
+        font-size: inherit;
+        font-weight: inherit;
+    }
+
+    .tribe-editor__subtitle__headline-date {
+        font-size: inherit;
+    }
+
+    .tribe-editor__separator {
+        margin: 0;
+        color: var(--enlightenment-accent-color);
+        font-size: inherit;
+        font-weight: 300;
+    }
+
+    .tribe-editor__timezone-input {
+        margin-left: .375rem;
+
+        input {
+            padding: 0;
+            margin: 0;
+            color: var(--enlightenment-accent-color);
+            font-size: inherit;
+            font-weight: 300;
+
+            &:focus {
+                outline: none;
+            }
+        }
+    }
+
+    .tribe-editor__event-cost {
+        margin-left: 1rem;
+        color: #fd000d;
+        font-size: 1.25rem;
+        font-weight: 700;
+
+        .block-editor-plain-text {
+            background-color: transparent;
+            font-size: 1.25rem;
+            line-height: 2rem;
+            vertical-align: text-bottom;
+        }
+    }
+}
+
+@media (min-width: 992px) {
+    .tribe-editor__date-time {
+        .tribe-editor__btn--label {
+            flex: 0 1 0;
+            white-space: nowrap;
+        }
+    }
+}

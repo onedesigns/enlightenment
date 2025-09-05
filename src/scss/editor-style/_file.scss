@@ -1,0 +1,175 @@
+.wp-block-file {
+    font-family: var(--enlightenment-body-font-family);
+
+	&__preview {
+		display: block;
+	}
+
+    .wp-block-file__textlink {
+        div {
+            color: inherit;
+            font-size: var(--enlightenment-body-font-size);
+
+            &::before {
+                content: "\f15c";
+                font-family: var(--enlightenment-font-icons);
+                -moz-osx-font-smoothing: grayscale;
+                -webkit-font-smoothing: antialiased;
+                display: inline-block;
+                margin-right: .24rem;
+                font-size: 1.5rem;
+                font-style: normal;
+                font-variant: normal;
+                text-rendering: auto;
+                line-height: 1;
+                vertical-align: middle;
+            }
+        }
+
+        &:only-child {
+            div {
+                color: var(--bs-link-color);
+            }
+        }
+    }
+
+	.wp-block-file__content-wrapper a {
+		font-size: var(--enlightenment-body-font-size);
+
+        &:not(:only-child) {
+            color: inherit;
+            text-decoration-line: none;
+        }
+
+        &::before {
+            font-family: var(--enlightenment-font-icons);
+            -moz-osx-font-smoothing: grayscale;
+            -webkit-font-smoothing: antialiased;
+            display: inline-block;
+            margin-right: .24rem;
+            font-size: 1.5rem;
+            font-style: normal;
+            font-variant: normal;
+            text-rendering: auto;
+            line-height: 1;
+            vertical-align: middle;
+        }
+
+        &[href$=".pdf"] {
+            &::before {
+                content: "\f1c1";
+            }
+        }
+
+        &[href$=".doc"],
+        &[href$=".docx"],
+        &[href$=".odt"],
+        &[href$=".rtf"] {
+            &::before {
+                content: "\f1c2";
+            }
+        }
+
+        &[href$=".xls"],
+        &[href$=".xlsx"],
+        &[href$=".ods"] {
+            &::before {
+                content: "\f1c3";
+            }
+        }
+
+        &[href$=".ppt"],
+        &[href$=".pptx"],
+        &[href$=".pps"],
+        &[href$=".ppsx"],
+        &[href$=".odp"] {
+            &::before {
+                content: "\f1c4";
+            }
+        }
+
+        &[href$=".mp4"],
+        &[href$=".m4v"],
+        &[href$=".mkv"],
+        &[href$=".mov"],
+        &[href$=".avi"],
+        &[href$=".ogv"],
+        &[href$=".webm"] {
+            &::before {
+                content: "\f1c8";
+            }
+        }
+
+        &[href$=".jpg"],
+        &[href$=".jpeg"],
+        &[href$=".png"],
+        &[href$=".gif"],
+        &[href$=".webp"] {
+            &::before {
+                content: "\f1c5";
+            }
+        }
+
+        &[href$=".mp3"],
+        &[href$=".m4a"],
+        &[href$=".wav"],
+        &[href$=".ogg"],
+        &[href$=".flac"] {
+            &::before {
+                content: "\f1c7";
+            }
+        }
+
+        &[href$=".zip"],
+        &[href$=".rar"],
+        &[href$=".tar"],
+        &[href$=".gz"],
+        &[href$=".bz2"],
+        &[href$=".lz"],
+        &[href$=".tgz"],
+        &[href$=".7z"] {
+            &::before {
+                content: "\f1c6";
+            }
+        }
+
+        &[href$=".php"],
+        &[href$=".js"],
+        &[href$=".coffee"],
+        &[href$=".css"],
+        &[href$=".scss"],
+        &[href$=".sass"],
+        &[href$=".less"],
+        &[href$=".c"],
+        &[href$=".cpp"],
+        &[href$=".h"],
+        &[href$=".java"] {
+            &::before {
+                content: "\f1c9";
+            }
+        }
+
+        &[href$=".txt"] {
+            &::before {
+                content: "\f15c";
+            }
+        }
+
+        &[href$=".csv"] {
+            &::before {
+                content: "\f6dd";
+                font-weight: 900;
+            }
+        }
+	}
+
+    .wp-block-file__button-richtext-wrapper {
+        margin-left: .5rem;
+    }
+
+    .wp-block-file__button {
+        padding: 0.3125rem 1.25rem;
+        border-radius: 1.125rem;
+        font-size: var(--enlightenment-body-font-size);
+    }
+}

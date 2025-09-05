@@ -1,0 +1,68 @@
+.woocommerce-checkout #payment .payment_methods .wc_payment_method {
+	label .stripe-icon {
+		padding-left: 0;
+		margin-left: auto;
+
+		& + .stripe-icon {
+			margin-left: 3px;
+		}
+	}
+}
+
+.payment_method_stripe_sepa {
+	.form-control,
+	.wc-stripe-iban-element-field {
+		&::before,
+		&::after {
+			content: "";
+		    display: block;
+		    height: 3px;
+		}
+	}
+
+	.wc-stripe-iban-element-field {
+		padding: .375rem .75rem;
+		border-color: var(--bs-border-color);
+
+		&::before,
+		&::after {
+			content: "";
+			display: block;
+			height: 3px;
+		}
+
+		&.StripeElement--invalid {
+		    border-color: #fd000d;
+		}
+
+		&.StripeElement--complete {
+			border-color: #28a745;
+		}
+	}
+
+	br {
+		display: none;
+	}
+}
+
+.woocommerce-add-payment-method #add_payment_method #payment ul.payment_methods li label img.stripe-icon {
+	padding-left: 0;
+	margin-left: auto;
+}
+
+.woocommerce-checkout #payment ul.payment_methods li.payment_method_stripe .stripe-card-brand.stripe-credit-card-brand,
+#add_payment_method #payment ul.payment_methods li .stripe-card-brand.stripe-credit-card-brand {
+	right: 13px;
+	margin-top: -9.5px;
+}
+
+.stripe-source-errors .wc-stripe-error {
+	margin-bottom: .5rem;
+	font-size: var(--enlightenment-font-size-sm);
+
+	&:where(:not(.woocommerce_error)) {
+		list-style: none;
+		padding: 0;
+		color: #dc3545;
+	}
+}

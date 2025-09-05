@@ -1,0 +1,93 @@
+.block-editor-block-list__layout {
+    .wp-block[data-align="left"],
+    .wp-block[data-align="right"] {
+        & > .wp-block-image {
+            display: table;
+            margin-top: .5rem;
+            margin-bottom: 1rem;
+
+            .components-resizable-box__container {
+                display: block;
+            }
+
+            figcaption {
+                display: table-caption;
+                caption-side: bottom;
+            }
+        }
+    }
+
+    .wp-block[data-align="left"] {
+        & > .wp-block-image {
+            margin-right: 1.5rem;
+        }
+    }
+
+    .wp-block[data-align="right"] {
+        & > .wp-block-image {
+            margin-left: 1.5rem;
+        }
+    }
+}
+
+.wp-block-image {
+    .components-resizable-box__container {
+        display: block;
+    }
+
+    figcaption {
+        margin: .5rem auto 0;
+        color: var(--enlightenment-accent-color);
+        font-family: var(--enlightenment-body-font-family);
+        font-size: var(--enlightenment-font-size-sm);
+        text-align: center;
+    }
+}
+
+@media (max-width: 575.98px) {
+    .block-editor-block-list__layout {
+        .wp-block[data-align="left"],
+        .wp-block[data-align="right"] {
+            height: auto;
+            
+            & > .wp-block-image {
+                float: none;
+                margin-top: 0;
+                margin-left: 0;
+                margin-right: 0;
+            }
+        }
+    }
+}
+
+@media (min-width: 576px) {
+    [data-type="core/image"][data-align="full"] {
+        .wp-block-image > figcaption {
+            max-width: 510px;
+        }
+    }
+}
+
+@media (min-width: 768px) {
+    [data-type="core/image"][data-align="full"] {
+        .wp-block-image > figcaption {
+            max-width: 690px;
+        }
+    }
+}
+
+@media (min-width: 992px) {
+    [data-type="core/image"][data-align="full"] {
+        .wp-block-image > figcaption {
+            max-width: 930px;
+        }
+    }
+}
+
+@media (min-width: 1200px) {
+    [data-type="core/image"][data-align="full"] {
+        .wp-block-image > figcaption {
+            max-width: 1110px;
+        }
+    }
+}

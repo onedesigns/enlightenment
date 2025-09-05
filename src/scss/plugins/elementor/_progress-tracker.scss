@@ -1,0 +1,31 @@
+.elementor-scrolling-tracker {
+	--border-radius: var(--bs-border-radius);
+	--scrolling-track-default-color: var(--bs-secondary-bg);
+	--scrolling-track-default-progress-color: var(--bs-primary);
+	--scrolling-track-precentage-default-color: var(--bs-white);
+}
+.elementor-scrolling-tracker-horizontal {
+	height: var(--horizontal-height, 1rem);
+	border-top-width: var(--horizontal-border-top-width, 1px);
+    border-right-width: var(--horizontal-border-right-width, 1px);
+    border-bottom-width: var(--horizontal-border-bottom-width, 1px);
+    border-left-width: var(--horizontal-border-left-width, 1px);
+	font-size: 0.75rem;
+	line-height: var(--horizontal-height, 1rem);
+	overflow: hidden;
+
+	.current-progress {
+		border-top-width: var(--horizontal-progress-border-top-width, 1px);
+		border-right-width: var(--horizontal-progress-border-right-width, 1px);
+		border-bottom-width: var(--horizontal-progress-border-bottom-width, 1px);
+		border-left-width: var(--horizontal-progress-border-left-width, 1px);
+
+		.current-progress-percentage {
+			inset-inline-end: .5rem;
+			display: flex;
+		    flex-direction: column;
+		    align-items: center;
+			width: var(--text-direction, calc(100% - 1rem));
+		}
+	}
+}

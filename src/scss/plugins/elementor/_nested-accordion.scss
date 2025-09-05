@@ -1,0 +1,20 @@
+.elementor-widget-n-accordion {
+	--n-accordion-icon-gap: 0.5rem;
+	--n-accordion-title-icon-order: initial;
+	--n-accordion-padding: 1rem 1.25rem;
+	--n-accordion-border-color: var(--bs-border-color);
+	--n-accordion-border-style: var(--bs-border-style);
+	--n-accordion-border-width: var(--bs-border-width);
+	--n-accordion-item-title-distance-from-content: calc(var(--n-accordion-border-width) * -1);
+	--n-accordion-item-title-space-between: calc(var(--n-accordion-border-width) * -1);
+	--n-accordion-title-normal-color: var(--bs-body-color);
+	--n-accordion-title-hover-color: var(--bs-body-color);
+	--n-accordion-title-active-color: var(--bs-body-color);
+
+	:where(.e-n-accordion-item > .e-con) {
+		--padding-top: 1rem;
+	    --padding-bottom: 1rem;
+	    --padding-left: 1.25rem;
+	    --padding-right: 1.25rem;
+	}
+}

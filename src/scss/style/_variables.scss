@@ -1,0 +1,261 @@
+:root {
+	--enlightenment-light-secondary-bg-rgb: 238, 238, 238;
+	--enlightenment-dark-secondary-bg-rgb: 51, 51, 51;
+	--enlightenment-light-tertiary-bg-rgb: 242, 242, 242;
+	--enlightenment-dark-tertiary-bg-rgb: 38, 38, 38;
+	--enlightenment-light-success-bg-subtle: #d1e7dd;
+	--enlightenment-dark-success-bg-subtle: #2c5442;
+	--enlightenment-light-success-bg-subtle-hover: #c3e6cb;
+	--enlightenment-dark-success-bg-subtle-hover: #3d755c;
+	--enlightenment-light-body-bg-rgb: 255, 255, 255;
+	--enlightenment-dark-body-bg-rgb: 25, 25, 25;
+	--enlightenment-light-body-color-rgb: 51, 51, 51;
+	--enlightenment-dark-body-color-rgb: 212, 212, 212;
+	--enlightenment-light-link-color-rgb: 13, 110, 253;
+	--enlightenment-dark-link-color-rgb: 110, 168, 254;
+	--enlightenment-light-link-hover-color-rgb: 10, 88, 202;
+	--enlightenment-dark-link-hover-color-rgb: 139, 185, 254;
+
+	--enlightenment-gutter-x: 1.875rem;
+
+	--enlightenment-light-body-bg: rgb(var(--enlightenment-light-body-bg-rgb));
+	--enlightenment-dark-body-bg: rgb(var(--enlightenment-dark-body-bg-rgb));
+	--enlightenment-custom-header-bg: rgba(var(--bs-black-rgb), 0.5);
+
+	--enlightenment-link-opacity: 1;
+
+	--enlightenment-font-sans-serif: Hind, sans-serif;
+	--enlightenment-font-serif: "PT Serif", serif;
+	--enlightenment-font-monospace: SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
+	--enlightenment-font-icons: "Font Awesome 5 Free";
+	--enlightenment-font-icons-brands: "Font Awesome 5 Brands";
+
+	--enlightenment-font-size: 1rem;
+	--enlightenment-font-size-sm: 0.875rem;
+
+	--enlightenment-body-font-family: var(--enlightenment-font-sans-serif);
+	--enlightenment-body-font-size: var(--enlightenment-font-size);
+	--enlightenment-body-font-style: normal;
+	--enlightenment-body-font-weight: 400;
+	--enlightenment-body-line-height: 1.5;
+	--enlightenment-body-text-align: start;
+
+	--enlightenment-link-text-decoration-line: underline;
+	--enlightenment-link-text-decoration-thickness: 1px;
+	--enlightenment-link-text-underline-offset: 0.11em;
+	--enlightenment-link-text-decoration-opacity: 0.5;
+
+	--enlightenment-btn-padding-x: 0.875rem;
+	--enlightenment-btn-padding-y: 0.2813rem;
+	--enlightenment-btn-border-radius: 999em;
+	--enlightenment-btn-font-size: var(--enlightenment-font-size-sm);
+	--enlightenment-btn-font-weight: 400;
+	--enlightenment-btn-line-height: 1.5;
+
+	--enlightenment-btn-sm-padding-x: 0.875rem;
+	--enlightenment-btn-sm-padding-y: 0.25rem;
+	--enlightenment-btn-sm-border-radius: 999em;
+    --enlightenment-btn-sm-font-size: 0.75rem;
+
+	--enlightenment-btn-lg-padding-x: 1.25rem;
+	--enlightenment-btn-lg-padding-y: 0.3125rem;
+	--enlightenment-btn-lg-border-radius: 999em;
+	--enlightenment-btn-lg-font-size: var(--enlightenment-font-size);
+
+	--enlightenment-btn-close-border-radius: var(--bs-border-radius);
+	--enlightenment-btn-close-bg: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16' fill='%23000'%3e%3cpath d='M.293.293a1 1 0 0 1 1.414 0L8 6.586 14.293.293a1 1 0 1 1 1.414 1.414L9.414 8l6.293 6.293a1 1 0 0 1-1.414 1.414L8 9.414l-6.293 6.293a1 1 0 0 1-1.414-1.414L6.586 8 .293 1.707a1 1 0 0 1 0-1.414z'/%3e%3c/svg%3e");
+	--enlightenment-btn-close-color: #000;
+	--enlightenment-btn-close-opacity: 0.5;
+	--enlightenment-btn-close-hover-opacity: 0.75;
+	--enlightenment-btn-close-focus-opacity: 1;
+	--enlightenment-btn-close-focus-shadow: var(--bs-focus-ring-x, 0) var(--bs-focus-ring-y, 0) var(--bs-focus-ring-blur, 0) var(--bs-focus-ring-width) var(--bs-focus-ring-color);
+	--enlightenment-btn-close-disabled-opacity: 0.25;
+	--enlightenment-btn-close-white-filter: invert(1) grayscale(100%) brightness(200%);
+
+	--enlightenment-dropdown-spacer: 1rem;
+
+	--enlightenment-navbar-brand-font-size: 1.25rem;
+	--enlightenment-navbar-brand-font-weight: 500;
+	--enlightenment-navbar-collapse-active-link-font-weight: 600;
+	--enlightenment-navbar-expand-font-size: var(--enlightenment-font-size-sm);
+	--enlightenment-navbar-expand-active-link-font-weight: 600;
+
+	--enlightenment-page-description-font-size: 1.25rem;
+	--enlightenment-page-description-font-style: normal;
+	--enlightenment-page-description-font-weight: 300;
+
+	--enlightenment-page-title-font-size: 2.75rem;
+	--enlightenment-page-title-line-height: 1.2;
+
+	--enlightenment-desktop-page-title-font-size: 3rem;
+
+	--enlightenment-author-page-title-font-size: 2rem;
+
+	--enlightenment-breadcrumb-divider: "\00a0/\00a0";
+	--enlightenment-breadcrumb-divider-color: rgba(var(--bs-emphasis-color-rgb), 0.15);
+	--enlightenment-backdrop-breadcrumb-divider-color: rgba(var(--bs-white-rgb), 0.5);
+	--enlightenment-breadcrumb-item-color: var(--enlightenment-accent-color);
+	--enlightenment-breadcrumb-hover-color: var(--bs-body-color);
+	--enlightenment-breadcrumb-active-color: var(--bs-emphasis-color);
+	--enlightenment-backdrop-breadcrumb-item-color: var(--bs-white);
+	--enlightenment-backdrop-breadcrumb-item-hover-color: rgba(var(--bs-white-rgb), 0.8);
+	--enlightenment-backdrop-breadcrumb-item-active-color: rgba(var(--bs-white-rgb), 0.6);
+	--enlightenment-breadcrumb-item-active-color: var(--enlightenment-accent-color);
+
+	--enlightenment-single-post-title-font-size: 2rem;
+	--enlightenment-single-post-title-line-height: 1.2;
+
+	--enlightenment-desktop-single-post-title-font-size: 3rem;
+
+	--enlightenment-single-post-excerpt-font-size: 1.25rem;
+	--enlightenment-single-post-excerpt-font-style: normal;
+	--enlightenment-single-post-excerpt-font-weight: 300;
+
+	--enlightenment-desktop-single-post-excerpt-font-size: 1.5rem;
+
+	--enlightenment-single-post-content-font-family: var(--enlightenment-font-serif);
+	--enlightenment-single-post-content-font-size: 1.125rem;
+	--enlightenment-single-post-content-line-height: 1.6;
+
+	--enlightenment-desktop-single-post-content-font-size: 1.25rem;
+
+	--enlightenment-toast-zindex: 1090;
+	--enlightenment-toast-max-width: 350px;
+	--enlightenment-toast-padding-x: 0.75rem;
+    --enlightenment-toast-padding-y: 0.5rem;
+	--enlightenment-toast-spacing: 1.5rem;
+	--enlightenment-toast-border-width: var(--bs-border-width);
+	--enlightenment-toast-border-radius: var(--bs-border-radius);
+	--enlightenment-toast-box-shadow: var(--bs-box-shadow);
+	--enlightenment-toast-font-size: var(--enlightenment-font-size-sm);
+
+	--enlightenment-backdrop-zindex: 1050;
+	--enlightenment-backdrop-bg: #000;
+	--enlightenment-backdrop-bg-rgb: 0, 0, 0;
+	--enlightenment-backdrop-opacity: 0.5;
+}
+
+:root,
+[data-bs-theme="light"],
+[data-bs-theme="dark"] {
+	--enlightenment-secondary-bg: rgb(var(--enlightenment-secondary-bg-rgb));
+	--enlightenment-tertiary-bg: rgb(var(--enlightenment-tertiary-bg-rgb));
+
+	--enlightenment-body-bg: rgb(var(--enlightenment-body-bg-rgb));
+	--enlightenment-body-color: rgb(var(--enlightenment-body-color-rgb));
+
+	--enlightenment-accent-color: rgba(var(--bs-emphasis-color-rgb), 0.65);
+
+	--enlightenment-link-color: rgba(var(--enlightenment-link-color-rgb), var(--enlightenment-link-opacity));
+	--enlightenment-link-hover-color: rgba(var(--enlightenment-link-hover-color-rgb), var(--enlightenment-link-opacity));
+	--enlightenment-link-text-decoration-color-rgb: var(--bs-link-color-rgb);
+	--enlightenment-link-hover-text-decoration-color-rgb: var(--bs-link-hover-color-rgb);
+	--enlightenment-link-text-decoration-color: rgba(var(--enlightenment-link-text-decoration-color-rgb), var(--enlightenment-link-text-decoration-opacity));
+	--enlightenment-link-hover-text-decoration-color: rgba(var(--enlightenment-link-hover-text-decoration-color-rgb), var(--enlightenment-link-text-decoration-opacity));
+
+	--enlightenment-navbar-fixed-shadow-color: rgba(var(--bs-emphasis-color-rgb), 0.15);
+	--enlightenment-navbar-color: var(--bs-emphasis-color);
+	--enlightenment-navbar-hover-color: rgba(var(--bs-emphasis-color-rgb), 0.75);
+	--enlightenment-navbar-active-color: rgba(var(--bs-emphasis-color-rgb), 0.5);
+	--enlightenment-navbar-brand-color: var(--bs-emphasis-color);
+	--enlightenment-navbar-brand-hover-color: rgba(var(--bs-emphasis-color-rgb), 0.75);
+	--enlightenment-navbar-brand-active-color: rgba(var(--bs-emphasis-color-rgb), 0.5);
+	--enlightenment-navbar-nav-link-color: var(--bs-emphasis-color);
+	--enlightenment-navbar-nav-link-hover-color: rgba(var(--bs-emphasis-color-rgb), 0.75);
+	--enlightenment-navbar-nav-link-active-color: rgba(var(--bs-emphasis-color-rgb), 0.5);
+	--enlightenment-navbar-nav-icons-color: var(--bs-emphasis-color);
+	--enlightenment-navbar-nav-icons-hover-color: rgba(var(--bs-emphasis-color-rgb), 0.75);
+	--enlightenment-navbar-nav-icons-active-color: rgba(var(--bs-emphasis-color-rgb), 0.5);
+
+	--enlightenment-secondary-nav-color: var(--bs-emphasis-color);
+	--enlightenment-secondary-nav-hover-color: rgba(var(--bs-emphasis-color-rgb), 0.75);
+	--enlightenment-secondary-nav-active-color: rgba(var(--bs-emphasis-color-rgb), 0.5);
+
+	--enlightenment-backdrop-page-header-color: var(--bs-white);
+
+	--enlightenment-page-title-color: var(--bs-heading-color);
+
+	--enlightenment-toast-border-color: var(--bs-border-color-translucent);
+	--enlightenment-toast-bg: rgba(var(--bs-body-bg-rgb), 0.85);
+	--enlightenment-toast-color: var(--bs-body-color);
+	--enlightenment-toast-header-color: var(--bs-secondary-color);
+	--enlightenment-toast-header-bg: rgba(var(--bs-body-bg-rgb), 0.85);
+	--enlightenment-toast-header-border-color: var(--bs-border-color-translucent);
+
+	--bs-secondary-bg: var(--enlightenment-secondary-bg);
+	--bs-secondary-bg-rgb: var(--enlightenment-secondary-bg-rgb);
+	--bs-tertiary-bg: var(--enlightenment-tertiary-bg);
+	--bs-tertiary-bg-rgb: var(--enlightenment-tertiary-bg-rgb);
+	--bs-success-bg-subtle: var(--enlightenment-success-bg-subtle);
+	--bs-body-bg: var(--enlightenment-body-bg);
+	--bs-body-bg-rgb: var(--enlightenment-body-bg-rgb);
+	--bs-link-color: var(--enlightenment-link-color);
+	--bs-link-color-rgb: var(--enlightenment-link-color-rgb);
+	--bs-link-hover-color: var(--enlightenment-link-hover-color);
+	--bs-link-hover-color-rgb: var(--enlightenment-link-hover-color-rgb);
+	--bs-link-opacity: var(--enlightenment-link-opacity);
+	--bs-font-sans-serif: var(--enlightenment-font-sans-serif);
+	--bs-font-serif: var(--enlightenment-font-serif);
+	--bs-body-color: var(--enlightenment-body-color);
+	--bs-body-color-rgb: var(--enlightenment-body-color-rgb);
+	--bs-body-font-family: var(--enlightenment-body-font-family);
+	--bs-body-font-size: var(--enlightenment-body-font-size);
+	--bs-body-font-weight: var(--enlightenment-body-font-weight);
+	--bs-body-line-height: var(--enlightenment-body-line-height);
+	--bs-body-text-align: var(--enlightenment-body-text-align);
+	--bs-heading-color: var(--bs-emphasis-color);
+	--bs-navbar-color: var(--enlightenment-navbar-color);
+	--bs-navbar-hover-color: var(--enlightenment-navbar-hover-color);
+	--bs-navbar-active-color: var(--enlightenment-navbar-active-color);
+	--bs-navbar-brand-color: var(--enlightenment-navbar-brand-color);
+	--bs-navbar-brand-hover-color: var(--enlightenment-navbar-brand-hover-color);
+	--bs-navbar-brand-font-size: var(--enlightenment-navbar-brand-font-size);
+	--bs-breadcrumb-font-size: var(--enlightenment-font-size-sm);
+}
+
+:root,
+[data-bs-theme="light"] {
+	--enlightenment-body-bg-rgb: var(--enlightenment-light-body-bg-rgb);
+	--enlightenment-body-color-rgb: var(--enlightenment-light-body-color-rgb);
+	--enlightenment-secondary-bg-rgb: var(--enlightenment-light-secondary-bg-rgb);
+	--enlightenment-tertiary-bg-rgb: var(--enlightenment-light-tertiary-bg-rgb);
+	--enlightenment-success-bg-subtle: var(--enlightenment-light-success-bg-subtle);
+	--enlightenment-success-bg-subtle-hover: var(--enlightenment-light-success-bg-subtle-hover);
+	--enlightenment-link-color-rgb: var(--enlightenment-light-link-color-rgb);
+	--enlightenment-link-hover-color-rgb: var(--enlightenment-light-link-hover-color-rgb);
+}
+
+[data-bs-theme="dark"] {
+	--enlightenment-body-bg-rgb: var(--enlightenment-dark-body-bg-rgb);
+	--enlightenment-body-color-rgb: var(--enlightenment-dark-body-color-rgb);
+	--enlightenment-secondary-bg-rgb: var(--enlightenment-dark-secondary-bg-rgb);
+	--enlightenment-tertiary-bg-rgb: var(--enlightenment-dark-tertiary-bg-rgb);
+	--enlightenment-success-bg-subtle: var(--enlightenment-dark-success-bg-subtle);
+	--enlightenment-success-bg-subtle-hover: var(--enlightenment-dark-success-bg-subtle-hover);
+	--enlightenment-link-color-rgb: var(--enlightenment-dark-link-color-rgb);
+	--enlightenment-link-hover-color-rgb: var(--enlightenment-dark-link-hover-color-rgb);
+}
+
+@media (min-width: 576px) {
+	:root {
+		--wp--style--global--content-size: 540px;
+	}
+}
+
+@media (min-width: 768px) {
+	:root {
+		--wp--style--global--content-size: 720px;
+	}
+}
+
+@media (min-width: 992px) {
+	:root {
+		--wp--style--global--content-size: 960px;
+	}
+}
+
+@media (min-width: 1200px) {
+	:root {
+		--wp--style--global--content-size: 1140px;
+	}
+}

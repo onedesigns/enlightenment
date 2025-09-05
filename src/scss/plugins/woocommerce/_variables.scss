@@ -1,0 +1,10 @@
+:root {
+	--enlightenment-product-summary-font-size: 1.25rem;
+	--enlightenment-product-summary-font-weight: 300;
+}
+
+:root,
+[data-bs-theme="light"],
+[data-bs-theme="dark"] {
+	--enlightenment-product-summary-color: var(--enlightenment-accent-color);
+}

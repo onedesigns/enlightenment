@@ -1,0 +1,35 @@
+.wp-block-jetpack-tiled-gallery {
+    &[data-carousel-extra],
+    [data-carousel-extra] {
+        cursor: default;
+    }
+}
+
+[data-carousel-extra] {
+	.wp-block-image,
+	.tiled-gallery__item {
+	    img[data-attachment-id] {
+	        cursor: zoom-in;
+	    }
+
+	    & > img[data-attachment-id] {
+	        transition: opacity .15s ease-in-out;
+
+	        &:hover {
+	            opacity: .8;
+	        }
+	    }
+	}
+}
+
+.blocks-gallery-grid[data-carousel-extra] {
+    cursor: default;
+
+    img {
+        cursor: zoom-in;
+    }
+}
+
+.wp-block-buttons[data-carousel-extra] {
+    cursor: default;
+}

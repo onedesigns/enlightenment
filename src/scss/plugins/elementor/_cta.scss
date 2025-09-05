@@ -1,0 +1,76 @@
+.elementor-cta--skin-classic {
+	.elementor-cta__content {
+		background-color: var(--bs-secondary-bg);
+
+		&-item,
+		&-item .elementor-icon {
+			border-color: var(--bs-body-color);
+			color: var(--bs-body-color);
+			fill: var(--bs-body-color);
+		}
+	}
+}
+
+.elementor-button.elementor-cta__button {
+    border-width: 1px;
+
+	.elementor-cta--skin-classic & {
+	    color: #212529;
+	    border-color: #212529;
+
+	    &:hover {
+	        color: #fff;
+	        background-color: #212529;
+	        border-color: #212529;
+	    }
+
+	    &:active,
+	    &:not(:disabled):active {
+	        color: #fff;
+	        background-color: #212529;
+	        border-color: #212529;
+	    }
+
+	    &:focus,
+	    &:not(:disabled):active:focus {
+	        color: #fff;
+	        background-color: #212529;
+	        border-color: #212529;
+	    }
+
+	    &:focus-visible,
+	    &:not(:disabled):active:focus-visible {
+			box-shadow: var(--bs-focus-ring-x, 0) var(--bs-focus-ring-y, 0) var(--bs-focus-ring-blur, 0) var(--bs-focus-ring-width) rgba(33, 37, 41, 0.5);
+		}
+
+		[data-bs-theme="dark"] & {
+			color: #f8f9fa;
+		    border-color: #f8f9fa;
+
+		    &:hover {
+		        color: #000;
+		        background-color: #f8f9fa;
+		        border-color: #f8f9fa;
+		    }
+
+		    &:active,
+		    &:not(:disabled):active {
+		        color: #000;
+		        background-color: #f8f9fa;
+		        border-color: #f8f9fa;
+		    }
+
+		    &:focus,
+		    &:not(:disabled):active:focus {
+		        color: #000;
+		        background-color: #f8f9fa;
+		        border-color: #f8f9fa;
+		    }
+
+		    &:focus-visible,
+		    &:not(:disabled):active:focus-visible {
+				box-shadow: var(--bs-focus-ring-x, 0) var(--bs-focus-ring-y, 0) var(--bs-focus-ring-blur, 0) var(--bs-focus-ring-width) rgba(248, 249, 250, 0.5);
+			}
+		}
+	}
+}

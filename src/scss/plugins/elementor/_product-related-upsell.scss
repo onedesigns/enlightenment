@@ -1,0 +1,92 @@
+.elementor-widget-woocommerce-product-related .related.products,
+.elementor-widget-woocommerce-product-upsell .upsells.products {
+	margin-top: 0;
+
+	.products.elementor-grid {
+        padding-left: 0;
+
+        .product {
+            position: relative;
+            padding-bottom: .2em;
+            margin-bottom: -.2em;
+            text-align: center;
+            overflow: hidden;
+
+            .woocommerce-loop-product__link {
+                cursor: default;
+                color: inherit;
+                pointer-events: none;
+
+                &:hover,
+                &:active {
+                    img {
+                        opacity: 1;
+                    }
+                }
+            }
+
+            .sale-flash-wrap .onsale {
+                padding: 0.1875rem 2rem;
+            }
+
+			.onsale.wc-memberships-member-discount {
+				padding: 4px 0.5rem 2px;
+			}
+
+            .woocommerce-loop-product__image {
+                cursor: pointer;
+                pointer-events: auto;
+                display: block;
+                margin-bottom: 1.25rem;
+                background-color: #000;
+                overflow: hidden;
+                transition: background-color .25s ease-out;
+
+                img {
+                    transition: opacity .5s ease-out, transform .5s ease-out;
+                }
+
+                &:hover img {
+                    opacity: .8;
+                    transform: scale(1.05);
+                }
+
+                &:active img {
+                    transition: opacity .15s ease-out, transform .5s ease-out;
+                    opacity: .6;
+                }
+            }
+
+            .woocommerce-loop-product__title {
+                cursor: pointer;
+                pointer-events: auto;
+                margin-top: 0;
+                font-size: 1.25rem;
+                line-height: 1.2;
+                transition: color .25s ease;
+
+                &:hover {
+    	            color: var(--bs-link-color);
+    	        }
+
+    	        &:active {
+    	            color: var(--bs-link-hover-color);
+    	        }
+            }
+
+			.star-rating span::before {
+				position: absolute;
+			    top: 0;
+			    left: 0;
+			}
+
+			.price {
+				line-height: 1.5;
+			}
+        }
+    }
+
+	.entry-media:not(:last-child) {
+		margin-bottom: 1.25rem;
+	}
+}

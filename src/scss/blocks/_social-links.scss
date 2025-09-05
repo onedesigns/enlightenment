@@ -1,0 +1,14 @@
+.wp-block-social-links {
+    &:where(.is-layout-flex) {
+		gap: calc(2em / 3);
+	}
+
+    .wp-social-link.wp-social-link.wp-social-link {
+        padding: 0;
+        margin: 0;
+    }
+
+	.wp-block-social-link a {
+		justify-content: center;
+	}
+}

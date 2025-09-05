@@ -1,0 +1,163 @@
+.comments-area {
+    margin-top: 3rem;
+}
+
+@media (min-width: 768px) {
+    .comments-area {
+        margin-top: 5rem;
+    }
+}
+
+.comments-title {
+    margin-bottom: 1.25rem;
+}
+
+.comment {
+    .comment,
+    & + .comment {
+        margin-top: 2rem;
+    }
+}
+
+.bypostauthor {
+}
+
+.comment-header {
+	display: flex;
+    flex-wrap: wrap;
+    gap: 0.125rem 0.25rem;
+    padding-top: 0.125rem;
+    padding-bottom: 0.125rem;
+    margin-bottom: 0.5rem;
+}
+
+.comment-author-avatar {
+    .avatar {
+        border-radius: 1.5rem;
+    }
+}
+
+.comment-author {
+    display: inline;
+    margin: 0;
+    font-size: var(--enlightenment-body-font-size);
+    font-weight: 600;
+
+    .fn {
+        font-style: normal;
+    }
+
+    a {
+        color: inherit;
+
+		&:hover {
+			color: var(--bs-link-color);
+		}
+
+		&:active {
+			color: var(--bs-link-hover-color);
+		}
+    }
+
+    & + .says {
+        color: var(--enlightenment-accent-color);
+        font-size: var(--enlightenment-font-size-sm);
+    }
+}
+
+.comment-meta {
+	flex: 0 0 100%;
+    max-width: 100%;
+    font-size: var(--enlightenment-font-size-sm);
+
+    a {
+        color: var(--enlightenment-accent-color);
+
+		&:hover {
+			color: var(--bs-link-color);
+		}
+
+		&:active {
+			color: var(--bs-link-hover-color);
+		}
+    }
+}
+
+.comment-content {
+    font-size: 1.125rem;
+
+    :last-child {
+        margin-bottom: 0;
+    }
+
+    a {
+		text-decoration-line: var(--enlightenment-link-text-decoration-line);
+    }
+}
+
+.comment-footer {
+    margin-top: .5rem;
+}
+
+.comment-reply-link {
+    font-size: var(--enlightenment-font-size-sm);
+}
+
+.comment-respond {
+    // padding-top: 3rem;
+    // margin-top: 3rem;
+    margin-top: 3rem;
+    // border-top: 1px solid rgba(0, 0, 0, 0.15);
+
+	.logged-in-as a {
+		text-decoration-line: none;
+	}
+}
+
+@media (min-width: 768px) {
+    .comment-respond {
+        margin-top: 5rem;
+    }
+}
+
+.comments-area .comment-respond {
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+
+    &:last-child {
+        margin-bottom: 0;
+    }
+}
+
+.comment-reply-title {
+    font-size: 2rem;
+
+    small {
+        display: block;
+        margin-top: .5rem;
+        white-space: nowrap;
+    }
+}
+
+@media (min-width: 768px) {
+    .comment-reply-title {
+        display: flex;
+        align-items: baseline;
+        font-size: 2rem;
+
+        small {
+            padding-left: 1rem;
+            margin-top: 0;
+            margin-left: auto;
+        }
+    }
+}
+
+.comment-notes {
+    color: var(--enlightenment-accent-color);
+    font-size: var(--enlightenment-font-size-sm);
+}
+
+.comment-form-comment .form-control {
+    resize: none;
+}

@@ -1,0 +1,164 @@
+.block-editor-block-list__layout {
+    .wp-block-pullquote {
+        padding-top: 0;
+        padding-bottom: 0;
+        border: none;
+		font-size: 2rem;
+
+		&.has-background {
+			padding: .5rem 1rem;
+		}
+
+        blockquote {
+            margin-bottom: 0;
+
+            &:not(.has-text-color) {
+                color: var(--enlightenment-accent-color);
+            }
+
+            & > div > :last-child {
+                margin-bottom: 0;
+            }
+        }
+
+		&.has-text-color blockquote {
+			color: inherit;
+		}
+
+        &.is-style-solid-color {
+            &.has-background {
+                padding: 1.25rem 2.5rem;
+            }
+
+            blockquote {
+                max-width: none;
+                text-align: center;
+
+                & > div {
+                    p {
+                        margin-bottom: 1rem;
+                    }
+
+                    &:last-child p:last-child {
+                        margin-bottom: 0;
+                    }
+                }
+            }
+        }
+
+        .wp-block-pullquote__citation {
+            font-family: var(--enlightenment-body-font-family);
+            font-size: var(--enlightenment-body-font-size);
+			font-style: normal;
+			font-weight: 400;
+            opacity: .5;
+            text-transform: none;
+        }
+
+		&.has-text-color .wp-block-pullquote__citation,
+        .has-text-color .wp-block-pullquote__citation {
+            opacity: .75;
+        }
+    }
+
+    .wp-block {
+        &[data-align="wide"],
+        &[data-align="full"] {
+            .wp-block-pullquote {
+                &.is-style-solid-color.has-background {
+                    padding-top: 3rem;
+                    padding-bottom: 3rem;
+                }
+
+                &[style^="border-color:"] {
+                    position: relative;
+                    padding-top: 2rem;
+                    padding-bottom: 2rem;
+
+                    &::before,
+                    &::after {
+                        content: "";
+                        position: absolute;
+                        left: 50%;
+                        width: 5rem;
+                        margin-left: -40px;
+                        border-color: inherit;
+                        border-style: solid;
+                        border-width: 1px;
+                    }
+
+                    &::before {
+                        top: 0;
+                    }
+
+                    &::after {
+                        top: auto;
+                        bottom: 0;
+                    }
+                }
+
+                blockquote {
+                    max-width: 40rem;
+                    margin-left: auto;
+                    margin-right: auto;
+                    margin-bottom: 0;
+                    text-align: center;
+                }
+            }
+        }
+
+        &[data-align="left"],
+        &[data-align="right"] {
+            .wp-block-pullquote {
+                position: relative;
+                z-index: 1;
+                max-width: 420px;
+
+                &[style^="border-color:"] {
+                    position: relative;
+                    padding-top: 1rem;
+
+                    &::before {
+                        content: "";
+                        position: absolute;
+                        top: 0;
+                        width: 50px;
+                        border-color: inherit;
+                        border-style: solid;
+                        border-width: 1px 0 0;
+                    }
+                }
+
+                p {
+                    font-size: 1.5rem;
+                }
+            }
+        }
+
+        &[data-align="left"] {
+            .wp-block-pullquote {
+                margin-right: 1.5rem;
+                text-align: right;
+
+                &[style^="border-color:"] {
+                    &::before {
+                        right: 0;
+                    }
+                }
+            }
+        }
+
+        &[data-align="right"] {
+            .wp-block-pullquote {
+                margin-left: 1.5rem;
+                text-align: left;
+
+                &[style^="border-color:"] {
+                    &::before {
+                        left: 0;
+                    }
+                }
+            }
+        }
+    }
+}

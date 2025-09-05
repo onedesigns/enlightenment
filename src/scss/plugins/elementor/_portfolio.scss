@@ -1,0 +1,87 @@
+.elementor-portfolio__filters {
+    justify-content: flex-start;
+    margin-bottom: 3rem;
+    border-top: var(--bs-border-width) var(--bs-border-style) var(--bs-border-color);
+    font-size: var(--enlightenment-font-size-sm);
+    font-weight: 300;
+    line-height: 1.25rem;
+    letter-spacing: 0.025rem;
+
+    .elementor-portfolio__filter {
+        position: relative;
+        padding: .875rem 10px .9375rem;
+        transition: color .15s ease-in-out, opacity .15s ease-in-out;
+
+        &:first-child {
+            padding-left: 0;
+        }
+
+        &:last-child {
+            padding-right: 0;
+        }
+
+        & + .elementor-portfolio__filter {
+            margin-top: 0;
+        }
+
+        &:hover {
+            opacity: .7;
+        }
+
+        &:active {
+            opacity: .4;
+        }
+
+        &::before {
+            content: "";
+            position: absolute;
+            top: -1px;
+            left: 10px;
+            right: 10px;
+            border-top: 1px solid transparent;
+            transition: border-color .15s ease-in-out
+        }
+
+        &:first-child::before {
+            left: 0;
+        }
+
+        &:last-child::before {
+            right: 0;
+        }
+
+        &.elementor-active::before {
+            border-color: currentColor;
+        }
+    }
+}
+
+.elementor-portfolio-item__overlay {
+    background-color: rgba(0,0,0,.4);
+    transition: opacity .25s ease;
+
+    &:hover {
+        transition: opacity .25s ease;
+    }
+}
+
+.elementor-posts-container.elementor-portfolio {
+    .elementor-post__thumbnail__link {
+        background-color: transparent;
+
+        &:active .elementor-portfolio-item__overlay {
+            opacity: .6;
+        }
+    }
+}
+
+.elementor-portfolio-item__title {
+    font-size: 1.25rem;
+    line-height: 1.2;
+    transform: scale(0);
+    transition: transform .25s ease;
+}
+
+.elementor-portfolio-item__overlay:hover .elementor-portfolio-item__title {
+    transform: scale(1);
+}

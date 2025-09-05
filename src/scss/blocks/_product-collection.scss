@@ -1,0 +1,9 @@
+.wc-block-product-template {
+	&.has-background {
+		padding: 1.875rem !important;
+	}
+
+	.wp-block-post-title:not(.has-background) {
+		margin-bottom: .5rem !important;
+	}
+}

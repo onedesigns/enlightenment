@@ -1,0 +1,49 @@
+.elementor-widget-table-of-contents .elementor-widget-container {
+	border: var(--box-border-width, var(--bs-border-width)) var(--bs-border-style) var(--box-border-color, var(--bs-border-color));
+	border-radius: var(--box-border-radius, var(--bs-border-radius));
+}
+
+.elementor-toc__header {
+    padding-top: calc(3 / 5 * var(--box-padding, 1.25rem));
+    padding-bottom: calc(3 / 5 * var(--box-padding, 1.25rem));
+    border-bottom: none;
+}
+
+.elementor-widget-table-of-contents .elementor-toc__header-title {
+	color: var(--header-color, var(--bs-heading-color));
+}
+
+.elementor-toc__toggle-button {
+	color: var(--toggle-button-color, var(--bs-heading-color));
+    transition: opacity .25s ease;
+
+    &:hover {
+        opacity: .8;
+    }
+
+    &:active {
+        opacity: .6;
+    }
+}
+
+.elementor-toc__body {
+    border-top: var(--separator-width, var(--bs-border-width)) var(--bs-border-style) var(--box-border-color, var(--bs-border-color));
+}
+
+.elementor-toc__spinner.eicon-animation-spin {
+    animation: fa-spin 2s linear infinite;
+}
+
+.elementor-toc__list-wrapper {
+    margin-bottom: 0;
+}
+
+.elementor-toc__list-item {
+    & + .elementor-toc__list-item {
+        margin-top: 0;
+    }
+
+    &:last-child {
+        margin-bottom: 0;
+    }
+}

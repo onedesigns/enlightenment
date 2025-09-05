@@ -1,0 +1,23 @@
+.elementor-icon {
+	color: var(--enlightenment-accent-color);
+}
+
+.elementor-icon-wrapper {
+    line-height: 1;
+
+    .elementor-icon {
+        vertical-align: middle;
+
+        &[href] {
+            transition: opacity .25s ease;
+
+            &:hover {
+                opacity: .8;
+            }
+
+            &:active {
+                opacity: .6;
+            }
+        }
+    }
+}

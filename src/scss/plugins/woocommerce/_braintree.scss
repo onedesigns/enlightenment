@@ -1,0 +1,285 @@
+.woocommerce .cart #wc_braintree_paypal_container {
+	flex-basis: 100%;
+	order: 2;
+	margin-top: 1rem;
+    margin-bottom: 0;
+
+	.paypal-buttons-context-iframe {
+		display: block !important;
+
+		[data-bs-theme="dark"] & {
+			border-radius: 999rem;
+			overflow: hidden;
+		}
+	}
+}
+
+.wc-braintree-hosted-field {
+	[data-bs-theme="dark"] & {
+		background-color: var(--bs-white);
+	}
+
+	&.braintree-hosted-fields-focused {
+		color: var(--bs-body-color);
+		background-color: #fff;
+		border-color: #80bdff;
+		outline: 0;
+		box-shadow: var(--bs-focus-ring-x, 0) var(--bs-focus-ring-y, 0) var(--bs-focus-ring-blur, 0) var(--bs-focus-ring-width) var(--bs-focus-ring-color);
+	}
+
+	&.braintree-hosted-fields-invalid {
+		border-color: #fd000d;
+		padding-right: calc(1.5em + .75rem);
+	    background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' fill='%23dc3545' viewBox='-2 -2 7 7'%3e%3cpath stroke='%23dc3545' d='M0 0l3 3m0-3L0 3'/%3e%3ccircle r='.5'/%3e%3ccircle cx='3' r='.5'/%3e%3ccircle cy='3' r='.5'/%3e%3ccircle cx='3' cy='3' r='.5'/%3e%3c/svg%3E");
+	    background-repeat: no-repeat;
+	    background-position: center right calc(.375em + .1875rem);
+	    background-size: calc(.75em + .375rem) calc(.75em + .375rem);
+
+		&.braintree-hosted-fields-focused {
+			border-color: #fd000d;
+			box-shadow: var(--bs-focus-ring-x, 0) var(--bs-focus-ring-y, 0) var(--bs-focus-ring-blur, 0) var(--bs-focus-ring-width) rgba(220,53,69,.25);
+		}
+	}
+
+	&.braintree-hosted-fields-valid {
+		padding-right: calc(1.5em + .75rem);
+	    border-color: #28a745;
+	    background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' width='8' height='8' viewBox='0 0 8 8'%3e%3cpath fill='%2328a745' d='M2.3 6.73L.6 4.53c-.4-1.04.46-1.4 1.1-.8l1.1 1.4 3.4-3.8c.6-.63 1.6-.27 1.2.7l-4 4.6c-.43.5-.8.4-1.1.1z'/%3e%3c/svg%3e");
+	    background-repeat: no-repeat;
+	    background-position: right calc(.375em + .1875rem) center;
+	    background-size: calc(.75em + .375rem) calc(.75em + .375rem);
+
+		&.wc-braintree-hosted-field-card-number {
+			background-image: none;
+		}
+
+		&.braintree-hosted-fields-focused {
+			border-color: #28a745;
+			box-shadow: var(--bs-focus-ring-x, 0) var(--bs-focus-ring-y, 0) var(--bs-focus-ring-blur, 0) var(--bs-focus-ring-width) rgba(40, 167, 69, 0.25);
+		}
+	}
+}
+
+label[for="wc-braintree-credit-card-context-hosted"]:empty {
+	display: none;
+}
+
+.payment_method_braintree_credit_card {
+	.title img {
+		display: inline;
+		margin-right: .25rem;
+	}
+
+	label[for="wc-braintree-credit-card-test-amount"] span {
+		display: block;
+	}
+
+	.wc-braintree-hosted-field {
+		min-height: calc(2.25rem + 2px);
+
+		iframe {
+			max-height: 1.5rem;
+		}
+	}
+
+	.wc-braintree-hosted-field-card-number {
+		position: relative;
+
+		&::after {
+			position: absolute;
+		    top: 5px;
+		    right: 10px;
+			-moz-osx-font-smoothing: grayscale;
+		    -webkit-font-smoothing: antialiased;
+		    display: inline-block;
+			color: var(--bs-highlight-color);
+			font-family: var(--enlightenment-font-icons-brands);
+			font-size: 1.66625rem;
+		    font-style: normal;
+		    font-weight: 400;
+		    font-variant: normal;
+		    text-rendering: auto;
+		    line-height: 1;
+		}
+
+		&.card-type-visa::after {
+			content: "\f1f0";
+		}
+
+		&.card-type-master-card::after,
+		&.card-type-maestro::after {
+			content: "\f1f1";
+		}
+
+		&.card-type-american-express::after {
+			content: "\f1f3";
+		}
+
+		&.card-type-discover::after {
+			content: "\f1f2";
+		}
+
+		&.card-type-diners-club::after {
+			content: "\f24c";
+		}
+
+		&.card-type-jcb::after {
+			content: "\f24b";
+		}
+	}
+}
+
+.payment_method_braintree_paypal {
+	label[for="wc-braintree-paypal-test-amount"] span {
+		display: block;
+	}
+
+	.sv-wc-payment-gateway-payment-form-saved-payment-method {
+		max-width: calc(100% - 1.5rem);
+
+		.title {
+			position: relative;
+		    display: block;
+			max-width: 100%;
+		    padding-right: calc(30px + 0.5em);
+		    overflow: hidden;
+		    text-overflow: ellipsis;
+			white-space: nowrap;
+		}
+
+		img {
+		    position: absolute;
+		    right: 0;
+		    margin: 0 !important;
+		}
+	}
+
+	.paypal-buttons-context-iframe {
+		display: block !important;
+		margin-bottom: 1rem;
+
+		[data-bs-theme="dark"] & {
+			border-radius: 999rem;
+		    overflow: hidden;
+		}
+	}
+}
+
+.woocommerce-add-payment-method #payment div.payment_method_braintree_credit_card {
+	.wc-braintree-hosted-field.form-control {
+		height: calc(1.5em + .75rem + 2px);
+	    padding: .375rem .75rem;
+		border: 1px solid #ced4da;
+		border-radius: var(--bs-border-radius);
+		transition: border-color .15s ease-in-out,box-shadow .15s ease-in-out;
+
+		&.wc-braintree-hosted-field-card-number {
+			background-image: none;
+		}
+
+		&.braintree-hosted-fields-focused {
+			color: var(--bs-body-color);
+			background-color: #fff;
+			border-color: #80bdff;
+			outline: 0;
+			box-shadow: var(--bs-focus-ring-x, 0) var(--bs-focus-ring-y, 0) var(--bs-focus-ring-blur, 0) var(--bs-focus-ring-width) var(--bs-focus-ring-color);
+		}
+
+		&.braintree-hosted-fields-invalid {
+			border-color: #fd000d;
+			padding-right: calc(1.5em + .75rem);
+		    background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' fill='%23dc3545' viewBox='-2 -2 7 7'%3e%3cpath stroke='%23dc3545' d='M0 0l3 3m0-3L0 3'/%3e%3ccircle r='.5'/%3e%3ccircle cx='3' r='.5'/%3e%3ccircle cy='3' r='.5'/%3e%3ccircle cx='3' cy='3' r='.5'/%3e%3c/svg%3E");
+		    background-repeat: no-repeat;
+		    background-position: center right calc(.375em + .1875rem);
+		    background-size: calc(.75em + .375rem) calc(.75em + .375rem);
+
+			&.braintree-hosted-fields-focused {
+				border-color: #fd000d;
+				box-shadow: var(--bs-focus-ring-x, 0) var(--bs-focus-ring-y, 0) var(--bs-focus-ring-blur, 0) var(--bs-focus-ring-width) rgba(220,53,69,.25);
+			}
+		}
+
+		&.braintree-hosted-fields-valid {
+			padding-right: calc(1.5em + .75rem);
+		    border-color: #28a745;
+		    background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' width='8' height='8' viewBox='0 0 8 8'%3e%3cpath fill='%2328a745' d='M2.3 6.73L.6 4.53c-.4-1.04.46-1.4 1.1-.8l1.1 1.4 3.4-3.8c.6-.63 1.6-.27 1.2.7l-4 4.6c-.43.5-.8.4-1.1.1z'/%3e%3c/svg%3e");
+		    background-repeat: no-repeat;
+		    background-position: right calc(.375em + .1875rem) center;
+		    background-size: calc(.75em + .375rem) calc(.75em + .375rem);
+
+			&.wc-braintree-hosted-field-card-number {
+				background-image: none;
+			}
+
+			&.braintree-hosted-fields-focused {
+				border-color: #28a745;
+				box-shadow: var(--bs-focus-ring-x, 0) var(--bs-focus-ring-y, 0) var(--bs-focus-ring-blur, 0) var(--bs-focus-ring-width) rgba(40, 167, 69, 0.25);
+			}
+		}
+
+		iframe {
+			margin: 0;
+		}
+	}
+}
+
+.wc-braintree-paypal-account {
+	margin-bottom: .5rem;
+
+	.name,
+	.email {
+	    display: block;
+	}
+
+	.name {
+		font-weight: 700;
+	}
+
+	.email {
+		margin-bottom: .5rem;
+	}
+
+	.cancel {
+		display: inline-block;
+        padding: var(--enlightenment-btn-padding-y) var(--enlightenment-btn-padding-x);
+	    border: var(--bs-border-width) var(--bs-border-style) #6c757d;
+		border-radius: var(--enlightenment-btn-border-radius);
+	    background-color: transparent;
+		color: #6c757d;
+	    font-size: var(--enlightenment-font-size-sm);
+	    font-weight: 400;
+		text-align: center;
+	    vertical-align: middle;
+	    -webkit-user-select: none;
+	    -moz-user-select: none;
+	    -ms-user-select: none;
+	    user-select: none;
+	    transition:
+			color 0.15s ease-in-out,
+			background-color 0.15s ease-in-out,
+			border-color 0.15s ease-in-out,
+			box-shadow 0.15s ease-in-out;
+
+		&:hover,
+		&:focus {
+		    border-color: #6c757d;
+		    background-color: #6c757d;
+		    color: #fff;
+			text-decoration-line: none;
+		}
+
+		&:focus-visible {
+		    box-shadow: var(--bs-focus-ring-x, 0) var(--bs-focus-ring-y, 0) var(--bs-focus-ring-blur, 0) var(--bs-focus-ring-width) rgba(108,117,125,.5);
+		}
+
+		&:not(:disabled):active {
+			border-color: #6c757d;
+			background-color: #6c757d;
+			color: #fff;
+		}
+
+		&:not(:disabled):active:focus-visible {
+			box-shadow: var(--bs-focus-ring-x, 0) var(--bs-focus-ring-y, 0) var(--bs-focus-ring-blur, 0) var(--bs-focus-ring-width) rgba(108,117,125,.5);
+		}
+	}
+}

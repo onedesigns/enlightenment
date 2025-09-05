@@ -1,0 +1,15 @@
+.elementor-login {
+    .elementor-lost-password,
+    .elementor-remember-me {
+        font-size: inherit;
+    }
+
+    .elementor-field-group:not([class*="elementor-field-type-"]) {
+        color: rgba(0,0,0,.15);
+    }
+
+    .elementor-login-separator {
+        margin-left: .25rem;
+        margin-right: .25rem;
+    }
+}

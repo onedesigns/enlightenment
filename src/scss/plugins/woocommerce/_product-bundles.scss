@@ -1,0 +1,245 @@
+.bundled_product_summary.bundled_product_summary {
+	.bundled_product_title {
+		font-size: 1.25rem;
+	}
+
+	.bundled_product_excerpt {
+		font-size: var(--enlightenment-font-size-sm);
+
+		& > :last-child {
+			margin-bottom: 0;
+		}
+	}
+
+	.bundled_product_optional_checkbox {
+		margin-top: 0.5rem;
+		line-height: inherit;
+	}
+
+	&.bundled_item_optional .bundled_product_optional_checkbox span.price {
+		display: inline-block;
+		margin-top: 0;
+		margin-left: 0.25rem;
+		font-size: inherit;
+	}
+
+	.cart {
+		margin-top: 0;
+		margin-bottom: 0;
+
+		.bundled_item_cart_content::before {
+			content: "";
+			display: block;
+		    height: 0.5rem;
+		}
+	}
+}
+
+.bundled_item_wrap,
+.single-product .product .bundled_item_wrap {
+	.bundled_item_cart_details:empty {
+		margin-top: -0.5rem;
+	}
+
+	.bundled_item_button:not(:first-child) .quantity {
+		margin-top: 0.5rem;
+	}
+}
+
+.bundled_product_summary .bundled_item_wrap span.price {
+	&,
+	.single-product & {
+		font-size: inherit;
+	}
+}
+
+.bundled_item_optional .bundled_item_wrap .bundled_item_cart_content--populated::before {
+	height: auto;
+}
+
+.cart.bundle_form {
+	div.bundled_product_summary,
+	.woocommerce & div.product.bundled_product_summary {
+		padding-bottom: 1.5rem;
+		margin-bottom: 1.5rem;
+		border-bottom-color: rgba(var(--bs-emphasis-color-rgb), 0.05);
+		border-bottom-width: 0;
+	}
+
+	table.bundled_products {
+		th,
+		td {
+			padding-left: 0.75rem;
+			padding-right: 0.75rem;
+
+			&:first-child {
+				padding-left: 0;
+			}
+
+			&:last-child {
+				padding-right: 0;
+			}
+		}
+
+		th {
+			padding-bottom: 1rem;
+			padding-top: 1.25rem;
+			font-size: 0.8125rem;
+			line-height: 0.875rem;
+			letter-spacing: 0.04375rem;
+			text-transform: uppercase;
+		}
+
+		td {
+			padding-top: 1rem;
+			padding-bottom: 1rem;
+		}
+
+		tr {
+			&:first-child td {
+				padding-top: 0;
+			}
+
+			&:last-child td {
+				padding-bottom: 0;
+			}
+
+			&.bundled_product_summary td.bundled_item_qty_col {
+				&,
+				.single-product .product & {
+					.quantity {
+						display: flex;
+						justify-content: flex-end;
+					}
+				}
+			}
+		}
+
+		.bundled_item_qty_head,
+		.bundled_item_qty_col {
+			min-width: 7.25rem;
+		}
+	}
+
+	&.layout_grid {
+		.products {
+			--bs-gutter-y: 1.875rem;
+		}
+
+		.woocommerce-product-gallery__image {
+			margin-bottom: 1.25rem;
+		}
+	}
+
+	.bundle_wrap {
+		display: flex;
+		flex-direction: column;
+	    gap: 1rem;
+
+		.summary-add-to-cart-form-bundle & {
+		    column-gap: 3rem;
+			row-gap: 2rem;
+
+			@media (min-width: 768px) {
+				flex-direction: row;
+			    flex-wrap: wrap;
+			    align-items: center;
+			}
+		}
+	}
+
+	.bundle_error {
+		order: -1;
+	    flex: 0 0 100%;
+		max-width: 100%;
+
+		.alert {
+			margin-bottom: 1rem;
+
+			&:last-child {
+				margin-bottom: 0;
+			}
+		}
+	}
+
+	.bundle_price p.price,
+	.bundle_availability p.stock {
+		&,
+		.single-product & {
+			margin-bottom: 0;
+		}
+	}
+}
+
+@media (min-width: 992px) {
+	.single-product .cart .bundle_button.gap-4 {
+		gap: 2rem !important;
+	}
+}
+
+.shop_table.cart {
+	tbody .product-name {
+		a.edit_bundle_in_cart_text {
+			margin-left: auto;
+			color: var(--bs-btn-color);
+
+			&:hover,
+			&:focus-visible {
+				color: var(--bs-btn-hover-color);
+			}
+
+			&:active {
+				color: var(--bs-btn-active-color);
+			}
+		}
+	}
+
+	.bundled_table_item .bundled_table_item_indent {
+		padding-left: 2rem;
+
+		& > a:first-child {
+			color: inherit;
+			text-decoration: none;
+
+	        &:hover {
+	            color: var(--bs-link-color);
+	        }
+
+	        &:active {
+	            color: var(--bs-link-hover-color);
+	        }
+		}
+	}
+}
+
+.summary-add-to-cart-form-bundle {
+	margin-top: 5rem;
+
+	.bundle_form {
+		margin-top: 0;
+		margin-bottom: 0;
+
+
+		.bundle_data {
+			margin-top: 3rem;
+		}
+
+		table.bundled_products {
+			th,
+			td {
+				padding-left: 1rem;
+				padding-right: 1rem;
+			}
+
+			td {
+				padding-top: 1.5rem;
+				padding-bottom: 1.5rem;
+			}
+
+			.bundled_item_qty_head,
+			.bundled_item_qty_col {
+				min-width: 7.5rem;
+			}
+		}
+	}
+}

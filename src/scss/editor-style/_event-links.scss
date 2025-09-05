@@ -1,0 +1,84 @@
+[data-type="tribe/event-links"] {
+	.tribe-events-c-subscribe-dropdown__button {
+		display: flex;
+		align-items: baseline;
+		padding: 0.3125rem .875rem .25rem;
+		border-color: #6c757d;
+		border-radius: 1rem;
+		background-color: transparent;
+		font-size: var(--enlightenment-font-size-sm);
+		color: #6c757d;
+
+		&:hover {
+			border-color: #6c757d;
+			background-color: #6c757d;
+			color: #fff;
+		}
+
+		&:focus-visible {
+			border-color: #6c757d;
+			background-color: #6c757d;
+			color: #fff;
+			box-shadow: var(--bs-focus-ring-x, 0) var(--bs-focus-ring-y, 0) var(--bs-focus-ring-blur, 0) var(--bs-focus-ring-width) rgba(108,117,125,.5);
+		}
+
+		&:active {
+			border-color: #6c757d;
+			background-color: #6c757d;
+			color: #fff;
+		}
+
+		&::after {
+			box-sizing: border-box;
+			align-self: center;
+			width: 6px;
+		    height: 6px;
+		    margin-left: 7px;
+		    margin-top: -3px;
+		    border-top: none;
+		    border-left: none;
+		    border-right: 1px solid;
+		    border-bottom: 1px solid;
+		    transform: rotate(45deg);
+		}
+	}
+
+	.tribe-events-c-subscribe-dropdown__content {
+		margin-top: 10px;
+		margin-right: -9px;
+		border: none;
+		box-shadow: 0 1px 1px rgba(var(--bs-emphasis-color-rgb), 0.25), 0 0 1px rgba(var(--bs-emphasis-color-rgb), 0.35);
+		font-size: var(--enlightenment-font-size-sm);
+
+		&::before {
+			content: "";
+		    position: absolute;
+		    top: -15px;
+		    left: auto;
+			right: 1.25rem;
+		    margin-left: 0;
+		    display: block;
+		    border-width: 7px;
+		    border-color: var(--bs-body-bg) transparent transparent var(--bs-body-bg);
+		    border-style: solid;
+		    box-shadow: -1px -1px 1px -1px rgba(var(--bs-emphasis-color-rgb), 0.44);
+		    transform: rotate(45deg) translate(6px, 6px);
+		}
+	}
+
+	.tribe-events-c-subscribe-dropdown .tribe-events-c-subscribe-dropdown__list {
+		.tribe-events-c-subscribe-dropdown__list-item {
+			.tribe-editor__btn-input input {
+				height: 1.9rem;
+			}
+		}
+	}
+}
+
+.is-selected[data-type="tribe/event-links"] {
+	.tribe-events-c-subscribe-dropdown__button {
+		border-color: #6c757d;
+		background-color: #6c757d;
+		color: #fff;
+	}
+}

@@ -1,0 +1,98 @@
+:where(.wp-block-columns) {
+	margin-bottom: 0;
+}
+
+.wp-block-columns[data-type="core/columns"] {
+	--bs-gutter-y: 1rem;
+
+	@media (min-width: 1200px) {
+		--bs-gutter-y: 2rem;
+	}
+
+	&:where(.has-background) {
+		padding: 2rem calc(2rem - var(--bs-gutter-x) * .5) !important;
+	}
+
+    [data-type="core/column"] {
+		max-width: 100% !important;
+		margin-top: 0;
+		margin-bottom: 0;
+
+        [data-type="core/heading"] {
+            margin-top: 1rem;
+            z-index: 1;
+        }
+
+        & > :first-child {
+            margin-top: 0;
+        }
+
+        & > :last-child {
+            margin-bottom: 0;
+        }
+
+		& > .block-list-appender {
+			bottom: auto;
+		}
+    }
+}
+
+.block-editor-block-list__layout.is-root-container {
+	& > .wp-block[data-align="full"] > .wp-block-columns[data-type="core/columns"] {
+		&:where(:not(.has-background)) {
+			margin-left: calc(var(--bs-gutter-x) * -.5);
+			margin-right: calc(var(--bs-gutter-x) * -.5);
+		}
+	}
+}
+
+.wp-block[data-align="wide"] > .wp-block-columns[data-type="core/columns"],
+.block-editor-block-list__layout.is-root-container > .wp-block-group > .wp-block-group__inner-container > .wp-block-columns[data-type="core/columns"],
+.wp-block-columns[data-type="core/columns"] .wp-block-columns[data-type="core/columns"] {
+	&:where(.has-background) {
+		padding-left: calc(2rem - var(--bs-gutter-x) * .5) !important;
+		padding-right: calc(2rem - var(--bs-gutter-x) * .5) !important;
+	}
+}
+
+@media (max-width: 575.98px) {
+    .wp-block-columns:not(.is-not-stacked-on-mobile) {
+        & > .wp-block-column[style*="flex-basis:"] {
+			&[style*="%"],
+			&[style*="%;"],
+			&[style*="vw"],
+			&[style*="vw;"] {
+				flex-basis: 100% !important;
+	        }
+		}
+    }
+}
+
+@media (min-width: 576px) and (max-width: 767.98px) {
+    .wp-block-columns {
+        & > .wp-block-column[style^="flex-basis:"] {
+			flex: 0 0 auto;
+		    width: 100%;
+		}
+	}
+}
+
+@media (min-width: 768px) and (max-width: 991.98px) {
+	.wp-block-columns:not(.is-not-stacked-on-mobile) {
+        & > .wp-block-column[style*="flex-basis:"] {
+			&[style*="%"],
+			&[style*="%;"],
+			&[style*="vw"],
+			&[style*="vw;"] {
+	            flex-basis: 100% !important;
+	        }
+		}
+    }
+}
+
+.wp-block-columns[data-type="core/columns"] .wp-block-columns[data-type="core/columns"] {
+	&:where(:not(.has-background)) {
+		margin-left: calc(var(--bs-gutter-x) * -.5) !important;
+		margin-right: calc(var(--bs-gutter-x) * -.5) !important;
+	}
+}

@@ -1,0 +1,109 @@
+.wc-block-grid {
+    display: flex;
+    flex-direction: column;
+    font-family: var(--enlightenment-body-font-family);
+    font-size: var(--enlightenment-body-font-size);
+
+	&.wc-block-grid:not(.alignwide):not(.alignfull) {
+		font-size: var(--enlightenment-body-font-size);
+	}
+}
+
+@media (min-width: 576px) {
+    .wc-block-grid.has-5-columns .wc-block-grid__products.row:last-child .col-sm {
+        flex-grow: 0;
+        flex-basis: 20%;
+        max-width: 20%;
+    }
+}
+
+.wc-block-grid__products {
+    margin-bottom: 0;
+
+    &:last-child {
+        margin-bottom: -3rem;
+    }
+
+    .product {
+        position: relative;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        height: calc(100% - 3rem);
+        height: calc(100% - 2.8rem); // 3rem - 0.2rem
+        margin-bottom: 3rem;
+        margin-bottom: 2.8rem; // 3rem - 0.2rem
+        overflow: hidden;
+
+        .wc-block-grid__product-image a {
+            img {
+                transition: opacity .5s ease-out, transform .5s ease-out;
+            }
+
+            &:hover img {
+                opacity: .8;
+                transform: scale(1.05);
+            }
+
+            &:active img {
+                opacity: .6;
+                transition: opacity .15s ease-out, transform .5s ease-out;
+            }
+        }
+
+        .wc-block-grid__product-price {
+            line-height: 1.5;
+        }
+
+        .wc-block-grid__product-rating .star-rating {
+            margin-bottom: 1rem;
+
+            &::before {
+                opacity: 1;
+                color: inherit;
+            }
+        }
+    }
+
+	.onsale {
+		position: absolute;
+	    top: 26px;
+	    left: 26px;
+		z-index: 1;
+	    padding: 0.1875rem 2rem;
+		box-shadow: none;
+		border-radius: 0;
+	    background-color: #fd000d;
+	    color: #fff;
+	    font-size: 0.8125rem;
+	    font-weight: 700;
+	    line-height: 0.875rem;
+	    text-transform: uppercase;
+		white-space: nowrap;
+	    transform: translate3d(-50%, -50%, 0) rotate(-45deg);
+	}
+}
+
+.wc-block-grid.has-aligned-buttons .wc-block-grid__products .product > div:last-child {
+    margin-top: auto;
+}
+
+.wc-block-grid__product-title.h3 {
+    margin-bottom: .5rem;
+	color: var(--bs-heading-color);
+    font-size: 1.25rem;
+    line-height: 1.2;
+
+    a {
+        color: inherit;
+        text-decoration-line: none;
+
+        &:hover {
+            color: var(--bs-link-color);
+        }
+
+        &:active {
+            color: var(--bs-link-hover-color);
+        }
+    }
+}

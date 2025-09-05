@@ -1,0 +1,132 @@
+:root {
+	--wp--style--gallery-gap-default: 0.5rem;
+}
+
+.wp-block-gallery ul.blocks-gallery-grid:not(.has-nested-images) {
+	column-gap: 0;
+	row-gap: inherit;
+}
+
+.blocks-gallery-grid,
+.wp-block-gallery {
+	&:not(.has-nested-images) {
+		margin-left: calc(var(--wp--style--gallery-gap-default) * -0.5);
+		margin-right: calc(var(--wp--style--gallery-gap-default) * -0.5);
+
+		&.columns-2 {
+			.blocks-gallery-image,
+		    .blocks-gallery-item {
+				width: 50%;
+			}
+		}
+
+		&.columns-3 {
+			.blocks-gallery-image,
+		    .blocks-gallery-item {
+				width: 33.33%;
+			}
+		}
+
+		&.columns-4 {
+			.blocks-gallery-image,
+		    .blocks-gallery-item {
+				width: 25%;
+			}
+		}
+
+		&.columns-5 {
+			.blocks-gallery-image,
+		    .blocks-gallery-item {
+				width: 20%;
+			}
+		}
+
+		&.columns-6 {
+			.blocks-gallery-image,
+		    .blocks-gallery-item {
+				width: 16.66%;
+			}
+		}
+
+		&.columns-7 {
+			.blocks-gallery-image,
+		    .blocks-gallery-item {
+				width: 14.28%;
+			}
+		}
+
+		&.columns-8 {
+			.blocks-gallery-image,
+		    .blocks-gallery-item {
+				width: 12.5%;
+			}
+		}
+
+		&.columns-9 {
+			.blocks-gallery-image,
+		    .blocks-gallery-item {
+				width: 11.11%;
+			}
+		}
+
+		.blocks-gallery-image,
+	    .blocks-gallery-item {
+			padding-left: calc(var(--wp--style--gallery-gap-default) * 0.5);
+			padding-right: calc(var(--wp--style--gallery-gap-default) * 0.5);
+			margin: 0 !important;
+
+	        figure {
+	            flex-direction: column;
+	        }
+
+	        &:nth-child(5) figure::before {
+	            content: none;
+	        }
+
+			figcaption {
+	            padding: 0 0.5rem 0.5rem;
+				margin: 0.5rem 0 0;
+	            font-family: var(--enlightenment-body-font-family);
+	            font-size: var(--enlightenment-font-size-sm);
+	        }
+	    }
+
+	    .blocks-gallery-item + .blocks-gallery-item {
+	        margin-top: 0;
+	    }
+	}
+}
+
+.wp-block-gallery {
+	figcaption {
+		line-height: var(--bs-body-line-height);
+	}
+
+	&.has-nested-images figure.wp-block-image {
+		figcaption {
+			max-height: 40%;
+			padding: 0 0.5rem 0.5rem;
+			color: var(--bs-white);
+			font-size: var(--enlightenment-font-size-sm);
+			transition: max-height 0.15s ease-out;
+
+			&:hover {
+				max-height: 100%;
+			}
+		}
+
+		&.is-selected figcaption {
+			max-height: 100%;
+		}
+	}
+}
+
+.blocks-gallery-caption {
+    flex-basis: 100%;
+	padding: 0;
+    margin-top: 0.5rem;
+    color: var(--enlightenment-accent-color);
+    font-family: var(--enlightenment-body-font-family);
+    font-size: var(--enlightenment-font-size-sm);
+    text-align: center;
+}

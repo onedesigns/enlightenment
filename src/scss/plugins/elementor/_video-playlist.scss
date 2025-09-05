@@ -1,0 +1,40 @@
+.elementor-widget-video-playlist {
+	--e-a-bg-default: var(--bs-body-bg);
+
+	.e-tabs-header {
+		border-bottom-color: var(--bs-border-color);
+
+		.e-tabs-videos-count {
+			color: var(--enlightenment-accent-color);
+		}
+	}
+
+	.e-tabs-items-wrapper .e-tab-title {
+		border-color: var(--bs-border-color);
+		
+		&.e-active,
+		&:hover {
+			border-color: var(--bs-border-color);
+			background-color: var(--bs-tertiary-bg);
+
+			.e-tab-title-text.e-tab-title-text {
+				&,
+				& a {
+					color: var(--bs-heading-color);
+				}
+			}
+		}
+
+		.e-tab-thumbnail {
+			background-color: var(--bs-black);
+
+			img {
+				display: block;
+			}
+		}
+
+		.e-tab-duration {
+			color: var(--enlightenment-accent-color);
+		}
+	}
+}

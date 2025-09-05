@@ -1,0 +1,64 @@
+@media (min-width: 992px) and (max-width: 1199.98px) {
+    .enlightenment-layout-full-width:where(:not(.enlightenment-layout-sm-content-sidebar, .enlightenment-layout-sm-sidebar-content, .enlightenment-layout-sm-sidebar-content-sidebar, .enlightenment-layout-md-content-sidebar, .enlightenment-layout-md-sidebar-content, .enlightenment-layout-md-sidebar-content-sidebar, .enlightenment-layout-lg-content-sidebar, .enlightenment-layout-lg-sidebar-content, .enlightenment-layout-lg-sidebar-content-sidebar)),
+    .enlightenment-layout-sm-full-width:where(:not(.enlightenment-layout-md-content-sidebar, .enlightenment-layout-md-sidebar-content, .enlightenment-layout-md-sidebar-content-sidebar, .enlightenment-layout-lg-content-sidebar, .enlightenment-layout-lg-sidebar-content, .enlightenment-layout-lg-sidebar-content-sidebar)),
+    .enlightenment-layout-md-full-width:where(:not(.enlightenment-layout-lg-content-sidebar, .enlightenment-layout-lg-sidebar-content, .enlightenment-layout-lg-sidebar-content-sidebar)),
+    .enlightenment-layout-lg-full-width {
+        &.post-type-page {
+            .wc-block-review-list {
+                display: flex;
+                flex-wrap: wrap;
+                margin-left: -15px;
+                margin-right: -15px;
+				column-gap: 120px;
+            }
+
+            .wc-block-review-list-item__item {
+                flex: 0 0 calc(50% - 3.75rem);
+                max-width: calc(50% - 3.75rem);
+                padding-left: 15px;
+                padding-right: 15px;
+
+                & + .wc-block-review-list-item__item {
+                    margin-top: 0;
+
+                    & + .wc-block-review-list-item__item {
+                        margin-top: 2rem;
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media (min-width: 1200px) {
+    .enlightenment-layout-md-full-width:where(:not(.enlightenment-layout-lg-content-sidebar, .enlightenment-layout-lg-sidebar-content, .enlightenment-layout-lg-sidebar-content-sidebar)),
+    .enlightenment-layout-sm-full-width:where(:not(.enlightenment-layout-md-content-sidebar, .enlightenment-layout-md-sidebar-content, .enlightenment-layout-md-sidebar-content-sidebar, .enlightenment-layout-lg-content-sidebar, .enlightenment-layout-lg-sidebar-content, .enlightenment-layout-lg-sidebar-content-sidebar, .enlightenment-layout-xl-content-sidebar, .enlightenment-layout-xl-sidebar-content, .enlightenment-layout-xl-sidebar-content-sidebar)),
+    .enlightenment-layout-md-full-width:where(:not(.enlightenment-layout-lg-content-sidebar, .enlightenment-layout-lg-sidebar-content, .enlightenment-layout-lg-sidebar-content-sidebar, .enlightenment-layout-xl-content-sidebar, .enlightenment-layout-xl-sidebar-content, .enlightenment-layout-xl-sidebar-content-sidebar)),
+    .enlightenment-layout-lg-full-width:where(:not(.enlightenment-layout-xl-content-sidebar, .enlightenment-layout-xl-sidebar-content, .enlightenment-layout-xl-sidebar-content-sidebar)),
+    .enlightenment-layout-xl-full-width {
+        &.post-type-page {
+            .wc-block-review-list {
+                display: flex;
+                flex-wrap: wrap;
+                margin-left: -15px;
+                margin-right: -15px;
+				column-gap: 120px;
+            }
+
+            .wc-block-review-list-item__item {
+                flex: 0 0 calc(50% - 3.75rem);
+                max-width: calc(50% - 3.75rem);
+                padding-left: 15px;
+                padding-right: 15px;
+
+                & + .wc-block-review-list-item__item {
+                    margin-top: 0;
+
+                    & + .wc-block-review-list-item__item {
+                        margin-top: 2rem;
+                    }
+                }
+            }
+        }
+    }
+}

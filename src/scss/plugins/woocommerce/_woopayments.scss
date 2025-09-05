@@ -1,0 +1,82 @@
+#payment .payment_methods li.wc_payment_method {
+	&.payment_method_woocommerce_payments label {
+		display: flex;
+		gap: 0.5rem;
+
+		.payment-methods--logos {
+			margin-left: auto;
+
+			& > div {
+				gap: 0.25rem;
+
+				img {
+					margin-right: 0;
+				}
+			}
+		}
+
+		.payment-methods--logos-count {
+			color: var(--bs-body-color);
+			font-size: var(--enlightenment-font-size-sm);
+			transition: color 0.15s ease;
+
+			&:hover {
+				color: var(--bs-emphasis-color);
+			}
+		}
+
+		.logo-popover {
+			gap: 0.5rem;
+			border: var(--bs-border-width) var(--bs-border-style) var(--bs-border-color);
+			border-radius: var(--bs-border-radius-sm);
+			background-color: var(--bs-body-bg);
+		}
+	}
+
+	.payment_box.payment_method_woocommerce_payments {
+		fieldset#wc-woocommerce_payments-cc-form {
+			padding: 0;
+		}
+
+		.woocommerce-error:not(.alert) {
+			margin-bottom: 1rem;
+		}
+	}
+}
+
+.payment_method_woocommerce_payments {
+	.form-control {
+		margin-bottom: 1rem;
+
+		&::before,
+		&::after {
+			content: "";
+			display: block;
+			height: 3.6px;
+		}
+	}
+
+	#wcpay-card-element,
+	#wcpay-sepa-element {
+		min-height: calc(2.25rem + 2px);
+		padding: .375rem .75rem;
+		border-color: var(--bs-border-color);
+		margin-bottom: 1rem;
+
+		&:hover {
+			border-color: #80bdff;
+		}
+
+		&.StripeElement--focus {
+			border-color: #86b7fe;
+		}
+
+		&.StripeElement--invalid {
+			border-color: #fd000d;
+
+			&.StripeElement--focus {
+				box-shadow: var(--bs-focus-ring-x, 0) var(--bs-focus-ring-y, 0) var(--bs-focus-ring-blur, 0) var(--bs-focus-ring-width) rgba(220,53,69,.25);
+			}
+		}
+	}
+}

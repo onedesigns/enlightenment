@@ -1,0 +1,27 @@
+.wp-block-search {
+    font-family: var(--enlightenment-body-font-family);
+    font-size: var(--enlightenment-body-font-size);
+
+    label.wp-block-search__label {
+		margin-bottom: .5rem;
+		color: var(--bs-heading-color);
+        font-size: 1.25rem;
+        font-weight: 700;
+		line-height: 1.2;
+    }
+
+    .wp-block-search__button {
+        &.has-icon {
+			padding: .3125rem .4375rem;
+		}
+    }
+
+	&.wp-block-search__button-inside .wp-block-search__button {
+		border-radius: var(--bs-border-radius);
+		line-height: 1.25rem;
+
+		&.has-icon {
+			padding: .1875rem;
+		}
+	}
+}

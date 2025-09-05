@@ -1,0 +1,5 @@
+.wp-block-post-title {
+	&[style*="text-decoration:"] a {
+		text-decoration: inherit;
+	}
+}

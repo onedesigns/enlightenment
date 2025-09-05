@@ -1,0 +1,34 @@
+.wp-block-jetpack-blogging-prompt {
+	&.jetpack-blogging-prompt {
+		padding: 1.5rem;
+		border: var(--bs-border-width) var(--bs-border-style) var(--bs-border-color);
+		border-radius: var(--bs-border-radius);
+		font-family: var(--enlightenment-body-font-family);
+		line-height: var(--bs-body-line-height);
+	}
+
+	.jetpack-blogging-prompt__label {
+	    padding-inline-start: 0;
+	    background-position: -999em;
+
+		&::before {
+		    content: "";
+		    padding-inline-start: 22px;
+		    background: inherit;
+		    background-position: -5px;
+		    background-size: inherit;
+
+			[data-bs-theme="dark"] & {
+			    filter: invert(1);
+			}
+		}
+	}
+
+	.jetpack-blogging-prompt__text {
+		font-family: var(--enlightenment-font-serif);
+	}
+
+	.jetpack-blogging-prompt__answers-link {
+		text-decoration-line: none;
+	}
+}

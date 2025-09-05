@@ -1,0 +1,112 @@
+.wp-block-bp-latest-activities {
+	font-family: var(--enlightenment-body-font-family);
+	font-size: var(--enlightenment-body-font-size);
+
+	.widget-title {
+		font-size: 1.25rem;
+
+		@media (min-width: 768px) {
+			font-size: 2rem;
+
+			.wp-block-column:not(:only-child) & {
+				font-size: 1.25rem;
+			}
+		}
+	}
+
+	.activity-list.item-list blockquote {
+		display: flex;
+		flex-direction: column;
+		padding-left: 0;
+	    margin-left: 0;
+		margin-bottom: 0;
+		font-family: var(--enlightenment-body-font-family);
+		font-size: var(--enlightenment-body-font-size);
+		font-style: normal;
+
+		& + blockquote {
+			margin-top: 2rem;
+		}
+
+		&::before {
+			content: none;
+		}
+
+		.activity-item {
+			&.mini {
+				color: var(--enlightenment-accent-color);
+				font-size: var(--enlightenment-font-size-sm);
+				line-height: 1.25rem;
+
+				p {
+					margin-bottom: 0;
+
+					&:empty {
+						display: none;
+					}
+
+					a:first-child {
+						color: var(--bs-body-color);
+						font-size: 1.25rem;
+						font-weight: 700;
+					}
+
+					.time-since::before {
+						content: "";
+						display: block;
+					}
+				}
+
+				&.created_group .avatar {
+					border-radius: var(--bs-border-radius);
+				}
+			}
+
+			&:not(.mini) {
+				padding: .75rem 1rem;
+				margin-top: var(--enlightenment-dropdown-spacer);
+				border-radius: var(--bs-border-radius);
+				box-shadow: 0 1px 1px rgba(var(--bs-emphasis-color-rgb), 0.25), 0 0 1px rgba(var(--bs-emphasis-color-rgb), 0.35);
+
+				&::before {
+				    top: -15px;
+				    left: 1.25rem;
+				    display: block;
+				    border-width: 7px;
+				    border-color: var(--bs-body-bg) transparent transparent var(--bs-body-bg);
+				    border-style: solid;
+				    box-shadow: -1px -1px 1px -1px rgba(var(--bs-emphasis-color-rgb), 0.44);
+				    transform: rotate(45deg) translate(6px, 6px)
+				}
+
+				&::after {
+					content: none;
+				}
+
+				p {
+					margin-top: 0;
+				}
+
+				:last-child {
+					margin-bottom: 0;
+				}
+			}
+		}
+
+		footer {
+			order: -1;
+
+			img.avatar {
+				min-width: 54px;
+				margin-right: 1rem;
+			    border-radius: 50%;
+			}
+		}
+
+		.activity-time-since {
+			color: var(--enlightenment-accent-color);
+			font-size: var(--enlightenment-font-size-sm);
+			text-decoration-line: none;
+		}
+	}
+}

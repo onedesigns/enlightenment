@@ -1,0 +1,11 @@
+.elementor-widget-loop-grid {
+	line-height: var(--enlightenment-body-line-height);
+}
+
+.elementor-loop-container.elementor-grid .e-loop-item + .e-loop-item {
+	margin-top: 0;
+}
+
+.e-loop__load-more .eicon-animation-spin {
+	transform-origin: 50% 48%;
+}

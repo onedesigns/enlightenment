@@ -1,0 +1,43 @@
+body {
+	position: static !important;
+}
+
+::selection {
+	background: var(--bs-body-color);
+	color: var(--bs-body-bg);
+}
+
+hr {
+}
+
+ul, ol {
+}
+
+ul {
+}
+
+ol {
+}
+
+li > ul,
+li > ol {
+}
+
+dt {
+}
+
+dd {
+}
+
+img {
+	height: auto;
+	/* Make sure images are scaled correctly. */
+	max-width: 100%;
+	/* Adhere to container width. */
+}
+
+figure {
+}
+
+table {
+}

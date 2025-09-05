@@ -1,0 +1,101 @@
+[data-type="core/spacer"] {
+    margin-top: -1rem !important;
+    margin-bottom: -1rem !important;
+
+    &:first-child {
+        margin-top: 0 !important;
+    }
+
+    &.is-selected {
+        margin-top: 1rem !important;
+        margin-bottom: 1rem !important;
+    }
+
+    & + {
+        [data-type="core/columns"],
+        [data-type="core/heading"] {
+            margin-top: 1rem !important;
+        }
+    }
+
+    .block-library-spacer__resize-container {
+        margin-bottom: 0;
+    }
+}
+
+@media (min-width: 1200px) {
+	[data-type="core/spacer"] {
+	    margin-top: -2rem !important;
+	    margin-bottom: -2rem !important;
+
+        &.is-selected {
+            margin-top: 2rem !important;
+            margin-bottom: 2rem !important;
+        }
+
+	    & + {
+	        [data-type="core/columns"],
+	        [data-type="core/heading"] {
+	            margin-top: 2rem !important;
+	        }
+	    }
+	}
+}
+
+[data-type="core/group"] > .wp-block-group__inner-container > .wp-block[data-type="core/spacer"] {
+    margin-top: -1rem !important;
+
+	&:first-child {
+        margin-top: 0 !important;
+    }
+
+    &.is-selected {
+        margin-top: 1rem !important;
+        margin-bottom: 1rem !important;
+    }
+
+	& + [data-type="core/spacer"] {
+	    margin-top: 1rem !important;
+	}
+}
+
+@media (min-width: 1200px) {
+    [data-type="core/group"] > .wp-block-group__inner-container > .wp-block[data-type="core/spacer"] {
+        margin-top: -2rem !important;
+
+        &.is-selected {
+            margin-top: 2rem !important;
+            margin-bottom: 2rem !important;
+        }
+
+		& + [data-type="core/spacer"] {
+		    margin-top: 2rem !important;
+		}
+    }
+}
+
+[data-type="core/column"] {
+    & > [data-type="core/spacer"]:first-child {
+        margin-top: 0 !important;
+    }
+}
+
+[data-type="core/heading"] + [data-type="core/spacer"] {
+    margin-top: .5rem !important;
+}
+
+@media (min-width: 1200px) {
+	[data-type="core/heading"] + [data-type="core/spacer"] {
+	    margin-top: 1.5rem !important;
+	}
+}
+
+[data-type="core/spacer"] + [data-type="core/spacer"] {
+    margin-top: 1rem !important;
+}
+
+@media (min-width: 1200px) {
+	[data-type="core/spacer"] + [data-type="core/spacer"] {
+	    margin-top: 2rem !important;
+	}
+}

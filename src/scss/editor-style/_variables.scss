@@ -1,0 +1,116 @@
+:root {
+	--enlightenment-white-rgb: 255, 255, 255;
+	--enlightenment-light-body-color-rgb: 51, 51, 51;
+	--enlightenment-dark-body-color-rgb: 212, 212, 212;
+	--enlightenment-light-link-color-rgb: 13, 110, 253;
+	--enlightenment-dark-link-color-rgb: 110, 168, 254;
+	--enlightenment-light-link-hover-color-rgb: 10, 88, 202;
+	--enlightenment-dark-link-hover-color-rgb: 139, 185, 254;
+	--enlightenment-light-emphasis-color-rgb: 0, 0, 0;
+	--enlightenment-dark-emphasis-color-rgb: 255, 255, 255;
+
+	--enlightenment-font-sans-serif: Hind, sans-serif;
+	--enlightenment-font-serif: "PT Serif", serif;
+	--enlightenment-font-monospace: SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
+	--enlightenment-font-icons: "Font Awesome 5 Free";
+	--enlightenment-font-icons-brands: "Font Awesome 5 Brands";
+
+	--enlightenment-font-size: 1rem;
+	--enlightenment-font-size-sm: 0.875rem;
+
+	--enlightenment-body-color: rgb(var(--enlightenment-body-color-rgb));
+	--enlightenment-body-font-family: var(--enlightenment-font-sans-serif);
+	--enlightenment-body-font-size: var(--enlightenment-font-size);
+	--enlightenment-body-line-height: 1.5;
+
+	--enlightenment-link-opacity: 1;
+	--enlightenment-link-color: rgba(var(--enlightenment-link-color-rgb), var(--enlightenment-link-opacity));
+	--enlightenment-link-hover-color: rgba(var(--enlightenment-link-hover-color-rgb), var(--enlightenment-link-opacity));
+	--enlightenment-link-text-decoration-line: underline;
+	--enlightenment-link-text-decoration-thickness: 1px;
+	--enlightenment-link-text-underline-offset: 0.11em;
+	--enlightenment-link-text-decoration-color-rgb: var(--bs-link-color-rgb);
+	--enlightenment-link-hover-text-decoration-color-rgb: var(--bs-link-hover-color-rgb);
+	--enlightenment-link-text-decoration-opacity: 0.5;
+	--enlightenment-link-text-decoration-color: rgba(var(--enlightenment-link-text-decoration-color-rgb), var(--enlightenment-link-text-decoration-opacity));
+	--enlightenment-link-hover-text-decoration-color: rgba(var(--enlightenment-link-hover-text-decoration-color-rgb), var(--enlightenment-link-text-decoration-opacity));
+
+	--enlightenment-accent-color: rgba(var(--bs-emphasis-color-rgb), 0.65);
+
+	--enlightenment-btn-padding-x: 0.875rem;
+	--enlightenment-btn-padding-y: 0.2813rem;
+	--enlightenment-btn-border-radius: 999em;
+	--enlightenment-btn-font-size: var(--enlightenment-font-size-sm);
+	--enlightenment-btn-lg-padding-x: 1.25rem;
+	--enlightenment-btn-lg-padding-y: 0.3125rem;
+	--enlightenment-btn-lg-border-radius: 999em;
+	--enlightenment-btn-lg-font-size: var(--enlightenment-body-font-size);
+
+	--enlightenment-dropdown-spacer: 1rem;
+
+	--enlightenment-light-emphasis-color: rgb(var(--enlightenment-light-emphasis-color-rgb));
+	--enlightenment-dark-emphasis-color: rgb(var(--enlightenment-dark-emphasis-color-rgb));
+
+	--bs-gutter-x: 1.875rem;
+
+	--bs-link-opacity: var(--enlightenment-link-opacity);
+
+	--bs-nav-link-color: var(--bs-link-color);
+
+	--bs-dropdown-spacer: var(--enlightenment-dropdown-spacer);
+
+	--bs-border-width: 1px;
+}
+
+:root,
+[data-bs-theme="light"] {
+	--bs-white-rgb: var(--enlightenment-white-rgb);
+	--bs-white: rgb(var(--bs-white-rgb));
+
+	--bs-body-font-family: var(--enlightenment-body-font-family);
+	--bs-body-font-size: var(--enlightenment-body-font-size);
+	--bs-body-line-height: var(--enlightenment-body-line-height);
+
+	--bs-border-color: #dee2e6;
+}
+
+[data-bs-theme="dark"] {
+	--bs-border-color: #495057;
+}
+
+:root,
+[data-bs-theme="light"],
+[data-bs-theme="dark"] {
+	--bs-body-color: var(--enlightenment-body-color);
+
+	--bs-link-color: var(--enlightenment-link-color);
+	--bs-link-color-rgb: var(--enlightenment-link-color-rgb);
+	--bs-link-hover-color: var(--enlightenment-link-hover-color);
+	--bs-link-hover-color-rgb: var(--enlightenment-link-hover-color-rgb);
+
+	--bs-emphasis-color-rgb: var(--enlightenment-emphasis-color-rgb);
+	--bs-emphasis-color: var(--enlightenment-emphasis-color);
+
+	--bs-heading-color: var(--bs-emphasis-color);
+}
+
+:root,
+[data-bs-theme="light"] {
+	--enlightenment-body-color-rgb: var(--enlightenment-light-body-color-rgb);
+
+	--enlightenment-link-color-rgb: var(--enlightenment-light-link-color-rgb);
+	--enlightenment-link-hover-color-rgb: var(--enlightenment-light-link-hover-color-rgb);
+
+	--enlightenment-emphasis-color-rgb: var(--enlightenment-light-emphasis-color-rgb);
+	--enlightenment-emphasis-color: var(--enlightenment-light-emphasis-color);
+}
+
+[data-bs-theme="dark"] {
+	--enlightenment-body-color-rgb: var(--enlightenment-dark-body-color-rgb);
+
+	--enlightenment-link-color-rgb: var(--enlightenment-dark-link-color-rgb);
+	--enlightenment-link-hover-color-rgb: var(--enlightenment-dark-link-hover-color-rgb);
+
+	--enlightenment-emphasis-color-rgb: var(--enlightenment-dark-emphasis-color-rgb);
+	--enlightenment-emphasis-color: var(--enlightenment-dark-emphasis-color);
+}

@@ -1,0 +1,30 @@
+[data-type="jetpack/calendly"]{
+    [data-align="left"],
+    [data-align="right"] {
+        .wp-block-jetpack-calendly {
+            margin-top: .5rem;
+            margin-bottom: 1rem;
+        }
+    }
+
+    [data-align="left"] {
+        .wp-block-jetpack-calendly {
+            margin-right: 1.5rem;
+        }
+    }
+
+    [data-align="right"] {
+        .wp-block-jetpack-calendly {
+            margin-left: 1.5rem;
+        }
+    }
+
+    .block-editor-block-list__layout {
+        display: flex;
+    }
+
+    [data-type="jetpack/button"] {
+        margin-top: 0;
+        margin-bottom: 0;
+    }
+}

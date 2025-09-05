@@ -1,0 +1,69 @@
+body,
+button,
+input,
+select,
+optgroup,
+textarea {
+	text-rendering: optimizeLegibility;
+	-moz-osx-font-smoothing: grayscale;
+	-webkit-font-smoothing: antialiased;
+}
+
+button,
+input,
+select,
+optgroup,
+textarea {
+	font-family: var(--enlightenment-body-font-family);
+}
+
+body {
+	font-style: var(--enlightenment-body-font-style);
+}
+
+.h1, .h2, .h3, .h4, .h5, .h6,
+h1, h2, h3, h4, h5, h6 {
+	font-weight: 700;
+}
+
+.h2, h2 {
+	font-size: 1.75rem;
+}
+
+@media (min-width: 768px) {
+	.h2, h2 {
+		font-size: 2rem;
+	}
+}
+
+p {
+}
+
+dfn, cite, em, i {
+}
+
+blockquote {
+	font-family: var(--enlightenment-font-serif);
+
+	cite {
+		font-family: var(--enlightenment-body-font-family);
+	}
+}
+
+address {
+}
+
+pre {
+}
+
+code, kbd, tt, var {
+}
+
+abbr, acronym {
+}
+
+mark, ins {
+}
+
+big {
+}

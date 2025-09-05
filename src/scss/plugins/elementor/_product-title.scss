@@ -1,0 +1,9 @@
+.elementor-widget-woocommerce-product-title.elementor-widget-heading {
+	&:not(:last-child) .elementor-widget-container {
+		margin-bottom: -10px;
+	}
+
+	.entry-title {
+		margin-bottom: 0;
+	}
+}

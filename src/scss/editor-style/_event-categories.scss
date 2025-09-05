@@ -1,0 +1,26 @@
+.tribe-editor__terms__label {
+    display: inline-flex;
+    margin-right: .25rem;
+    font-size: inherit;
+    font-weight: 700;
+
+    &::after {
+        content: ":";
+    }
+}
+
+.tribe-editor__terms__list-wrapper {
+    display: inline;
+}
+
+.tribe-editor__terms__list {
+    display: inline;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.tribe-editor__terms__list-item {
+    display: inline;
+    margin: 0;
+}

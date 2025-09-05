@@ -1,0 +1,82 @@
+a {
+    text-decoration: none;
+	text-decoration-thickness: var(--enlightenment-link-text-decoration-thickness);
+	text-underline-offset: var(--enlightenment-link-text-underline-offset);
+	text-decoration-color: var(--enlightenment-link-text-decoration-color);
+    transition: color .25s ease;
+
+	&:visited {
+	}
+
+	&:hover,
+	&:focus,
+	&:active {
+	}
+
+	&:hover {
+		text-decoration-color: var(--enlightenment-link-hover-text-decoration-color);
+	}
+
+	&:focus {
+	}
+
+	&:hover,
+	&:active {
+	}
+
+    &.fluidbox--ready {
+        display: block;
+    }
+
+    &.fluidbox--closed,
+    &.fluidbox--destroyed {
+        cursor: zoom-in;
+    }
+
+	&.fluidbox--loading .fluidbox__wrap::after {
+		content: "\f110";
+		position: absolute;
+		top: 50%;
+		left: 50%;
+		margin-top: -1rem;
+		margin-left:-1rem;
+		display: inline-block;
+		color: #fff;
+		font-family: var(--enlightenment-font-icons);
+		font-size: 2rem;
+		font-style: normal;
+		font-variant: normal;
+		font-weight: 900;
+		text-rendering: auto;
+		line-height: 1;
+		-moz-osx-font-smoothing: grayscale;
+		-webkit-font-smoothing: antialiased;
+		animation: fa-spin 1s steps(8) infinite;
+	}
+
+    &.fluidbox--opened {
+        cursor: zoom-out;
+    }
+
+    img,
+    &.fluidbox--ready:not(.fluidbox--opened) {
+        transition: opacity .15s ease-in-out;
+    }
+
+    &:hover img,
+    &.fluidbox--ready:not(.fluidbox--opened):hover {
+        opacity: .8;
+    }
+
+    &:active img {
+        opacity: .6;
+    }
+}
+
+.wp-block-image,
+.gallery-item,
+.blocks-gallery-item {
+    a img[data-attachment-id] {
+        cursor: zoom-in;
+    }
+}

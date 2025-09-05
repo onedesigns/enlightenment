@@ -1,0 +1,27 @@
+.wp-block-woocommerce-customer-account.wp-block-woocommerce-customer-account {
+	font-family: var(--bs-body-font-family);
+    font-size: var(--bs-body-font-size);
+	line-height: var(--bs-body-line-height);
+
+	&:not(.has-background) {
+		padding: 0;
+	}
+
+	a {
+		gap: .5em;
+		transition: opacity .15s ease-in-out;
+
+		&:hover {
+			opacity: .8;
+			text-decoration-line: none !important;
+		}
+
+		&:active {
+			opacity: .6;
+		}
+
+		.wc-block-customer-account__account-icon {
+			padding: 0;
+		}
+	}
+}

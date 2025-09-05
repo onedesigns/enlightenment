@@ -1,0 +1,83 @@
+.wp-block-yoast-how-to-block,
+.wp-block-yoast-faq-block,
+[data-type="yoast-seo/breadcrumbs"] {
+    font-family: var(--enlightenment-body-font-family);
+    font-size: var(--enlightenment-body-font-size);
+}
+
+.schema-how-to {
+    .schema-how-to-duration-legend {
+        padding: 0;
+        font-weight: 700;
+    }
+
+    .schema-how-to-description {
+        margin-bottom: 1rem;
+    }
+
+    .schema-how-to-steps {
+		list-style: none;
+        padding-left: 0;
+        margin-top: 0;
+    }
+
+    .schema-how-to-step {
+        padding: 0 0 0 40px;
+        border: none;
+
+        &:first-child {
+            margin-top: 0;
+        }
+    }
+}
+
+.schema-faq-section {
+    padding: 0;
+    margin: 0;
+    border: none;
+}
+
+.schema-faq-answer {
+    margin-bottom: 1rem;
+}
+
+.schema-how-to-step-text,
+.schema-faq-answer {
+    img {
+        display: block;
+        margin-top: .5rem;
+    }
+}
+[data-type="yoast-seo/breadcrumbs"] {
+    .yoast-breadcrumbs {
+        position: relative;
+        color: var(--enlightenment-accent-color);
+        font-size: var(--enlightenment-font-size-sm);
+        line-height: 2rem;
+
+        &::after {
+            content: "";
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            z-index: 1;
+        }
+
+        a {
+            color: var(--enlightenment-accent-color);
+			text-decoration-line: none;
+
+            &:hover {
+                color: var(--bs-body-color);
+            }
+
+            & + span::before {
+                content: "\00a0/\00a0";
+                padding-right: .25rem;
+                opacity: .3;
+            }
+        }
+    }
+}

@@ -1,0 +1,60 @@
+.payment_method_ppcp-credit-card-gateway {
+	.wc-payment-form div[id^="zoid-paypal-card-"] {
+		display: block !important;
+		max-height: 38px;
+		border-radius: 0.25rem;
+		overflow: hidden;
+
+		& > iframe {
+			max-width: none;
+		    width: calc(100% + 0.75rem) !important;
+		    height: calc(100% + 0.75rem) !important;
+			margin: -0.375rem;
+		}
+	}
+
+	& > .form-check {
+		.form-check-label {
+			& > img + img {
+				margin-left: 5px;
+			}
+		}
+	}
+}
+
+.ppc-button-wrapper div[id^="zoid-paypal-buttons-"] {
+	border-radius: 0.25rem;
+    overflow: hidden;
+}
+
+#ppcp-credit-card-gateway-card-number,
+#ppcp-credit-card-gateway-card-expiry,
+#ppcp-credit-card-gateway-card-cvc {
+	min-width: 100% !important;
+	max-width: 100% !important;
+}
+
+#ppcp-hosted-fields .btn-danger {
+	width: 100%;
+	background-color: #fd000d;
+    border-color: #fd000d;
+
+	&:hover,
+	&:focus {
+		background-color: #bb2d3b;
+	    border-color: #b02a37;
+	}
+
+	&:active {
+		background-color: #b02a37;
+	    border-color: #a52834;
+	}
+}
+
+.paypal-checkout-sandbox-iframe {
+	border: none;
+}
+
+iframe[id^="hosted-fields-tokenization-frame_"] {
+	display: block;
+}

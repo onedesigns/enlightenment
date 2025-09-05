@@ -1,0 +1,50 @@
+[data-type^="core-embed/"] {
+    [data-align="left"],
+    [data-align="right"] {
+        .wp-block-embed {
+            position: relative;
+            z-index: 1;
+            max-width: 360px;
+            width: 100%;
+        }
+    }
+
+    [data-align="left"] {
+        .wp-block-embed {
+            margin-right: 1.5em;
+        }
+    }
+
+    [data-align="right"] {
+        .wp-block-embed {
+            margin-left: 1.5em;
+        }
+    }
+}
+
+.wp-block-embed {
+	&.is-loading {
+		flex-direction: column;
+		align-items: center;
+		font-family: var(--enlightenment-body-font-family);
+	    font-size: var(--enlightenment-body-font-size);
+	}
+
+    .wp-block-embed {
+        margin: 0;
+    }
+
+	iframe {
+		display: block;
+	}
+
+    figcaption {
+        flex-basis: 100%;
+        margin-top: .5rem;
+        margin-bottom: 0;
+        color: var(--enlightenment-accent-color);
+        font-family: var(--enlightenment-body-font-family);
+        font-size: var(--enlightenment-font-size-sm);
+        text-align: center;
+    }
+}

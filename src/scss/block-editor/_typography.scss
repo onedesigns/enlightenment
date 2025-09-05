@@ -1,0 +1,101 @@
+.post-type-post {
+    .editor-styles-wrapper {
+        font-family: var(--enlightenment-font-serif);
+        font-size: 1.125rem;
+
+        h1, h2, h3, h4, h5, h6 {
+            font-family: var(--enlightenment-body-font-family);
+        }
+
+        .wp-block-column .wp-block {
+            max-width: 100%;
+        }
+    }
+}
+
+@media (min-width: 768px) {
+	.post-type-post {
+	    .editor-styles-wrapper {
+	        font-size: 1.25rem;
+	    }
+	}
+}
+
+@media (min-width: 1200px) {
+	.editor-styles-wrapper > .block-editor-block-list__layout.is-root-container > {
+	    h1, h2, h3, h4, h5, h6 {
+	        margin-top: 3rem;
+
+			&:first-child {
+				margin-top: 1rem;
+			}
+	    }
+
+	    p,
+	    ul,
+	    ol,
+	    dl,
+	    blockquote,
+	    table,
+	    pre {
+	        margin-bottom: 2rem;
+	    }
+
+	    .wp-block,
+		[class^="wp-block-"],
+		[class*=" wp-block-"],
+		[class^="wc-block-"],
+		[class^="bp-block-"],
+	    div[class=""] > .wp-block-video,
+		div:not([class]) > .wp-block-jetpack-podcast-player,
+		.jetpack-portfolio-shortcode,
+		.jetpack-testimonial-shortcode {
+	        margin-top: 2rem;
+	        margin-bottom: 2rem;
+
+			&[style*="margin-top: 0px;"][style*="margin-top: 0px;"]:first-child {
+				margin-top: 2rem !important;
+			}
+	    }
+
+	    [data-type="core/heading"] {
+	        margin-top: 3rem;
+
+	        &:first-child {
+	            margin-top: 1rem;
+	        }
+
+	        h1, h2, h3, h4, h5, h6 {
+	            margin-bottom: -1.5rem;
+	        }
+
+	        &.is-selected {
+	            h1, h2, h3, h4, h5, h6 {
+	                margin-bottom: 0;
+	            }
+	        }
+	    }
+
+
+
+	    h1, h2, h3, h4, h5, h6 {
+	        &[data-type="core/heading"] {
+	            margin-bottom: -1.5rem;
+	        }
+
+	        &.is-selected {
+	            margin-bottom: 0;
+	        }
+	    }
+	}
+
+    .post-type-tribe_events {
+        .editor-styles-wrapper {
+            .wp-block[data-type="core/paragraph"],
+            .wp-block[data-type="core/list"],
+            .wp-block[data-type="core/freeform"] {
+                font-size: 1.25rem;
+            }
+        }
+    }
+}

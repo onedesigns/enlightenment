@@ -1,0 +1,62 @@
+.jetpack-testimonial-shortcode {
+    & > .row {
+        margin-bottom: -2rem;
+    }
+
+    .testimonial-entry {
+        margin-bottom: 2rem;
+
+        .testimonial-featured-image {
+            display: block;
+            margin-right: 1.25rem;
+        }
+
+        .wp-post-image {
+            border-radius: 50%;
+        }
+
+        .testimonial-entry-content {
+            margin: 0;
+        }
+
+        .testimonial-entry-title {
+            margin-top: .5rem;
+			color: var(--bs-heading-color);
+            font-size: 0;
+            line-height: 1.2;
+
+            a {
+                color: inherit;
+                font-size: 1.25rem;
+
+                &:hover {
+                    color: var(--bs-link-color);
+                }
+
+                &:active {
+                    color: var(--bs-link-hover-color);
+                }
+            }
+        }
+    }
+}
+
+@media (max-width: 991.98px) {
+    .jetpack-testimonial-shortcode {
+        .testimonial-entry {
+            .wp-post-image {
+                max-width: 4rem;
+            }
+
+            .testimonial-entry-content {
+                font-size: var(--enlightenment-font-size-sm);
+            }
+
+            .testimonial-entry-title {
+                a {
+                    font-size: var(--enlightenment-body-font-size);
+                }
+            }
+        }
+    }
+}

@@ -1,0 +1,245 @@
+.wp-block-latest-posts {
+    font-family: var(--enlightenment-body-font-family);
+
+    &:last-child {
+        margin-bottom: 0;
+    }
+
+    & + .wp-block-latest-posts {
+        margin-top: 2rem;
+    }
+
+    & > li,
+    [class^="col-sm-"] {
+        &::after {
+            content: "";
+            display: table;
+            width: 100%;
+            clear: both;
+        }
+    }
+
+    &.wp-block-latest-posts__list > li + li {
+        margin-top: 2rem;
+    }
+
+    &.is-grid {
+        [class^="col-sm-"] {
+            line-height: 1.5rem;
+        }
+
+        [class^="col-sm-"] + [class^="col-sm-"] {
+            margin-top: 0;
+        }
+
+        &.columns-2 {
+            [class^="col-sm-"] + [class^="col-sm-"] + [class^="col-sm-"] {
+                margin-top: 2rem;
+            }
+        }
+
+        &.columns-3 {
+            [class^="col-sm-"] + [class^="col-sm-"] + [class^="col-sm-"] + [class^="col-sm-"] {
+                margin-top: 2rem;
+            }
+        }
+
+        &.columns-4 {
+            [class^="col-sm-"] + [class^="col-sm-"] + [class^="col-sm-"] + [class^="col-sm-"] + [class^="col-sm-"] {
+                margin-top: 2rem;
+            }
+        }
+
+        &.columns-5 {
+            [class^="col-sm-"] + [class^="col-sm-"] + [class^="col-sm-"] + [class^="col-sm-"] + [class^="col-sm-"] + [class^="col-sm-"] {
+                margin-top: 2rem;
+            }
+        }
+
+        &.columns-6 {
+            [class^="col-sm-"] + [class^="col-sm-"] + [class^="col-sm-"] + [class^="col-sm-"] + [class^="col-sm-"] + [class^="col-sm-"] + [class^="col-sm-"] {
+                margin-top: 2rem;
+            }
+        }
+    }
+
+    .wp-block-latest-posts__featured-image {
+        &.alignleft {
+            margin-right: 1.25rem;
+        }
+
+        &.aligncenter {
+            margin-bottom: 1.25rem;
+        }
+    }
+
+    li,
+    [class^="col-sm-"] {
+        & > a {
+            font-size: var(--enlightenment-body-font-size);
+			text-decoration-line: none;
+
+            &:not(:only-child) {
+                display: block;
+                margin-bottom: .5rem;
+                color: inherit;
+                font-size: 1.5rem;
+                font-weight: 700;
+                line-height: 1.2;
+
+                &:hover {
+                    color: var(--bs-link-color);
+                }
+
+                &:active {
+                    color: var(--bs-link-hover-color);
+                }
+            }
+
+            &:last-child {
+                margin-bottom: 0;
+            }
+
+            &:only-child::before {
+                content: "";
+                display: block;
+                width: 100%;
+            }
+        }
+    }
+
+    li + li > a:only-child::before {
+        margin-top: -1.125rem;
+    }
+
+    .wp-block-latest-posts__post-author-date-wrap {
+        display: flex;
+        margin-bottom: .5rem;
+
+        &:last-child {
+            margin-bottom: 0;
+        }
+    }
+
+    .wp-block-latest-posts__post-author {
+        order: 1;
+        margin-left: .25rem;
+        color: var(--enlightenment-accent-color);
+        font-size: var(--enlightenment-font-size-sm);
+    }
+
+    .wp-block-latest-posts__post-date {
+        color: var(--enlightenment-accent-color);
+        font-size: var(--enlightenment-font-size-sm);
+    }
+
+    .wp-block-latest-posts__featured-image {
+        &.aligncenter + a + .wp-block-latest-posts__post-date {
+            margin-bottom: 1.25rem;
+
+            &:last-child {
+                margin-bottom: 0;
+            }
+        }
+
+        img {
+            display: block;
+        }
+    }
+
+    .wp-block-latest-posts__post-excerpt,
+    .wp-block-latest-posts__post-full-content {
+        margin-top: 0;
+        margin-bottom: 0;
+        font-size: var(--enlightenment-body-font-size);
+        overflow: hidden;
+    }
+
+
+    .wp-block-latest-posts__post-full-content {
+        :last-child {
+            margin-bottom: 0;
+        }
+    }
+}
+
+.wp-block-columns .wp-block-latest-posts {
+    li,
+    [class^="col-sm-"] {
+        & > a {
+            font-size: 1.75rem;
+        }
+    }
+
+    .wp-block-latest-posts__featured-image.alignleft {
+        max-width: 75px;
+
+        & + a {
+            margin-bottom: .25rem;
+            font-size: 1.125rem;
+        }
+    }
+}
+
+@media (min-width: 576px) {
+    .wp-block-latest-posts.is-grid {
+        [class^="col-sm-"] + [class^="col-sm-"] {
+            margin-top: 0;
+        }
+
+        &.columns-2 {
+            [class^="col-sm-"] + [class^="col-sm-"] + [class^="col-sm-"] {
+                margin-top: 2rem;
+
+                & > a:only-child::before {
+                    margin-top: -1.125rem;
+                }
+            }
+        }
+
+        &.columns-3 {
+            [class^="col-sm-"] + [class^="col-sm-"] + [class^="col-sm-"] + [class^="col-sm-"] {
+                margin-top: 2rem;
+
+                & > a:only-child::before {
+                    margin-top: -1.125rem;
+                }
+            }
+        }
+
+        &.columns-4 {
+            [class^="col-sm-"] + [class^="col-sm-"] + [class^="col-sm-"] + [class^="col-sm-"] + [class^="col-sm-"] {
+                margin-top: 2rem;
+
+                & > a:only-child::before {
+                    margin-top: -1.125rem;
+                }
+            }
+        }
+
+        &.columns-5 {
+            [class^="col-sm-"] + [class^="col-sm-"] + [class^="col-sm-"] + [class^="col-sm-"] + [class^="col-sm-"] + [class^="col-sm-"] {
+                margin-top: 2rem;
+
+                & > a:only-child::before {
+                    margin-top: -1.125rem;
+                }
+            }
+        }
+
+        &.columns-6 {
+            [class^="col-sm-"] + [class^="col-sm-"] + [class^="col-sm-"] + [class^="col-sm-"] + [class^="col-sm-"] + [class^="col-sm-"] + [class^="col-sm-"] {
+                margin-top: 2rem;
+
+                & > a:only-child::before {
+                    margin-top: -1.125rem;
+                }
+            }
+        }
+    }
+
+    .wp-block-columns .wp-block-latest-posts.is-grid [class^="col-sm-"] > a {
+        margin-bottom: .25rem;
+        font-size: 1.125rem;
+    }
+}

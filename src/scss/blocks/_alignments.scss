@@ -1,0 +1,210 @@
+@media (max-width: 575.98px) {
+    .layout-full-width {
+        .entry-content > .alignfull {
+			clear: both;
+            margin-left: calc(-50vw - -50%);
+            margin-right: calc(-50vw - -50%);
+        }
+
+        .site-main > .hentry {
+            &:first-child > .entry-content:first-child > .alignfull:first-child {
+                margin-top: -2rem;
+            }
+
+            &:last-child .entry-content:last-child > .alignfull:last-child {
+                margin-bottom: -2rem;
+            }
+        }
+
+        .is-navbar-transparent,
+        .is-navbar-inversed.is-navbar-scroll {
+            & + .site-content .site-main > .hentry:first-child > .entry-content:first-child > .alignfull:first-child {
+                margin-top: -90px;
+            }
+        }
+
+        .navbar-lg.is-navbar-transparent,
+        .navbar-lg.is-navbar-inversed.is-navbar-scroll {
+            & + .site-content .site-main > .hentry:first-child > .entry-content:first-child > .alignfull:first-child {
+                margin-top: -110px;
+            }
+        }
+
+		.navbar-expand {
+			&.navbar-lg.is-navbar-transparent,
+	        &.navbar-lg.is-navbar-inversed.is-navbar-scroll {
+	            & + .site-content .site-main > .hentry:first-child > .entry-content:first-child > .alignfull:first-child {
+	                margin-top: -160px;
+	            }
+	        }
+		}
+    }
+}
+
+@media (min-width: 576px) and (max-width: 767.98px) {
+    .layout-full-width:where(:not(.layout-sm-content-sidebar, .layout-sm-sidebar-content, .layout-sm-sidebar-content-sidebar)),
+    .layout-sm-full-width {
+        .entry-content > .alignfull {
+			clear: both;
+            margin-left: calc(-50vw - -50%);
+            margin-right: calc(-50vw - -50%);
+        }
+
+        .site-main > .hentry {
+            &:first-child > .entry-content:first-child > .alignfull:first-child {
+                margin-top: -2rem;
+            }
+
+            &:last-child .entry-content:last-child > .alignfull:last-child {
+                margin-bottom: -2rem;
+            }
+        }
+
+        .is-navbar-transparent,
+        .is-navbar-inversed.is-navbar-scroll {
+            & + .site-content .site-main > .hentry:first-child > .entry-content:first-child > .alignfull:first-child {
+                margin-top: -90px;
+            }
+        }
+
+        .navbar-lg.is-navbar-transparent,
+        .navbar-lg.is-navbar-inversed.is-navbar-scroll {
+            & + .site-content .site-main > .hentry:first-child > .entry-content:first-child > .alignfull:first-child {
+                margin-top: -110px;
+            }
+        }
+
+		.navbar-expand,
+		.navbar-expand-sm {
+			&.navbar-lg.is-navbar-transparent,
+	        &.navbar-lg.is-navbar-inversed.is-navbar-scroll {
+	            & + .site-content .site-main > .hentry:first-child > .entry-content:first-child > .alignfull:first-child {
+	                margin-top: -160px;
+	            }
+	        }
+		}
+    }
+}
+
+@media (min-width: 768px) and (max-width: 991.98px) {
+    .layout-full-width:where(:not(.layout-sm-content-sidebar, .layout-sm-sidebar-content, .layout-sm-sidebar-content-sidebar, .layout-md-content-sidebar, .layout-md-sidebar-content, .layout-md-sidebar-content-sidebar)),
+    .layout-sm-full-width:where(:not(.layout-md-content-sidebar, .layout-md-sidebar-content, .layout-md-sidebar-content-sidebar)),
+    .layout-md-full-width {
+        .entry-content > .alignfull {
+			clear: both;
+            margin-left: calc(-50vw - -50%);
+            margin-right: calc(-50vw - -50%);
+        }
+
+        .site-main > .hentry {
+            &:first-child > .entry-content:first-child > .alignfull:first-child {
+                margin-top: -5rem;
+            }
+
+            &:last-child .entry-content:last-child > .alignfull:last-child {
+                margin-bottom: -5rem;
+            }
+        }
+
+        .is-navbar-transparent,
+        .is-navbar-inversed.is-navbar-scroll {
+            & + .site-content .site-main > .hentry:first-child > .entry-content:first-child > .alignfull:first-child {
+                margin-top: -140px;
+            }
+        }
+
+        .navbar-lg.is-navbar-transparent,
+        .navbar-lg.is-navbar-inversed.is-navbar-scroll {
+            & + .site-content .site-main > .hentry:first-child > .entry-content:first-child > .alignfull:first-child {
+                margin-top: -13rem;
+            }
+        }
+    }
+}
+
+@media (min-width: 992px) and (max-width: 1199.98px) {
+    .layout-full-width:where(:not(.layout-sm-content-sidebar, .layout-sm-sidebar-content, .layout-sm-sidebar-content-sidebar, .layout-md-content-sidebar, .layout-md-sidebar-content, .layout-md-sidebar-content-sidebar, .layout-lg-content-sidebar, .layout-lg-sidebar-content, .layout-lg-sidebar-content-sidebar)),
+    .layout-sm-full-width:where(:not(.layout-md-content-sidebar, .layout-md-sidebar-content, .layout-md-sidebar-content-sidebar, .layout-lg-content-sidebar, .layout-lg-sidebar-content, .layout-lg-sidebar-content-sidebar)),
+    .layout-md-full-width:where(:not(.layout-lg-content-sidebar, .layout-lg-sidebar-content, .layout-lg-sidebar-content-sidebar)),
+    .layout-lg-full-width {
+        &.single-post .entry-content > .alignwide {
+			clear: both;
+            margin-left: -105px;
+            margin-right: -105px;
+        }
+
+        .entry-content > .alignfull {
+			clear: both;
+            margin-left: calc(-50vw - -50%);
+            margin-right: calc(-50vw - -50%);
+        }
+
+        .site-main > .hentry {
+            &:first-child > .entry-content:first-child > .alignfull:first-child {
+                margin-top: -5rem;
+            }
+
+            &:last-child .entry-content:last-child > .alignfull:last-child {
+                margin-bottom: -5rem;
+            }
+        }
+
+        .is-navbar-transparent,
+        .is-navbar-inversed.is-navbar-scroll {
+            & + .site-content .site-main > .hentry:first-child > .entry-content:first-child > .alignfull:first-child {
+                margin-top: -140px;
+            }
+        }
+
+        .navbar-lg.is-navbar-transparent,
+        .navbar-lg.is-navbar-inversed.is-navbar-scroll {
+            & + .site-content .site-main > .hentry:first-child > .entry-content:first-child > .alignfull:first-child {
+                margin-top: -13rem;
+            }
+        }
+    }
+}
+
+@media (min-width: 1200px) {
+    .layout-full-width:where(:not(.layout-sm-content-sidebar, .layout-sm-sidebar-content, .layout-sm-sidebar-content-sidebar, .layout-md-content-sidebar, .layout-md-sidebar-content, .layout-md-sidebar-content-sidebar, .layout-lg-content-sidebar, .layout-lg-sidebar-content, .layout-lg-sidebar-content-sidebar, .layout-xl-content-sidebar, .layout-xl-sidebar-content, .layout-xl-sidebar-content-sidebar)),
+    .layout-sm-full-width:where(:not(.layout-md-content-sidebar, .layout-md-sidebar-content, .layout-md-sidebar-content-sidebar, .layout-lg-content-sidebar, .layout-lg-sidebar-content, .layout-lg-sidebar-content-sidebar, .layout-xl-content-sidebar, .layout-xl-sidebar-content, .layout-xl-sidebar-content-sidebar)),
+    .layout-md-full-width:where(:not(.layout-lg-content-sidebar, .layout-lg-sidebar-content, .layout-lg-sidebar-content-sidebar, .layout-xl-content-sidebar, .layout-xl-sidebar-content, .layout-xl-sidebar-content-sidebar)),
+    .layout-lg-full-width:where(:not(.layout-xl-content-sidebar, .layout-xl-sidebar-content, .layout-xl-sidebar-content-sidebar)),
+    .layout-xl-full-width {
+        &.single-post .entry-content > .alignwide {
+			clear: both;
+            margin-left: -195px;
+            margin-right: -195px;
+        }
+
+        .entry-content > .alignfull {
+			clear: both;
+            margin-left: calc(-50vw - -50%);
+            margin-right: calc(-50vw - -50%);
+        }
+
+        .site-main > .hentry {
+            &:first-child > .entry-content:first-child > .alignfull:first-child {
+                margin-top: -5rem;
+            }
+
+            &:last-child .entry-content:last-child > .alignfull:last-child {
+                margin-bottom: -5rem;
+            }
+        }
+
+        .is-navbar-transparent,
+        .is-navbar-inversed.is-navbar-scroll {
+            & + .site-content .site-main > .hentry:first-child > .entry-content:first-child > .alignfull:first-child {
+                margin-top: -140px;
+            }
+        }
+
+        .navbar-lg.is-navbar-transparent,
+        .navbar-lg.is-navbar-inversed.is-navbar-scroll {
+            & + .site-content .site-main > .hentry:first-child > .entry-content:first-child > .alignfull:first-child {
+                margin-top: -13rem;
+            }
+        }
+    }
+}

@@ -1,0 +1,12 @@
+ul.wp-block-archives {
+    margin-left: 0;
+    font-size: var(--enlightenment-body-font-size);
+
+    &.wp-block-archives-list {
+        font-family: var(--enlightenment-body-font-family);
+    }
+
+	a {
+		text-decoration-line: none;
+	}
+}

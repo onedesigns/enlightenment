@@ -1,0 +1,215 @@
+.entry-elements-fade {
+    .entries-list > .row {
+        margin-bottom: -2rem;
+
+		& > div {
+			display: flex;
+		}
+    }
+
+    .hentry {
+        position: relative;
+		width: 100%;
+    	margin-bottom: 2rem;
+    	text-align: center;
+    }
+
+    .entry-heder {
+    	position: relative;
+    }
+
+    .entry-media {
+		margin-bottom: 0;
+
+		a {
+	        position: relative;
+	    	display: block;
+	        background-color: transparent;
+
+	        &::after {
+	        	content: "";
+	        	position: absolute;
+	        	top: 0;
+	        	left: 0;
+	        	right: 0;
+	        	bottom: 0;
+	        	background-color: rgba(0,0,0,.4);
+	        	opacity: 0;
+	        	transition: opacity .25s ease;
+	        }
+
+	        &:hover .wp-post-image {
+	            opacity: 1;
+	            transform: none;
+	        }
+	    }
+	}
+
+    .entry-title {
+        font-size: 1.25rem;
+
+        a {
+        	color: #fff;
+            transition: opacity .25s ease;
+
+            &:hover {
+                opacity: .8;
+            }
+
+            &:active {
+                opacity: .6;
+            }
+        }
+    }
+
+    .entry-meta {
+		margin-bottom: 0;
+
+    	a {
+        	color: #fff;
+        	text-decoration-line: none;
+            transition: opacity .25s ease;
+
+            &:hover {
+                opacity: .8;
+            }
+
+            &:active {
+                opacity: .6;
+            }
+        }
+    }
+
+	.has-post-thumbnail {
+		.entry-title,
+		.entry-meta {
+			position: absolute;
+	    	left: 0;
+	    	right: 0;
+			padding-left: 1.25rem;
+			padding-right: 1.25rem;
+			transform: scale(0);
+			transition: transform .25s ease;
+		}
+
+		.entry-title {
+	    	bottom: 50%;
+	        transform-origin: 50% 100%;
+		}
+
+		.entry-meta {
+	    	top: 50%;
+			transform-origin: 50% 0;
+		}
+
+		&:hover {
+			.entry-media a {
+	            &::after {
+	            	opacity: 1;
+	            }
+
+	            &:active::after {
+	            	opacity: .8;
+	            }
+	        }
+
+			.entry-title {
+				transform: scale(1);
+			}
+
+			.entry-meta {
+				transform: scale(1);
+			}
+		}
+	}
+
+	.hentry:not(.has-post-thumbnail) {
+		display: flex;
+	    align-items: center;
+	    justify-content: center;
+		padding: 1.5rem 1.25rem;
+		background-color: #000;
+	}
+}
+
+.single-jetpack-portfolio {
+    .entry-meta {
+    	margin-top: 2rem;
+        margin-bottom: 0;
+
+        & > span {
+            display: block;
+            font-weight: 600;
+
+            & + span {
+                margin-top: .5rem;
+            }
+
+            a,
+            .sep {
+                font-weight: 300;
+            }
+        }
+    }
+}
+
+.jetpack-portfolio-shortcode {
+    & > .row {
+        margin-bottom: -3rem;
+    }
+
+    .portfolio-entry {
+        margin-bottom: 3rem;
+
+        .portfolio-featured-image {
+            display: block;
+            margin-bottom: 1.25rem;
+        }
+
+        .portfolio-entry-title {
+            margin-top: 0;
+            font-size: 1.5rem;
+
+            a {
+                color: inherit;
+
+                &:hover {
+                    color: var(--bs-link-color);
+                }
+
+                &:active {
+                    color: var(--bs-link-hover-color);
+                }
+            }
+        }
+
+        .portfolio-entry-meta {
+            margin-top: .5rem;
+            font-size: var(--enlightenment-font-size-sm);
+            font-weight: 300;
+            line-height: 1.5;
+
+            .project-types:only-child {
+                span {
+                    position: absolute;
+                    width: 1px;
+                    height: 1px;
+                    padding: 0;
+                    margin: -1px;
+                    overflow: hidden;
+                    clip: rect(0,0,0,0);
+                    white-space: nowrap;
+                    border: 0;
+                }
+            }
+
+            a {
+                font-size: inherit;
+            }
+        }
+
+        .portfolio-entry-content {
+            margin-top: 1.25rem;
+        }
+    }
+}

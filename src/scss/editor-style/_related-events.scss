@@ -1,0 +1,19 @@
+.tribe-editor__related-events__title-text {
+    margin-bottom: .5rem;
+
+    input {
+        min-width: 100%;
+        max-width: none;
+        padding: 0;
+        margin: 0;
+        min-height: unset;
+        background-color: transparent;
+        font-size: 1.25rem;
+        font-weight: 700;
+        line-height: 1.2;
+
+		&::-webkit-input-placeholder {
+			line-height: inherit !important;
+		}
+    }
+}

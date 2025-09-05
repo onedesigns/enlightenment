@@ -1,0 +1,53 @@
+.woocommerce .elementor-widget-woocommerce-product-images {
+	overflow: hidden;
+
+	span.onsale {
+		position: absolute;
+	    top: 26px;
+	    right: 26px;
+	    z-index: 1;
+	    padding: 0.1875rem 2rem;
+		margin: 0;
+	    box-shadow: none;
+	    border-radius: 0;
+	    background-color: #fd000d;
+	    color: #fff;
+	    font-size: 0.8125rem;
+	    font-weight: 700;
+	    line-height: 0.875rem;
+	    text-transform: uppercase;
+	    white-space: nowrap;
+	    transform: translate3d(50%, -50%, 0) rotate(45deg);
+	}
+}
+
+@media (min-width: 992px) and (max-width: 1199.98px) {
+	.layout-full-width:where(:not(.layout-sm-content-sidebar, .layout-sm-sidebar-content, .layout-sm-sidebar-content-sidebar, .layout-md-content-sidebar, .layout-md-sidebar-content, .layout-md-sidebar-content-sidebar, .layout-lg-content-sidebar, .layout-lg-sidebar-content, .layout-lg-sidebar-content-sidebar)),
+	.layout-sm-full-width:where(:not(.layout-md-content-sidebar, .layout-md-sidebar-content, .layout-md-sidebar-content-sidebar, .layout-lg-content-sidebar, .layout-lg-sidebar-content, .layout-lg-sidebar-content-sidebar)),
+	.layout-md-full-width:where(:not(.layout-lg-content-sidebar, .layout-lg-sidebar-content, .layout-lg-sidebar-content-sidebar)),
+	.layout-lg-full-width {
+		 .elementor-col-50:first-child .elementor-widget-woocommerce-product-images {
+			 margin-right: 7.5px;
+		 }
+
+		 .woocommerce-product-gallery {
+			 margin-right: 0;
+		 }
+	}
+}
+
+@media (min-width: 1200px) {
+	.layout-full-width:where(:not(.layout-sm-content-sidebar, .layout-sm-sidebar-content, .layout-sm-sidebar-content-sidebar, .layout-md-content-sidebar, .layout-md-sidebar-content, .layout-md-sidebar-content-sidebar, .layout-lg-content-sidebar, .layout-lg-sidebar-content, .layout-lg-sidebar-content-sidebar, .layout-xl-content-sidebar, .layout-xl-sidebar-content, .layout-xl-sidebar-content-sidebar)),
+	.layout-sm-full-width:where(:not(.layout-md-content-sidebar, .layout-md-sidebar-content, .layout-md-sidebar-content-sidebar, .layout-lg-content-sidebar, .layout-lg-sidebar-content, .layout-lg-sidebar-content-sidebar, .layout-xl-content-sidebar, .layout-xl-sidebar-content, .layout-xl-sidebar-content-sidebar)),
+	.layout-md-full-width:where(:not(.layout-lg-content-sidebar, .layout-lg-sidebar-content, .layout-lg-sidebar-content-sidebar, .layout-xl-content-sidebar, .layout-xl-sidebar-content, .layout-xl-sidebar-content-sidebar)),
+	.layout-lg-full-width:where(:not(.layout-xl-content-sidebar, .layout-xl-sidebar-content, .layout-xl-sidebar-content-sidebar)),
+	.layout-xl-full-width {
+		.elementor-col-50:first-child .elementor-widget-woocommerce-product-images {
+			margin-right: 25px;
+		}
+
+		.woocommerce-product-gallery {
+			margin-right: 0;
+		}
+	}
+}

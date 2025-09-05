@@ -1,0 +1,26 @@
+.elementor-widget-image-carousel {
+	--swiper-pagination-color: var(--bs-emphasis-color);
+	--swiper-pagination-bullet-inactive-color: var(--bs-emphasis-color);
+}
+
+.elementor-arrows-position-outside {
+    .swiper-container {
+        width: 100%;
+    }
+
+    .elementor-swiper-button-prev {
+        left: auto;
+        right: calc(100% + .75rem);
+    }
+
+    .elementor-swiper-button-next {
+        left: calc(100% + .75rem);
+        right: auto;
+    }
+}
+
+@media (max-width: 575.98px) {
+    .elementor-swiper-button {
+        display: none;
+    }
+}

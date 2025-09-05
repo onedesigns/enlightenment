@@ -1,0 +1,27 @@
+.elementor-widget-woocommerce-product-data-tabs {
+	.woocommerce-tabs {
+		margin-top: 0;
+
+		.wc-tabs-wrap.wc-tabs-wrap ul.tabs li {
+			& + li {
+				padding-left: 2rem;
+			}
+
+			a {
+				padding: 0.8125rem 0;
+			}
+		}
+
+		div.tab-content.tab-content .panel {
+			padding: 0;
+			margin: 0;
+			border-top: none;
+		}
+	}
+
+	.product-description {
+		:last-child {
+			margin-bottom: 0;
+		}
+	}
+}

@@ -1,0 +1,10 @@
+[data-type="jetpack/opentable"] {
+    &[data-align="center"],
+    &[data-align="wide"],
+    &[data-align="full"] {
+        .wp-block-jetpack-opentable {
+            display: flex;
+            justify-content: center;
+        }
+    }
+}

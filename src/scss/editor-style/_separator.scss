@@ -1,0 +1,31 @@
+.wp-block-separator {
+	padding-top: 0;
+	padding-bottom: 0;
+
+    &:not(.has-background) {
+        border-color: #8f98a1;
+    }
+
+    &.is-style-wide {
+        max-width: none;
+        border-color: currentColor;
+    }
+
+	&:not(.is-style-wide) {
+		max-width: 100px !important;
+		border-top-width: 2px;
+	}
+
+    &.is-style-dots {
+        &::before {
+            padding-left: 1rem;
+            font-size: 1.5rem;
+            letter-spacing: 1rem;
+        }
+    }
+}
+
+[data-type="core/separator"] hr {
+    margin-top: 0;
+    margin-bottom: 0;
+}

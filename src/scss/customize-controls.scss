@@ -1,0 +1,48 @@
+#customize-control-single_post_thumbnail {
+    .customize-control-imageRadio-item {
+        flex-basis: 33.3333333333%;
+        max-width: 33.3333333333%;
+    }
+}
+
+#customize-control-header_image_position {
+    fieldset {
+		max-width: 5.25rem;
+		margin-left: -.25px;
+		margin-right: -.25px;
+    }
+
+    .customize-control-imageRadio-item {
+        flex-basis: 1.75rem;
+        max-width: 1.75rem;
+        padding: .25rem;
+    }
+
+    .customize-control-imageRadio-item input[type="radio"] {
+		top: .75rem;
+		left: .75rem;
+    }
+
+    .customize-control-imageRadio-item label {
+        padding: 0;
+        border: none;
+    }
+}
+
+@media screen and (max-width: 782px) {
+	#customize-control-header_image_position {
+		fieldset {
+			max-width: 6rem;
+		}
+
+		.customize-control-imageRadio-item {
+			flex-basis: 2rem;
+			max-width: 2rem;
+
+			input[type="radio"] {
+				width: 1.5rem;
+				height: 1.5rem;
+			}
+		}
+	}
+}

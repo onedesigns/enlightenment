@@ -1,0 +1,72 @@
+.enlightenment-controls {
+    & + .enlightenment-controls {
+        margin-top: 12px;
+    }
+
+    .components-base-control__label {
+        font-weight: 500;
+    }
+
+	&__image-position,
+	&__header-overlay {
+	    .components-base-control__label {
+	        display: inline-block;
+			padding: 0;
+	        margin-bottom: 8px;
+			font-size: 11px;
+			line-height: 1.4;
+			text-transform: uppercase;
+	    }
+	}
+
+	&__image-style {
+	    .enlightenment-image-radio .components-radio-control__option {
+	        flex-basis: 33.3333333333%;
+	        max-width: 33.3333333333%;
+	    }
+	}
+
+	&__image-position .enlightenment-image-radio {
+	    .components-radio-control__option {
+	        flex-basis: 1.75rem;
+	        max-width: 1.75rem;
+	    }
+
+	    .components-radio-control__input {
+	        top: 0;
+	        left: 4px;
+	    }
+
+	    .components-base-control__field {
+	        max-width: 84px;
+	        margin-top: -8px;
+	        margin-left: -4px;
+	        margin-right: -4px;
+	    }
+
+	    .components-base-control__label,
+	    .components-radio-control__option {
+	        padding-left: 4px;
+	        padding-right: 4px;
+	        margin-top: 8px;
+	    }
+
+	    .components-base-control__label {
+	        white-space: nowrap;
+	    }
+
+	    &.enlightenment-image-radio__option-0-is-text .components-radio-control__option:nth-child(1),
+	    &.enlightenment-image-radio__option-0-is-text label ~ .components-radio-control__option:nth-child(2) {
+	        white-space: nowrap;
+	    }
+
+	    .components-radio-control__input + label {
+	        padding: 0;
+	        border: none;
+	    }
+
+	    .components-radio-control__input:checked + label {
+	        color: #2271b1;
+	    }
+	}
+}

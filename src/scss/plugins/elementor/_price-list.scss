@@ -1,0 +1,66 @@
+.elementor-price-list {
+	li:not(:last-child) {
+		margin-bottom: 1rem;
+	}
+
+	.elementor-price-list-item {
+	    color: inherit;
+	    pointer-events: none;
+
+	    &:hover,
+	    &:active {
+	        img {
+	            opacity: 1;
+	        }
+	    }
+
+	    .elementor-price-list-image {
+	        pointer-events: auto;
+
+	        &:hover img {
+	            opacity: .8;
+	        }
+
+	        &:active img {
+	            opacity: .6;
+	        }
+	    }
+
+		.elementor-price-list-header {
+			margin-bottom: 0.5rem;
+		}
+
+	    .elementor-price-list-title,
+	    .elementor-price-list-price {
+			color: var(--bs-heading-color);
+			line-height: 1.2;
+	        pointer-events: auto;
+	        transition: color .25s ease;
+
+	        &:hover {
+	            color: var(--bs-link-color);
+	        }
+
+	        &:active {
+	            color: var(--bs-link-hover-color);
+	        }
+	    }
+
+	    .elementor-price-list-separator,
+	    .elementor-price-list-description {
+	        color: var(--enlightenment-accent-color);
+	    }
+
+	    .elementor-price-list-description {
+	        pointer-events: auto;
+
+	        &:hover {
+	            color: var(--bs-link-color);
+	        }
+
+	        &:active {
+	            color: var(--bs-link-hover-color);
+	        }
+	    }
+	}
+}

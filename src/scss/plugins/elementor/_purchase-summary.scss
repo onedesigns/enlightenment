@@ -1,0 +1,196 @@
+.elementor-widget-woocommerce-purchase-summary {
+	color: inherit;
+	font-family: inherit;
+	font-size: inherit;
+
+	.woocommerce {
+		line-height: var(--bs-body-line-height);
+
+		a {
+			color: var(--order-details-product-links-normal-color, var(--bs-link-color));
+
+			&:hover {
+				color: var(--order-details-product-links-hover-color, var(--bs-link-hover-color));
+			}
+		}
+
+		p {
+			margin-bottom: 1rem;
+		}
+
+		.woocommerce-thankyou-order-received {
+			margin-bottom: var(--sections-spacing, 3rem);
+			color: var(--confirmation-message-color, inherit);
+
+			&.woocommerce-notice--success {
+				color: var(--confirmation-message-color, var(--bs-success-text-emphasis));
+			}
+
+			&.woocommerce-notice--error {
+				color: var(--confirmation-message-color, var(--bs-danger-text-emphasis));
+			}
+		}
+
+		.btn {
+			color: var(--bs-btn-color);
+
+			&:hover,
+			&:focus-visible {
+				color: var(--bs-btn-hover-color);
+			}
+
+			&:active {
+				color: var(--bs-btn-active-color);
+			}
+		}
+
+		.woocommerce-thankyou-order-details {
+			margin-top: calc(-1 * var(--bs-gutter-y));
+			margin-left: calc(-.5 * var(--payment-details-space-between, var(--bs-gutter-x)));
+			margin-right: calc(-.5 * var(--payment-details-space-between, var(--bs-gutter-x)));
+		    margin-bottom: 3rem;
+
+			li {
+				padding-left: var(--payment-details-space-between, calc(var(--bs-gutter-x) * .5));
+				padding-right: var(--payment-details-space-between, calc(var(--bs-gutter-x) * .5));
+				margin-right: 0;
+				margin-bottom: 0;
+				border-right-style: var(--payment-details-border-type, none);
+				color: var(--payment-details-titles-color, inherit);
+				font-size: inherit;
+				font-weight: 400;
+				text-transform: none;
+
+				&:last-child {
+					border-right-style: none;
+				}
+
+				strong {
+					margin-top: var(--payment-details-titles-spacing, 0);
+					color: var(--payment-details-items-color, inherit);
+					font-size: inherit;
+					font-weight: bolder;
+				}
+			}
+		}
+
+		section {
+			margin-top: var(--sections-spacing, 3rem);
+		}
+
+		h2 {
+			margin-bottom: var(--titles-spacing, .5rem);
+			color: var(--titles-color, var(--bs-heading-color));
+			font-weight: 700;
+		}
+
+		.shop_table {
+			padding: var(--sections-padding, 0);
+			border-color: var(--sections-border-color, rgba(0,0,0,.15));
+		    border-radius: var(--sections-border-radius, 0);
+			border-style: var(--sections-border-type, none);
+			border-width: 1px;
+			background-color: var(--sections-background-color, var(--bs-table-bg));
+			font-size: var(--enlightenment-body-font-size);
+
+			thead tr {
+				border-bottom-color: var(--tables-divider-border-color, rgba(0,0,0,.15));
+				border-bottom-style: var(--tables-divider-border-type, solid);
+				border-bottom-width: var(--tables-divider-border-width, 1px);
+
+				th {
+					padding-top: 1.25rem;
+					padding-bottom: 16px;
+					color: var(--order-details-titles-totals-color, inherit);
+				}
+			}
+
+			tbody {
+				th,
+				td {
+					padding-top: calc(var(--order-details-rows-gap, 24px) / 2);
+					padding-bottom: calc(var(--order-details-rows-gap, 24px) / 2);
+				}
+			}
+
+			tfoot {
+				th,
+				td {
+					padding-top: .25rem;
+				    padding-bottom: .25rem;
+					color: var(--order-details-titles-totals-color, var(--bs-table-color-state, var(--bs-table-color-type, var(--bs-table-color))));
+				}
+
+				tr:last-child {
+					th,
+					td {
+					    padding-bottom: .25rem;
+					}
+				}
+			}
+
+			th,
+			td {
+				padding-left: 15px;
+				padding-right: 15px;
+				border-top-style: none;
+
+				&:first-child {
+					padding-left: 0;
+				}
+
+				&:last-child {
+					padding-right: 0;
+				}
+			}
+
+			.product-quantity,
+			td.download-remaining,
+			td.download-expires {
+				color: var(--order-details-items-color, inherit);
+			}
+
+			.product-quantity {
+				font-weight: bolder;
+			}
+
+			tbody td .woocommerce-Price-amount {
+				color: var(--order-details-items-color, inherit);
+			}
+
+			.button.alt {
+				padding: var(--button-padding, var(--enlightenment-btn-padding-y) var(--enlightenment-btn-padding-x));
+				border-color: var(--buttons-border-color, var(--bs-btn-border-color));
+				border-radius: var(--button-border-radius, var(--enlightenment-btn-border-radius));
+				border-width: var(--bs-btn-border-width);
+				background-color: var(--bs-btn-bg);
+				color: var(--button-normal-text-color, var(--bs-btn-color));
+
+				&:hover {
+					border-color: var(--buttons-border-color, var(--bs-btn-hover-border-color));
+				    background-color: var(--bs-btn-hover-bg);
+					color: var(--button-hover-text-color, var(--bs-btn-hover-color));
+					transition-duration: var(--button-hover-transition-duration, 0.15s);
+				}
+
+				&:active {
+					border-color: var(--buttons-border-color, var(--bs-btn-active-border-color));
+				    background-color: var(--bs-btn-active-bg);
+					color: var(--button-hover-text-color, var(--bs-btn-active-color));
+				}
+			}
+		}
+
+		address {
+			padding: var(--sections-padding, 0);
+		    background-color: var(--sections-background-color, var(--bs-body-bg));
+		    border-style: var(--sections-border-type, none);
+			border-radius: var(--sections-border-radius, 0);
+		    color: var(--general-text-color, inherit);
+
+			p {
+				margin: 0;
+			}
+		}
+	}
+}

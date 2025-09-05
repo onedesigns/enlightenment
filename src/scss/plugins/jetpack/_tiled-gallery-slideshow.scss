@@ -1,0 +1,32 @@
+.blog,
+.archive {
+	.entries-list {
+		.format-gallery {
+			.wp-block-jetpack-tiled-gallery,
+			.wp-block-jetpack-slideshow {
+				margin-bottom: 1.25rem;
+			}
+
+			.wp-block-jetpack-slideshow_container:not(.swiper-container-initialized) {
+				.wp-block-jetpack-slideshow_slide {
+					flex: 1 0 100%;
+				}
+
+				.swiper-button-next,
+				.swiper-button-prev {
+					position: absolute;
+				}
+			}
+
+			.wp-block-jetpack-slideshow_pagination {
+				position: absolute;
+
+                .swiper-pagination-bullet,
+                .swiper-pagination-bullet-active,
+                .swiper-pagination-bullet[selected] {
+                    background: #fff;
+	            }
+			}
+		}
+	}
+}

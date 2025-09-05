@@ -1,0 +1,136 @@
+.wc-block-grid {
+    font-family: var(--enlightenment-body-font-family);
+    font-size: var(--enlightenment-body-font-size);
+
+	&.wc-block-grid:not(.alignwide):not(.alignfull) {
+		font-size: var(--enlightenment-body-font-size);
+	}
+
+    .wc-block-grid__products {
+        margin-bottom: -3rem;
+
+        .wc-block-grid__product {
+            margin-bottom: 3rem;
+            margin-bottom: 2.8rem; // 3rem - 0.2rem
+
+            .wc-block-grid__product-link {
+				position: relative;
+                color: inherit;
+				text-decoration-line: none;
+				overflow: hidden;
+            }
+
+            .wc-block-grid__product-image {
+                margin-bottom: 1.25rem;
+
+                img {
+                    display: block;
+                }
+            }
+
+            .wc-block-grid__product-title {
+                margin-bottom: .5rem;
+				color: var(--bs-heading-color);
+                font-size: 1.25rem;
+                line-height: 1.2;
+                font-weight: 700;
+            }
+
+            .wc-block-grid__product-onsale {
+				position: absolute;
+			    top: 26px;
+			    left: 26px;
+				right: auto;
+				z-index: 1;
+			    padding: 0.1875rem 2rem;
+				margin: 0;
+				border: none;
+				box-shadow: none;
+				border-radius: 0;
+			    background-color: #fd000d;
+			    color: #fff;
+			    font-size: 0.8125rem;
+			    font-weight: 700;
+			    line-height: 0.875rem;
+			    text-transform: uppercase;
+				white-space: nowrap;
+			    transform: translate3d(-50%, -50%, 0) rotate(-45deg);
+            }
+
+            .wc-block-grid__product-price {
+                display: block;
+                margin-bottom: .5rem;
+                color: #fd000d;
+				font-size: var(--enlightenment-body-font-size);
+                font-weight: 700;
+                line-height: 1.5;
+
+                del {
+                    color: var(--enlightenment-accent-color);
+                    font-size: var(--enlightenment-font-size-sm);
+                }
+
+                ins {
+                    padding: 0 var(--bs-border-radius);
+                    background: none;
+                    border-radius: var(--bs-border-radius);
+                    box-shadow: 0 0 1px #fd000d;
+                    text-decoration-line: none;
+                }
+            }
+
+            .wc-block-grid__product-rating {
+                margin-bottom: 1rem;
+
+                .star-rating {
+                    width: 78px;
+                    height: 1.25rem;
+                    font-family: var(--enlightenment-font-icons);
+                    font-size: var(--enlightenment-font-size-sm);
+                    overflow: hidden;
+                    white-space: nowrap;
+
+                    &::before {
+                        content: "\f005\f005\f005\f005\f005";
+                        display: block;
+                        opacity: 1;
+                        color: inherit;
+                    }
+
+                    span {
+                        position: absolute;
+                        top: 0;
+                        left: 0;
+                        width: 0;
+                        height: 1.25rem;
+                        overflow: hidden;
+                        white-space: nowrap;
+
+                        &::before {
+                            content: "\f005\f005\f005\f005\f005";
+                            font-weight: 900;
+                        }
+                    }
+                }
+            }
+
+            .wc-block-grid__product-add-to-cart {
+                padding-bottom: .2rem;
+                margin-bottom: 0;
+
+                .wp-block-button__link {
+			        padding: var(--enlightenment-btn-padding-y) var(--enlightenment-btn-padding-x);
+                    border-color: #6c757d;
+                    background-color: transparent;
+                    color: #6c757d;
+					font-size: var(--enlightenment-font-size-sm);
+					text-decoration-line: none;
+                }
+            }
+        }
+    }
+}
+
+.woocommerce-search-list__selected ul li {
+	margin-top: 0;
+}

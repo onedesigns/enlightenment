@@ -1,0 +1,17 @@
+.elementor-widget-n-tabs {
+	--n-tabs-default-padding-block: .5rem;
+	--n-tabs-default-padding-inline: 1rem;
+	--n-tabs-gap: 1rem;
+	--n-tabs-title-border-radius: .375rem;
+	--n-tabs-title-background-color: transparent;
+	--n-tabs-title-background-color-hover: transparent;
+	--n-tabs-title-background-color-active: #0d6efd;
+	--n-tabs-title-color: var(--bs-link-color);
+	--n-tabs-title-color-hover: var(--bs-link-hover-color);
+	--n-tabs-title-color-active: #fff;
+	--n-tabs-icon-color: var(--n-tabs-title-color);
+	--n-tabs-title-transition: .15s;
+	--n-tabs-heading-justify-content: flex-start;
+	--n-tabs-title-gap: 0px;
+	line-height: var(--bs-body-line-height);
+}

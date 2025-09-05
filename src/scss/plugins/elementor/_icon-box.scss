@@ -1,0 +1,35 @@
+.elementor-widget-icon-box {
+    .elementor-icon-box-icon {
+        line-height: 1;
+
+        .elementor-icon {
+            vertical-align: middle;
+
+            &[href] {
+                transition: opacity .25s ease;
+
+                &:hover {
+    				opacity: .8;
+    			}
+
+    			&:active {
+    				opacity: .6;
+    			}
+            }
+        }
+    }
+
+    .elementor-icon-box-title a {
+        &:hover {
+            color: var(--bs-link-color);
+        }
+
+        &:active {
+            color: var(--bs-link-hover-color);
+        }
+    }
+}
+
+.elementor-view-stacked .elementor-icon {
+	color: #fff;
+}

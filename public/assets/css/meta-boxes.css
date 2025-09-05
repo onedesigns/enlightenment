@@ -1,0 +1,10 @@
+.featured-image-style .radio-button-control{
+    flex-basis: 33.3333333333%;
+    max-width: 33.3333333333%;
+}
+
+.enlightenment-header-overlay::before {
+    content: "";
+    display: block;
+    height: 1em;
+}

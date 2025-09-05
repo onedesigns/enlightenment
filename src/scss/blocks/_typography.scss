@@ -1,0 +1,16 @@
+h1, h2, h3, h4, h5, h6 {
+    &.has-background {
+		padding: 1rem;
+	}
+}
+
+.has-drop-cap:not(:focus)::first-letter {
+    margin-top: 0.14em;
+    font-size: 3.24em;
+}
+
+p {
+	&.has-background {
+		padding: 1rem 1.5rem;
+	}
+}

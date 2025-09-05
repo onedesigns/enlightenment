@@ -1,0 +1,60 @@
+.elementor-blockquote {
+    font-family: inherit;
+}
+
+.elementor-widget-blockquote blockquote {
+	color: var(--bs-body-color);
+}
+
+.elementor-widget.elementor-widget-blockquote .elementor-blockquote::before {
+    content: none;
+}
+
+.elementor-blockquote--skin-boxed .elementor-blockquote {
+    padding-left: 30px;
+}
+
+.elementor-blockquote--skin-border .elementor-blockquote {
+    padding-left: 1.5rem;
+    border-left-width: 3px;
+    border-left-color: var(--bs-body-color);
+}
+
+.elementor-blockquote--skin-boxed .elementor-blockquote {
+	background-color: var(--bs-secondary-bg);
+}
+
+.elementor-blockquote--skin-quotation .elementor-blockquote.elementor-blockquote,
+.elementor-blockquote--skin-clean .elementor-blockquote.elementor-blockquote {
+    padding-left: 0;
+}
+
+.elementor-blockquote__content {
+	font-family: var(--enlightenment-font-serif);
+    font-size: 1.25rem;
+    font-style: italic;
+}
+
+.elementor-blockquote--skin-quotation .elementor-blockquote__content {
+    margin-top: 0;
+    font-size: 1.5rem;
+}
+
+.elementor-blockquote footer {
+    margin-top: 1rem;
+}
+
+.elementor-blockquote__author {
+    color: var(--enlightenment-accent-color);
+    font-size: var(--enlightenment-body-font-size);
+    font-weight: 400;
+}
+
+.elementor-blockquote--button-skin-classic .elementor-blockquote__tweet-button {
+    padding: 10px 18px 8px;
+    font-size: var(--enlightenment-font-size-sm);
+}
+
+.elementor-blockquote__tweet-button span {
+    font-weight: 500;
+}

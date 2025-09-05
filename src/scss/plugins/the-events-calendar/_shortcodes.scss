@@ -1,0 +1,93 @@
+.single-post .entry-content .tribe-events-view .hentry {
+    max-width: none;
+}
+
+.single,
+.page {
+    .entry-content {
+		.tribe-events-calendar-list__event-row + .tribe-events-calendar-list__event-row {
+			margin-top: 5rem;
+		}
+
+        .tribe-events-calendar-month__calendar-event-title,
+        .tribe-events-calendar-month__multiday-event-bar-title,
+    	.tribe-events-pro-week-grid__event-title,
+        .tribe-events-pro-week-grid__multiday-event-bar-title,
+    	.tribe-events-pro-photo__event-title,
+    	.tribe-events-pro-map__event-title {
+    		margin-top: 0;
+    	}
+
+    	.tribe-events-c-top-bar__nav-list-item + .tribe-events-c-top-bar__nav-list-item {
+    		margin-top: 0;
+    	}
+
+    	.tribe-events-calendar-list__event-header,
+    	.tribe-events-calendar-day__event-header {
+    		display: flex;
+    	    flex-direction: column;
+            align-items: flex-start;
+    		margin-bottom: 1.25rem;
+    	    color: var(--enlightenment-accent-color);
+    	    font-size: var(--enlightenment-font-size-sm);
+    	    font-weight: 300;
+    	}
+
+    	.tribe-events-calendar-list__event-title,
+    	.tribe-events-calendar-day__event-title {
+    		order: -1;
+    		margin-top: 0;
+    		color: var(--bs-body-color);
+    		font-size: 2rem;
+
+    		a {
+    		    color: inherit;
+    		    text-decoration-line: none;
+
+	    		&:hover {
+	    			color: var(--bs-link-color);
+	    		}
+
+	    		&:active {
+	    			color: var(--bs-link-hover-color);
+	    		}
+    		}
+    	}
+
+    	.tribe-events-c-nav__list-item + .tribe-events-c-nav__list-item {
+    		margin-top: 0;
+    	}
+    }
+}
+
+.tribe-event-inline-wrapper {
+    font-size: var(--enlightenment-font-size-sm);
+
+    & > br,
+    & > p:empty {
+        display: none;
+    }
+
+    & > .tribe-events-event-image:not(:last-child) {
+        margin-bottom: .5rem;
+    }
+
+    & > h2,
+    & > h3,
+    & > h4 {
+        margin-top: 0;
+        font-size: 1.25rem;
+
+        a {
+            color: inherit;
+
+    		&:hover {
+    			color: var(--bs-link-color);
+    		}
+
+    		&:active {
+    			color: var(--bs-link-hover-color);
+    		}
+        }
+    }
+}

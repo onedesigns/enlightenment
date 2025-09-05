@@ -1,0 +1,17 @@
+.elementor-widget-sidebar {
+    .elementor-widget-container {
+        .widget + .widget {
+            margin-top: 1rem;
+        }
+    }
+}
+
+@media (min-width: 1200px) {
+    .elementor-widget-sidebar {
+        .elementor-widget-container {
+            .widget + .widget {
+                margin-top: 2rem;
+            }
+        }
+    }
+}

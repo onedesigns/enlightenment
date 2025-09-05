@@ -1,0 +1,29 @@
+.elementor-widget-breadcrumbs {
+    color: var(--enlightenment-accent-color);
+    font-size: var(--enlightenment-font-size-sm);
+    line-height: 2rem;
+
+	span {
+		display: flex;
+		flex-wrap: wrap;
+	}
+
+    a {
+        color: var(--enlightenment-accent-color);
+
+        &:hover {
+            color: var(--bs-body-color);
+        }
+    }
+
+	span + span,
+	a + span {
+		padding-left: 0.25rem;
+
+		&::before {
+			content: "\00a0/\00a0";
+			padding-right: 0.25rem;
+			color: rgba(var(--bs-emphasis-color-rgb), 0.15);
+		}
+	}
+}

@@ -1,0 +1,96 @@
+.e-link-in-bio {
+	--e-link-in-bio-heading-color: var(--bs-heading-color);
+	--e-link-in-bio-title-color: var(--bs-heading-color);
+	--e-link-in-bio-about-heading-color: var(--bs-heading-color);
+	--e-link-in-bio-description-color: var(--bs-body-color);
+	--e-link-in-bio-ctas-background-color: var(--bs-primary);
+	--e-link-in-bio-ctas-padding-block-end: 0.75rem;
+    --e-link-in-bio-ctas-padding-block-start: 0.75rem;
+	--e-link-in-bio-ctas-padding-inline-end: 1.25rem;
+    --e-link-in-bio-ctas-padding-inline-start: 1.25rem;
+	--e-link-in-bio-ctas-border-color: var(--bs-primary);
+	--e-link-in-bio-ctas-divider-color: transparent;
+
+	&-var-4 {
+		--e-link-in-bio-ctas-text-color: var(--bs-dark);
+	}
+
+	&-var-7 {
+		--e-link-in-bio-icon-background-color: var(--bs-primary);
+		--e-link-in-bio-icon-text-color: var(--bs-emphasis-color);
+	}
+
+	&__content {
+		color: var(--bs-body-color);
+	}
+
+	&__title {
+		font-size: 1.25rem;
+		font-weight: 600;
+		line-height: 1.2;
+
+		&.e-link-in-bio__title {
+			margin-top: 0;
+		}
+	}
+
+	&__icon .e-link-in-bio__icon-link {
+		gap: 0.25rem;
+		color: var(--bs-emphasis-color);
+		transition: box-shadow 0.15s ease, opacity 0.15s ease;
+
+		&:focus,
+		&:hover,
+		&:active {
+			color: var(--bs-emphasis-color);
+		}
+
+		&:hover {
+			opacity: 0.875;
+		}
+
+		&:active,
+		&:focus {
+			opacity: 0.75;
+		}
+
+		&:focus {
+			outline: none;
+		}
+
+		&:focus-visible {
+			box-shadow: var(--bs-focus-ring-x, 0) var(--bs-focus-ring-y, 0) var(--bs-focus-ring-blur, 0) var(--bs-focus-ring-width) rgba(var(--bs-emphasis-color-rgb), 0.5)
+		}
+	}
+
+	&__ctas .e-link-in-bio__cta {
+		font-size: var(--bs-body-font-size);
+		line-height: var(--enlightenment-btn-line-height);
+		transition: box-shadow 0.15s ease, opacity 0.15s ease;
+
+		&.is-type-button.has-corners-rounded {
+			--e-link-in-bio-ctas-border-radius: var(--bs-border-radius-xl);
+		}
+
+		&.is-type-link {
+			--e-link-in-bio-ctas-text-color: var(--bs-link-color);
+		}
+
+		&:hover {
+			opacity: 0.875;
+		}
+
+		&:active,
+		&:focus {
+			opacity: 0.75;
+		}
+
+		&:focus {
+			outline: none;
+		}
+
+		&:focus-visible {
+			box-shadow: var(--bs-focus-ring-x, 0) var(--bs-focus-ring-y, 0) var(--bs-focus-ring-blur, 0) var(--bs-focus-ring-width) rgba(var(--bs-primary-rgb), 0.5)
+		}
+	}
+}

@@ -1,0 +1,20 @@
+.wp-block-jetpack-gif {
+    &.alignleft {
+        margin-right: 1.5em;
+    }
+
+    &.alignright {
+        margin-left: 1.5em;
+    }
+
+    figure {
+        .wp-block-jetpack-gif-caption {
+            margin-top: .5rem;
+            margin-bottom: 0;
+            color: var(--enlightenment-accent-color);
+            font-family: var(--enlightenment-body-font-family);
+            font-size: var(--enlightenment-font-size-sm);
+            text-align: center;
+        }
+    }
+}

@@ -1,0 +1,75 @@
+.wp-block-button.wc-block-components-product-button {
+	border-radius: 0;
+
+	.btn.has-background {
+		border-color: transparent;
+	}
+
+	.btn-group {
+		& > .btn-group:not(:first-child) > .btn,
+		& > .btn:not(:first-child) {
+			border-top-left-radius: 0;
+		    border-bottom-left-radius: 0;
+		}
+
+		& > .btn-group:not(:last-child) > .btn,
+		& > .btn:not(:last-child) {
+			border-top-right-radius: 0;
+		    border-bottom-right-radius: 0;
+		}
+
+		&:has(span[hidden]) > .btn:not(:last-child) {
+			border-top-right-radius: 1rem;
+		    border-bottom-right-radius: 1rem;
+		}
+	}
+
+	&[data-font-size] .btn,
+	&[data-style*="&quot;fontSize&quot;"] .btn,
+	.btn.has-font-size {
+		border-radius: var(--bs-border-radius);
+	}
+
+	&[data-font-size] .btn-group:has(span[hidden]) > .btn,
+	&[data-style*="&quot;fontSize&quot;"] .btn-group:has(span[hidden]) > .btn {
+		border-top-right-radius: var(--bs-border-radius);
+		border-bottom-right-radius: var(--bs-border-radius);
+	}
+
+	&[data-font-size="small"] .btn {
+		font-size: var(--wp--preset--font-size--small);
+	}
+
+	&[data-font-size="medium"] .btn {
+		font-size: var(--wp--preset--font-size--medium);
+	}
+
+	&[data-font-size="large"] .btn {
+		font-size: var(--wp--preset--font-size--large);
+	}
+
+	&[data-font-size="large"] .btn {
+		font-size: var(--wp--preset--font-size--large);
+	}
+
+	&[data-font-size="x-large"] .btn {
+		font-size: var(--wp--preset--font-size--x-large);
+	}
+
+	.btn[style*="margin-bottom:"] + .btn-group {
+		align-self: flex-start;
+	}
+
+	&[data-font-size] .btn .fa-spinner {
+		font-size: inherit;
+	}
+}
+
+.wp-block-query .row > .wp-block-post.type-product > .wc-block-components-product-button {
+	margin-bottom: .5rem;
+
+	& + .wp-block-spacer {
+		margin-top: -.5rem;
+		margin-bottom: 0;
+	}
+}

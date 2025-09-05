@@ -1,0 +1,15 @@
+.tribe-editor__tickets__inner-blocks {
+    .wp-block {
+        margin: 0;
+
+        &:not(:first-child) {
+            .tribe-editor__ticket {
+                border-top-width: 0;
+            }
+        }
+    }
+}
+
+.tribe-editor__ticket {
+    margin: 0;
+}

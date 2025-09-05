@@ -1,0 +1,14 @@
+@media (min-width: 992px) {
+    .post-type-post {
+        .editor-styles-wrapper {
+            .wp-block[data-type="core/image"] {
+                &[data-align="wide"],
+                &[data-align="full"] {
+                    .wp-block-image > figcaption {
+                        max-width: 720px;
+                    }
+                }
+            }
+        }
+    }
+}

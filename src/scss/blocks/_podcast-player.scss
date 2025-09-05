@@ -1,0 +1,44 @@
+.wp-block-jetpack-podcast-player {
+	font-family: var(--enlightenment-body-font-family);
+    font-size: var(--enlightenment-font-size-sm);
+
+	&.wp-block-jetpack-podcast-player {
+		overflow: visible;
+	}
+
+	.jetpack-podcast-player.jetpack-podcast-player {
+		--jetpack-podcast-player-primary: var(--bs-heading-color);
+		--jetpack-podcast-player-secondary: var(--bs-body-color);
+		--jetpack-podcast-player-background: var(--bs-body-bg);
+		
+		border-radius: var(--bs-border-radius);
+
+		&:not(.has-background) {
+			background-color: var(--bs-body-bg);
+			box-shadow: inset 0 0 0 var(--bs-border-width) var(--bs-border-color);
+		}
+
+		&:not(.has-secondary) {
+			color: var(--bs-body-color);
+		}
+
+		.jetpack-podcast-player__current-track-title:not(.has-primary) {
+			color: var(--bs-heading-color);
+		}
+
+		.jetpack-podcast-player__track:not(.is-active):not(.has-secondary) {
+			color: var(--bs-body-color);
+		}
+
+		.jetpack-podcast-player__track.is-active:not(.has-primary) {
+			color: var(--bs-heading-color);
+		}
+	}
+
+	.jetpack-audio-player .mejs-controls {
+		.mejs-horizontal-volume-slider .mejs-horizontal-volume-total,
+		.mejs-time-rail .mejs-time-total {
+			background-color: rgba(var(--bs-emphasis-color-rgb), 0.5);
+		}
+	}
+}

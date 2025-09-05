@@ -1,0 +1,37 @@
+.wp-block-bp-dynamic-members,
+.wp-block-bp-friends,
+.wp-block-bp-dynamic-groups {
+	font-family: var(--enlightenment-body-font-family);
+    font-size: var(--enlightenment-body-font-size);
+
+	.widget-title {
+		font-size: 1.75rem;
+	}
+}
+
+.bp-dynamic-block-container {
+	display: flex;
+	flex-wrap: wrap;
+	align-items: baseline;
+	column-gap: 0.5rem;
+	justify-content: space-between;
+	width: 100%;
+
+	.widget-title {
+		font-size: 1.25rem;
+	}
+}
+
+@media (min-width: 768px) {
+	.wp-block-bp-dynamic-members,
+	.wp-block-bp-friends,
+	.wp-block-bp-dynamic-groups {
+		.widget-title {
+			font-size: 2rem;
+
+			.wp-block-columns > .w-100 > .row > div:not(:only-child) & {
+				font-size: 1.25rem;
+			}
+		}
+	}
+}

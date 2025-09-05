@@ -1,0 +1,12 @@
+.elementor-widget-woocommerce-product-short-description {
+	.woocommerce-product-details__short-description {
+		color: var(--enlightenment-product-summary-color);
+	    font-size: var(--enlightenment-product-summary-font-size);
+		font-weight: var(--enlightenment-product-summary-font-weight);
+
+		.entry-summary {
+			margin-top: 0;
+			color: inherit;
+		}
+	}
+}

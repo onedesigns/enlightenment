@@ -1,0 +1,20 @@
+.elementor-widget-code-highlight .prismjs-default {
+	:not(pre)>code[class*="language-"],
+	pre[class*="language-"] {
+		background-color: var(--bs-tertiary-bg);
+	}
+
+	code[class*="language-"],
+	pre[class*="language-"] {
+		color: var(--bs-body-color);
+		text-shadow: none;
+	}
+
+	.line-numbers .line-numbers-rows {
+		border-right-color: var(--bs-border-color);
+	}
+
+	.line-numbers-rows > span::before {
+		color: var(--enlightenment-accent-color);
+	}
+}

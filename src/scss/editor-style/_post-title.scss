@@ -1,0 +1,16 @@
+.wp-block-post-title.wp-block-post-title.wp-block-post-title {
+	margin-top: revert;
+	margin-bottom: -.5rem;
+
+	@media (min-width: 1200px) {
+		margin-bottom: -1.5rem;
+	}
+
+	a {
+		color: inherit;
+	}
+
+	&[style*="text-decoration:"] a {
+		text-decoration: inherit;
+	}
+}

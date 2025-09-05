@@ -1,0 +1,54 @@
+/*!**********************************************************************************************************************!*\
+  !*** css ./node_modules/css-loader/dist/cjs.js!./node_modules/sass-loader/dist/cjs.js!./src/scss/editor-panels.scss ***!
+  \**********************************************************************************************************************/
+.enlightenment-controls + .enlightenment-controls {
+  margin-top: 12px;
+}
+.enlightenment-controls .components-base-control__label {
+  font-weight: 500;
+}
+.enlightenment-controls__image-position .components-base-control__label, .enlightenment-controls__header-overlay .components-base-control__label {
+  display: inline-block;
+  padding: 0;
+  margin-bottom: 8px;
+  font-size: 11px;
+  line-height: 1.4;
+  text-transform: uppercase;
+}
+.enlightenment-controls__image-style .enlightenment-image-radio .components-radio-control__option {
+  flex-basis: 33.3333333333%;
+  max-width: 33.3333333333%;
+}
+.enlightenment-controls__image-position .enlightenment-image-radio .components-radio-control__option {
+  flex-basis: 1.75rem;
+  max-width: 1.75rem;
+}
+.enlightenment-controls__image-position .enlightenment-image-radio .components-radio-control__input {
+  top: 0;
+  left: 4px;
+}
+.enlightenment-controls__image-position .enlightenment-image-radio .components-base-control__field {
+  max-width: 84px;
+  margin-top: -8px;
+  margin-left: -4px;
+  margin-right: -4px;
+}
+.enlightenment-controls__image-position .enlightenment-image-radio .components-base-control__label,
+.enlightenment-controls__image-position .enlightenment-image-radio .components-radio-control__option {
+  padding-left: 4px;
+  padding-right: 4px;
+  margin-top: 8px;
+}
+.enlightenment-controls__image-position .enlightenment-image-radio .components-base-control__label {
+  white-space: nowrap;
+}
+.enlightenment-controls__image-position .enlightenment-image-radio.enlightenment-image-radio__option-0-is-text .components-radio-control__option:nth-child(1), .enlightenment-controls__image-position .enlightenment-image-radio.enlightenment-image-radio__option-0-is-text label ~ .components-radio-control__option:nth-child(2) {
+  white-space: nowrap;
+}
+.enlightenment-controls__image-position .enlightenment-image-radio .components-radio-control__input + label {
+  padding: 0;
+  border: none;
+}
+.enlightenment-controls__image-position .enlightenment-image-radio .components-radio-control__input:checked + label {
+  color: #2271b1;
+}

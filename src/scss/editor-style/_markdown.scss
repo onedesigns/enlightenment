@@ -1,0 +1,114 @@
+.block-editor-block-list__block .wp-block-jetpack-markdown__preview {
+    line-height: 1.6;
+
+    & > * {
+        margin-top: 1rem;
+        margin-bottom: 1rem;
+    }
+
+    h1, h2, h3, h4, h5, h6 {
+        line-height: 1.2;
+    }
+
+    h1 {
+        font-size: 2.5rem;
+    }
+
+    h2 {
+        font-size: 2rem;
+    }
+
+    h3 {
+        font-size: 1.75rem;
+    }
+
+    h4 {
+        font-size: 1.25rem;
+    }
+
+    h5 {
+        font-size: 1.25rem;
+    }
+
+    h6 {
+        font-size: var(--enlightenment-body-font-size);
+    }
+
+    ol,
+    ul {
+        padding-left: 40px;
+        margin-left: 0;
+    }
+
+    blockquote {
+        position: relative;
+        padding-left: 1.5rem;
+        margin-left: -1.5rem;
+        border-left: none;
+        font-size: 1.25rem;
+
+        &::before {
+            content: "";
+            position: absolute;
+            top: 0;
+            left: 0;
+            bottom: 0;
+            width: 3px;
+            background-color: #292929;
+        }
+
+        blockquote {
+            margin-left: 0;
+        }
+    }
+
+    code {
+        padding: 0;
+        border-radius: 0;
+        background: none;
+        color: #e83e8c;
+        font-size: 87.5%;
+        word-wrap: break-word;
+    }
+}
+
+@media (min-width: 1200px) {
+    .block-editor-block-list__block .wp-block-jetpack-markdown__preview > {
+        h1, h2, h3, h4, h5, h6 {
+            margin-top: 3rem;
+
+            &:first-child {
+                margin-top: 0;
+            }
+        }
+
+        p,
+        ul,
+        ol,
+        dl,
+        blockquote,
+        table,
+        pre {
+            margin-bottom: 2rem;
+        }
+
+        hr {
+            margin-top: 2rem;
+            margin-bottom: 2rem;
+        }
+
+        pre {
+            padding: 0;
+            border: none;
+            border-radius: 0;
+            font-family: var(--enlightenment-font-monospace);
+            font-size: var(--enlightenment-font-size-sm);
+
+            code {
+                color: inherit;
+                font-size: inherit;
+                word-break: normal;
+            }
+        }
+    }
+}

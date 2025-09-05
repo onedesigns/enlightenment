@@ -1,0 +1,224 @@
+[data-type="core/latest-posts"] + [data-type="core/latest-posts"] {
+    margin-top: 2rem;
+}
+
+.wp-block-latest-posts {
+    font-family: var(--enlightenment-body-font-family);
+
+    & > li::after {
+        content: "";
+        display: table;
+        width: 100%;
+        clear: both;
+    }
+
+    &.wp-block-latest-posts__list > li + li {
+        margin-top: 2rem;
+    }
+
+    &.is-grid {
+        li + li {
+            margin-top: 0;
+        }
+
+        &.columns-2 {
+            li + li + li {
+                margin-top: 2rem;
+            }
+        }
+
+        &.columns-3 {
+            li + li + li + li {
+                margin-top: 2rem;
+            }
+        }
+
+        &.columns-4 {
+            li + li + li + li + li {
+                margin-top: 2rem;
+            }
+        }
+
+        &.columns-5 {
+            li + li + li + li + li + li {
+                margin-top: 2rem;
+            }
+        }
+
+        &.columns-6 {
+            li + li + li + li + li + li + li {
+                margin-top: 2rem;
+            }
+        }
+    }
+
+    .wp-block-latest-posts__featured-image {
+        &.alignleft {
+            margin-right: 1.25rem;
+        }
+
+        &.aligncenter {
+            margin-bottom: 1.25rem;
+        }
+    }
+
+    li > a {
+        font-size: var(--enlightenment-body-font-size);
+		text-decoration-line: none;
+
+        &:not(:only-child) {
+            display: block;
+            margin-bottom: .5rem;
+            color: inherit;
+            font-size: 1.5rem;
+            font-weight: 700;
+            line-height: 1.2;
+        }
+
+        &:last-child {
+            margin-bottom: 0;
+        }
+
+        &:only-child::before {
+            content: "";
+            display: block;
+            width: 100%;
+        }
+    }
+
+    &:not(.is-grid) li {
+        position: relative;
+        line-height: 1.5rem;
+
+        & + li {
+            & > a:only-child::before {
+                margin-top: -1.125rem;
+            }
+        }
+    }
+
+    .wp-block-latest-posts__post-date {
+        margin-bottom: .5rem;
+        color: var(--enlightenment-accent-color);
+        font-size: var(--enlightenment-font-size-sm);
+
+        &:last-child {
+            margin-bottom: 0;
+        }
+    }
+
+    .wp-block-latest-posts__featured-image {
+        &.aligncenter + a + .wp-block-latest-posts__post-date {
+            margin-bottom: 1.25rem;
+
+            &:last-child {
+                margin-bottom: 0;
+            }
+        }
+
+        img {
+            display: block;
+        }
+    }
+
+    .wp-block-latest-posts__post-excerpt,
+    .wp-block-latest-posts__post-full-content {
+        margin-top: 0;
+        margin-bottom: 0;
+        font-size: var(--enlightenment-body-font-size);
+        overflow: hidden;
+    }
+
+    .wp-block-latest-posts__post-full-content {
+        p {
+            margin-top: 0;
+            margin-bottom: 1rem;
+        }
+
+        :last-child {
+            margin-bottom: 0;
+        }
+    }
+}
+
+.wp-block-columns .wp-block-latest-posts {
+    li > a {
+        font-size: 1.75rem;
+    }
+
+    .wp-block-latest-posts__featured-image.alignleft {
+        max-width: 75px;
+
+        & + a {
+            margin-bottom: .25rem;
+            font-size: 1.125rem;
+        }
+    }
+}
+
+@media (min-width: 576px) {
+    .wp-block-latest-posts.is-grid {
+        li {
+            line-height: 1.5rem;
+        }
+
+        li + li {
+            margin-top: 0;
+        }
+
+        &.columns-2 {
+            li + li + li {
+                margin-top: 2rem;
+
+                & > a:only-child::before {
+                    margin-top: -1.125rem;
+                }
+            }
+        }
+
+        &.columns-3 {
+            li + li + li + li {
+                margin-top: 2rem;
+
+                & > a:only-child::before {
+                    margin-top: -1.125rem;
+                }
+            }
+        }
+
+        &.columns-4 {
+            li + li + li + li + li {
+                margin-top: 2rem;
+
+                & > a:only-child::before {
+                    margin-top: -1.125rem;
+                }
+            }
+        }
+
+        &.columns-5 {
+            li + li + li + li + li + li {
+                margin-top: 2rem;
+
+                & > a:only-child::before {
+                    margin-top: -1.125rem;
+                }
+            }
+        }
+
+        &.columns-6 {
+            li + li + li + li + li + li + li {
+                margin-top: 2rem;
+
+                & > a:only-child::before {
+                    margin-top: -1.125rem;
+                }
+            }
+        }
+    }
+
+    .wp-block-columns .wp-block-latest-posts.is-grid li > a {
+        margin-bottom: .25rem;
+        font-size: 1.125rem;
+    }
+}

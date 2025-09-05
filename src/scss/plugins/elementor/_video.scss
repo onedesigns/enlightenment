@@ -1,0 +1,20 @@
+.elementor-widget-video {
+    .elementor-custom-embed-image-overlay {
+        .elementor-custom-embed-play {
+            opacity: .6;
+            transition: opacity .15s ease-in-out;
+        }
+
+        &:hover .elementor-custom-embed-play {
+            opacity: .8;
+
+            &:hover {
+                opacity: 1;
+            }
+
+            &:active {
+                opacity: .6;
+            }
+        }
+    }
+}

@@ -1,0 +1,35 @@
+.elementor-widget-woocommerce-product-add-to-cart {
+	div.elementor-add-to-cart.elementor-add-to-cart {
+		.stock {
+			margin-top: 0;
+			margin-bottom: 1rem;
+		}
+
+		.quantity input.qty {
+			height: calc(1.5em + .75rem + 2px);
+			margin-right: .25rem;
+		}
+	}
+
+	&.elementor-add-to-cart--layout-stacked {
+		button {
+			margin-left: 0 !important;
+		}
+	}
+
+	&.elementor-add-to-cart--layout-auto {
+		.e-atc-qty-button-holder {
+			flex-wrap: wrap !important;
+			width: 100%;
+		}
+
+		button,
+		#wc-stripe-payment-request-button-separator {
+			white-space: nowrap;
+		}
+	}
+
+	form.cart + .wcpay-payment-request-wrapper {
+		margin-top: 1rem;
+	}
+}

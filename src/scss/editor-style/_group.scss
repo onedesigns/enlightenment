@@ -1,0 +1,113 @@
+.wp-block-group {
+	gap: 1rem;
+
+	&.has-background {
+	    padding: 1rem;
+
+		.block-editor-block-list__layout.is-root-container & {
+			padding: 2rem;
+		}
+	}
+
+	& > .wp-block:not(.wp-block-group__inner-container) {
+		margin-left: 0 !important;
+		margin-right: 0 !important;
+	}
+
+	&.is-layout-flex,
+	&.is-layout-grid,
+	& > .container.is-layout-flex,
+	& > .container.is-layout-grid {
+		& > .wp-block {
+			margin-top: 0 !important;
+			margin-bottom: 0 !important;
+		}
+	}
+}
+
+.wp-block[data-align="full"] {
+	& > .wp-block-group.has-background {
+	    padding-left: 0;
+	    padding-right: 0;
+	}
+
+	& > .wp-block-group {
+		&:not(:has(> .wp-block-group__inner-container))  {
+			padding-right: calc(var(--bs-gutter-x) * .5);
+			padding-left: calc(var(--bs-gutter-x) * .5);
+		}
+	}
+
+	& > .wp-block-group {
+		&:not(:has(> .wp-block-group__inner-container)),
+		& > .wp-block-group__inner-container {
+			@media (min-width: 1400px) {
+				max-width: 1140px;
+			}
+		}
+	}
+
+	& > .wp-block-group > .wp-block {
+		padding-left: 0;
+	    padding-right: 0;
+	}
+}
+
+.wp-block-group__inner-container .wp-block {
+	max-width: none !important;
+}
+
+@media (min-width: 1200px) {
+    .block-editor-block-list__layout.is-root-container {
+		&.has-background {
+			padding: 2rem;
+
+			& > .wp-block-group__inner-container {
+				margin-top: -2rem;
+				margin-bottom: -2rem;
+			}
+		}
+
+		& > .wp-block-group,
+		& > .wp-block[data-align] > .wp-block-group {
+			&.is-layout-flex,
+			&.is-layout-grid,
+			& > .container.is-layout-flex,
+			& > .container.is-layout-grid {
+				gap: 2rem;
+			}
+
+			& > .wp-block-group__inner-container {
+				& > .wp-block,
+				& > [class^="wp-block-"],
+				& > [class*=" wp-block-"],
+				& > [class^="wc-block-"],
+				& > [class^="bp-block-"],
+			    & > div[class=""] > .wp-block-video,
+				& > div:not([class]) > .wp-block-jetpack-podcast-player,
+				.jetpack-portfolio-shortcode,
+				.jetpack-testimonial-shortcode {
+					margin-top: 2rem;
+					margin-bottom: 2rem;
+				}
+
+				& > {
+					.h1, .h2, .h3, .h4, .h5, .h6,
+					h1, h2, h3, h4, h5, h6 {
+					    &[data-type="core/heading"] {
+					        margin-bottom: -1.5rem;
+					    }
+					}
+				}
+
+				& > :first-child {
+					margin-top: 0;
+				}
+
+				& > :last-child {
+					margin-bottom: 0;
+				}
+			}
+		}
+	}
+}

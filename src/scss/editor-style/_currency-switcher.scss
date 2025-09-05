@@ -1,0 +1,43 @@
+.wp-block-currency-switcher {
+	.select2-container {
+		height: 38px;
+
+		.select2-selection--single {
+			height: 38px;
+		}
+	}
+
+	.select2-container--default .select2-selection--single {
+		border-color: var(--bs-border-color);
+		border-radius: var(--bs-border-radius);
+
+		&:hover {
+		    border-color: #80bdff;
+		}
+	}
+
+	.select2-container--default.select2-container--open .select2-selection--single,
+	.select2-container--default.select2-container--focus .select2-selection--single {
+		border-color: #80bdff;
+	}
+
+	.select2.select2-container--default .select2-selection--single {
+		.select2-selection__rendered {
+			padding-left: .75rem;
+			padding-right: 2rem;
+			color: var(--bs-body-color);
+			font-size: var(--enlightenment-body-font-size);
+			line-height: 36px;
+		}
+
+		.select2-selection__arrow {
+			width: 26px;
+			margin-top: 3px;
+		}
+	}
+
+	.select2-container--default.select2-container--open.select2-container--above .select2-selection--single,
+	.select2-container--default.select2-container--open.select2-container--below .select2-selection--single {
+		border-radius: var(--bs-border-radius);
+	}
+}

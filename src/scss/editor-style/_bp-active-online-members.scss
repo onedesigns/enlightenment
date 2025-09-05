@@ -1,0 +1,24 @@
+[data-type="bp/active-members"],
+[data-type="bp/online-members"] {
+	.widget-title {
+		font-size: 1.25rem;
+
+		@media (min-width: 768px) {
+			font-size: 2rem;
+
+			.wp-block-column:not(:only-child) & {
+				font-size: 1.25rem;
+			}
+		}
+	}
+	
+	.avatar-block {
+		margin: -.25rem;
+
+		img {
+			max-width: 3rem;
+			margin: .25rem;
+			border-radius: 50%;
+		}
+	}
+}

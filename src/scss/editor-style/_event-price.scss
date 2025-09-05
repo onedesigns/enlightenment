@@ -1,0 +1,40 @@
+.block-editor-block-list__layout {
+    & > [data-type="tribe/event-datetime"]:first-child {
+        & + [data-type="tribe/event-price"] {
+            margin-top: -1rem;
+        }
+    }
+}
+
+@media (min-width: 1200px) {
+    .block-editor-block-list__layout {
+        & > [data-type="tribe/event-datetime"]:first-child {
+            & + [data-type="tribe/event-price"] {
+                margin-top: -2rem;
+            }
+        }
+    }
+}
+
+.tribe-editor__event-price__price {
+    display: block;
+    font-family: var(--enlightenment-body-font-family);
+
+    .tribe-editor__event-price__currency {
+        margin: 0;
+        color: #fd000d;
+        font-size: 1.25rem;
+    }
+
+    .tribe-editor__event-price__cost {
+        color: #fd000d;
+        font-size: 1.25rem;
+    }
+
+    .tribe-editor__event-price__description {
+        margin-left: .375rem;
+        color: var(--enlightenment-accent-color);
+        font-size: var(--enlightenment-font-size-sm);
+        font-weight: 300;
+    }
+}

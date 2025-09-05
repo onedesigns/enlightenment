@@ -1,0 +1,176 @@
+.gm-scrollbar {
+	display: flex;
+	border-radius: 0;
+
+	.main-navigation & {
+		z-index: 1002;
+	}
+
+	.gm-scrollbar-container.gm-autoshow > &,
+	.gm-scrollbar-container.gm-autoshow:hover > &,
+	.gm-scrollbar-container.gm-autoshow:active > &,
+	.gm-scrollbar-container.gm-autoshow:focus > & {
+		opacity: 0;
+		pointer-events: none;
+		transition:
+			width 0s ease-in 0.7s,
+			height 0s ease-in 0.7s,
+			padding 0s ease-in 0.7s,
+			border-color 0s ease-in 0.7s,
+			background-color 0s ease-in 0.7s,
+			opacity 0.2s ease-in 0.5s;
+	}
+
+	&.-vertical {
+		top: 3px;
+		bottom: 3px;
+		right: 0;
+		justify-content: flex-end;
+		width: 9px;
+		padding-left: 2px;
+		padding-right: 2px;
+		border-left: 1px solid transparent;
+		border-right: 1px solid transparent;
+
+		.gm-scrollbar-container.gm-autoshow.gm-has-vertical-scroll.gm-is-scrolling > &,
+		.gm-scrollbar-container.gm-autoshow.gm-has-vertical-scroll.gm-is-scrolling:hover > &,
+		.gm-scrollbar-container.gm-autoshow.gm-has-vertical-scroll.gm-is-scrolling:active > &,
+		.gm-scrollbar-container.gm-autoshow.gm-has-vertical-scroll.gm-is-scrolling:focus > & {
+			opacity: 1;
+			pointer-events: auto;
+			transition: none;
+		}
+
+		.gm-scrollbar-container.gm-has-hovered-vertical & {
+			width: 14px;
+		}
+
+		@media (min-width: 768px) {
+			top: 2px;
+			bottom: 2px;
+			width: 11px;
+			padding-left: 1px;
+			padding-right: 1px;
+
+			.gm-scrollbar-container.gm-has-hovered-vertical & {
+				width: 16px;
+				padding-left: 2px;
+				border-left-color: rgba(var(--bs-emphasis-color-rgb), 0.115);
+				border-right-color: rgba(var(--bs-emphasis-color-rgb), 0.055);
+				background-color: rgba(var(--bs-emphasis-color-rgb), 0.02);
+				transition:
+					border-color 0.2s ease-in 0.1s,
+					background-color 0.2s ease-in 0.1s !important;
+
+				[data-bs-theme="dark"] & {
+					border-left-color: rgba(var(--bs-emphasis-color-rgb), 0.175);
+					border-right-color: rgba(var(--bs-emphasis-color-rgb), 0.12);
+					background-color: rgba(var(--bs-emphasis-color-rgb), 0.117);
+				}
+			}
+		}
+	}
+
+	&.-horizontal {
+		left: 3px;
+		right: 3px;
+		bottom: 0;
+		align-items: flex-end;
+		height: 9px;
+		padding-top: 2px;
+		padding-bottom: 2px;
+		border-top: 1px solid transparent;
+		border-bottom: 1px solid transparent;
+
+		.gm-scrollbar-container.gm-autoshow.gm-has-horizontal-scroll.gm-is-scrolling > &,
+		.gm-scrollbar-container.gm-autoshow.gm-has-horizontal-scroll.gm-is-scrolling:hover > &,
+		.gm-scrollbar-container.gm-autoshow.gm-has-horizontal-scroll.gm-is-scrolling:active > &,
+		.gm-scrollbar-container.gm-autoshow.gm-has-horizontal-scroll.gm-is-scrolling:focus > & {
+			opacity: 1;
+			pointer-events: auto;
+			transition: none;
+		}
+
+		.gm-scrollbar-container.gm-has-hovered-horizontal & {
+			height: 14px;
+		}
+
+		@media (min-width: 768px) {
+			left: 2px;
+			right: 2px;
+			height: 11px;
+			padding-top: 1px;
+			padding-bottom: 1px;
+
+			.gm-scrollbar-container.gm-has-hovered-horizontal & {
+				height: 16px;
+				padding-top: 2px;
+				border-top-color: rgba(var(--bs-emphasis-color-rgb), 0.115);
+				border-bottom-color: rgba(var(--bs-emphasis-color-rgb), 0.055);
+				background-color: rgba(var(--bs-emphasis-color-rgb), 0.02);
+				transition:
+					border-color 0.2s ease-in 0.1s,
+					background-color 0.2s ease-in 0.1s !important;
+
+				[data-bs-theme="dark"] & {
+					border-top-color: rgba(var(--bs-emphasis-color-rgb), 0.175);
+					border-bottom-color: rgba(var(--bs-emphasis-color-rgb), 0.12);
+					background-color: rgba(var(--bs-emphasis-color-rgb), 0.117);
+				}
+			}
+		}
+	}
+
+	.thumb {
+		cursor: default;
+		border-radius: 999em;
+
+		&,
+		&:hover,
+		&:active {
+			background-color: rgba(var(--bs-emphasis-color-rgb), 0.5);
+		}
+	}
+
+	&.-vertical .thumb {
+		width: 3px;
+		transition: width 0s ease-in 0.7s;
+
+		.gm-scrollbar-container.gm-autoshow.gm-is-scrolling & {
+			transition: width 0.3s ease-out 0.1s;
+		}
+
+		.gm-scrollbar-container.gm-has-hovered-vertical & {
+			width: 8px;
+		}
+
+		@media (min-width: 768px) {
+			width: 7px;
+
+			.gm-scrollbar-container.gm-has-hovered-vertical & {
+				width: 11px;
+			}
+		}
+	}
+
+	&.-horizontal .thumb {
+		height: 3px;
+		transition: height 0s ease-in 0.7s;
+
+		.gm-scrollbar-container.gm-autoshow.gm-is-scrolling & {
+			transition: height 0.3s ease-out 0.1s;
+		}
+
+		.gm-scrollbar-container.gm-has-hovered-vertical & {
+			height: 8px;
+		}
+
+		@media (min-width: 768px) {
+			height: 7px;
+
+			.gm-scrollbar-container.gm-has-hovered-horizontal & {
+				height: 11px;
+			}
+		}
+	}
+}

@@ -1,0 +1,23 @@
+.elementor-button.elementor-flip-box__button {
+    border-width: 1px;
+    transition: color .15s ease-in-out, background-color .15s ease-in-out, border-color .15s ease-in-out, box-shadow .15s ease-in-out, opacity .25s ease;
+
+    &:hover {
+        background-color: transparent;
+        border-color: #fff;
+        color: #fff;
+        opacity: .8;
+    }
+
+    &:active,
+    &:not(:disabled):active {
+        border-color: #fff;
+        // background-color: transparent;
+        opacity: .6;
+    }
+
+    &:focus-visible,
+    &:not(:disabled):active:focus-visible {
+        box-shadow: var(--bs-focus-ring-x, 0) var(--bs-focus-ring-y, 0) var(--bs-focus-ring-blur, 0) var(--bs-focus-ring-width) rgba(255,255,255,.5);
+    }
+}

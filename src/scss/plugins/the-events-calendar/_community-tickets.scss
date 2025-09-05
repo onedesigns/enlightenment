@@ -1,0 +1,769 @@
+.tribe-section-content {
+    position: relative;
+}
+
+.tribe-tickets-editor-blocker {
+    display: none;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    z-index: 100000;
+    background: rgba(var(--bs-body-bg-rgb), 0.7);
+
+    .spinner {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        margin: -1.5rem 0 0 -1.5rem;
+        color: #fd000d;
+        font-size: 3rem;
+    }
+}
+
+.ticket_table_intro {
+    .text-body-secondary {
+        i {
+            font-style: normal;
+        }
+    }
+}
+
+@media (max-width: 767.98px) {
+    .ticket_table_intro {
+        display: flex;
+        flex-wrap: wrap;
+
+        .text-body-secondary {
+            width: 100%;
+            margin-bottom: .5rem;
+        }
+
+        .btn:not(:last-child) {
+            order: 1;
+        }
+    }
+}
+
+.ticket_form_label {
+    font-size: inherit;
+}
+
+.tribe-tickets-editor-table {
+    th,
+    td {
+        white-space: nowrap;
+    }
+
+    .tribe-handle {
+        color: rgba(0,0,0,.15);
+        cursor: move;
+
+        &::before {
+            display: inline-block;
+            min-width: 1rem;
+            text-align: center;
+        }
+    }
+
+	.ticket_price {
+		ins {
+			font-weight: 600;
+			text-decoration-line: none;
+		}
+
+		del {
+			color: var(--enlightenment-accent-color);
+		}
+	}
+
+    .ticket_edit {
+        text-align: center;
+    }
+
+    .ticket_edit button {
+        padding: 0;
+        border: none;
+        background: none;
+        -webkit-appearance: none;
+        -moz-appearance: none;
+        appearance: none;
+        transition: color .25s ease;
+
+        &:hover {
+            color: var(--enlightenment-accent-color);
+        }
+
+        &:focus {
+            color: var(--bs-link-color);
+            outline: none;
+        }
+
+		&.ticket_delete {
+			color: #fd000d;
+
+			&:hover {
+				color: #bb2d3b;
+			}
+
+			&:focus {
+				color: #b02a37;
+			}
+		}
+
+        &::before {
+            display: inline-block;
+            font-family: var(--enlightenment-font-icons);
+            font-style: normal;
+            font-variant: normal;
+            font-weight: 400;
+            text-rendering: auto;
+            line-height: 1;
+            -moz-osx-font-smoothing: grayscale;
+            -webkit-font-smoothing: antialiased;
+        }
+
+		&.ticket_edit_button::before {
+			content: "\f044";
+			font-weight: 900;
+		}
+
+		&.ticket_duplicate::before {
+			content: "\f24d";
+		}
+
+		&.ticket_delete::before {
+			content: "\f2ed";
+		}
+
+		& + button {
+			margin-left: .5rem;
+		}
+
+		span {
+			font-size: 0;
+		}
+    }
+}
+
+.tribe-button-icon::before {
+    display: inline-block;
+    font-family: var(--enlightenment-font-icons);
+    font-style: normal;
+    font-variant: normal;
+    font-weight: 900;
+    text-rendering: auto;
+    line-height: 1;
+    -moz-osx-font-smoothing: grayscale;
+    -webkit-font-smoothing: antialiased;
+}
+
+.tribe-button-icon-plus::before {
+    content: "\f067";
+}
+
+.tribe-button-icon-settings::before {
+    content: "\f013";
+}
+
+.tribe-button-icon-edit::before {
+    content: "\f044";
+	margin-right: .25rem;
+}
+
+.tribe-warning-toggle {
+    padding-top: .375rem;
+    padding-bottom: .375rem;
+    color: #fd000d;
+    font-size: var(--enlightenment-font-size-sm);
+    line-height: 1.25rem;
+
+    .fas {
+        margin-right: .25rem;
+    }
+}
+
+.recurring-warning {
+    .fas {
+        position: absolute;
+        font-size: 1.5rem;
+    }
+
+    .recurring-warning-msg {
+        padding-left: 2rem;
+    }
+}
+
+.ticket_panel[aria-hidden="true"] {
+    display: none;
+    // opacity: 0;
+    // position: absolute;
+    // visibility: hidden;
+}
+
+.ticket_panel .ticket_form .ticket_form_title {
+    margin-top: 0;
+}
+
+.tribe_soft_note {
+    &[data-depends="#Tribe__Tickets__RSVP_radio"] {
+        display: none;
+    }
+
+    &.tribe-active[data-depends="#Tribe__Tickets__RSVP_radio"] {
+        display: block;
+    }
+}
+
+@media (min-width: 576px) {
+	.ticket_form_right.align-items-sm-center {
+		align-items: flex-start !important;
+
+		.datetime_seperator,
+		.datetime_separator,
+		.fa-question-circle {
+			line-height: calc(2.25rem + 2px);
+		}
+	}
+}
+
+.ticket_form .price {
+    color: inherit;
+    font-weight: inherit;
+}
+
+.tribe-ticket-field-capacity {
+    & + .tribe-description-small .tribe-ticket-capacity-max {
+        display: none;
+    }
+
+    &[max]:not([max=""]) + .tribe-description-small .tribe-ticket-capacity-max {
+        display: inline;
+    }
+}
+
+[data-bs-theme="dark"] {
+	.ticket_form,
+	.tribe_ticket_list_table {
+		.tec-tickets-icon__ticket-type {
+			filter: invert(1);
+		}
+	}
+}
+
+.eventtable.ticket_form {
+	.accordion-item {
+		border: none;
+		border-radius: 0;
+		background-color: transparent;
+
+		& + .accordion-item {
+			margin-top: 1rem;
+		}
+	}
+
+	.accordion-button {
+	    display: flex;
+	    align-items: center;
+	    width: 100%;
+	    padding: 0;
+	    border: none;
+		border-radius: 0;
+		box-shadow: none;
+	    background: none;
+	    font-size: var(--enlightenment-font-size-sm);
+	    text-align: left;
+	    white-space: nowrap;
+	    -webkit-appearance: none;
+	    -moz-appearance: none;
+	    appearance: none;
+
+		&.collapsed {
+			border-radius: 0;
+		}
+
+		&:not(.collapsed) {
+			color: var(--bs-body-color);
+		}
+
+		&:hover {
+			color: var(--bs-link-color);
+		}
+
+		&:active {
+			color: var(--bs-link-hover-color);
+		}
+
+	    &:focus {
+	        outline: none;
+	    }
+
+	    &::before {
+	        content: "\f055";
+	        display: inline-block;
+	        margin-right: .5rem;
+	        font-family: var(--enlightenment-font-icons);
+	        font-style: normal;
+	        font-variant: normal;
+	        font-weight: 900;
+	        text-rendering: auto;
+	        line-height: 1;
+	        -moz-osx-font-smoothing: grayscale;
+	        -webkit-font-smoothing: antialiased;
+	    }
+
+	    &:not(.collapsed)::before {
+	        content: "\f056";
+	    }
+
+	    &::after {
+	        content: "";
+	        display: inline-block;
+	        flex-grow: 1;
+	        height: 1px;
+	        margin-left: .75rem;
+	        background-color: rgba(0,0,0,.1);
+			transform: none;
+	    }
+	}
+
+	.accordion-body {
+	    padding-left: 0;
+		padding-right: 0;
+		padding-bottom: 0;
+	}
+}
+
+#settings_global_capacity_edit {
+    min-width: 107px;
+}
+
+.global_capacity_edit_button {
+    padding: 0;
+    border: none;
+    background: none;
+    line-height: 2.375rem;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+}
+
+.tribe-tickets-image-upload {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    .input_block {
+        width: 100%;
+    }
+
+    .ticket_form_label.tribe-strong-label {
+		display: block;
+        margin-bottom: 0.5rem;
+		color: var(--bs-heading-color);
+        font-size: 1.25rem;
+        font-weight: 700;
+        line-height: 1.2;
+    }
+}
+
+.tribe-tickets-image-preview {
+    max-width: 300px;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+
+    img {
+        margin-bottom: .5rem;
+    }
+}
+
+#tribe_tickets_image_preview_filename,
+#tribe_ticket_header_remove {
+    display: none;
+}
+
+#tribe_tickets_image_preview_filename {
+    margin-top: .5rem;
+    margin-bottom: .5rem;
+}
+
+#tribe-events-report {
+    .tabbed-view-wrap,
+    .table-menu-wrapper {
+        display: none;
+    }
+}
+
+.tribe-report-page {
+	line-height: var(--bs-body-line-height);
+}
+
+.tribe-report-panel {
+    margin-bottom: 2rem;
+}
+
+.welcome-panel-column {
+    font-size: var(--enlightenment-font-size-sm);
+
+    &.list-group-item-light {
+        color: inherit;
+    }
+
+    h3 {
+        font-size: 1.25rem;
+    }
+}
+
+@media (min-width: 992px) {
+    .welcome-panel-column {
+        flex: 1 0 0;
+    }
+}
+
+#tribe-attendees-summary .totals-header {
+    margin-bottom: .5rem;
+    font-size: 1.25rem;
+    line-height: 1.2;
+
+    h3 {
+        display: inline;
+        margin-bottom: 0;
+    }
+}
+
+.tribe-event-meta-tickets-sold-itemized,
+.totals-header .order-total {
+    margin-bottom: .75rem;
+}
+
+.topics-filter,
+#topics-filter {
+    .form-control-sm {
+        height: calc(1.5em + .5rem + calc(var(--bs-border-width) * 2) + 1px);
+    }
+
+    .select2-container {
+		width: 100% !important;
+	}
+
+	.search-box .btn {
+		padding: 0.375rem 0.75rem;
+		border-radius: var(--bs-border-radius);
+		font-size: var(--bs-body-font-size);
+		line-height: var(--bs-body-line-height);
+	}
+
+    .pagination-links .btn {
+        border-radius: var(--bs-border-radius);
+    }
+
+    .paging-input {
+        vertical-align: middle;
+    }
+}
+
+@media (max-width: 767.98px) {
+	.topics-filter,
+    #topics-filter {
+        .search-box {
+            .form-control {
+                min-width: 100%;
+                margin-right: 0 !important;
+            }
+
+            .button {
+                width: 100%;
+            }
+        }
+
+        .actions {
+            width: 100%;
+
+            .select2-container {
+                width: auto !important;
+                margin-bottom: 0;
+            }
+        }
+
+        .tablenav-pages {
+            display: flex;
+            align-items: center;
+            width: 100%;
+            margin-left: 0 !important;
+
+            .displaying-num + .pagination-links {
+                margin-left: auto;
+            }
+
+            .paging-input {
+                flex-wrap: nowrap;
+            }
+
+            .tablenav-paging-text {
+                white-space: nowrap;
+            }
+        }
+    }
+}
+
+@media (min-width: 768px) {
+	.topics-filter,
+    #topics-filter {
+        .select2-container {
+    		width: auto !important;
+    	}
+    }
+}
+
+.wp-list-table.tribe-attendees,
+.tribe-report-page .wp-list-table.woocommerce-orders {
+    th,
+    td {
+        white-space: nowrap;
+    }
+
+    thead,
+    tfoot {
+        th,
+        td {
+            padding-bottom: 16px;
+            padding-top: 1.25rem;
+            font-size: .8125rem;
+            line-height: .875rem;
+            letter-spacing: .04375rem;
+            text-transform: uppercase;
+        }
+    }
+
+    tbody {
+        th,
+        td {
+            color: var(--enlightenment-accent-color);
+            font-size: var(--enlightenment-font-size-sm);
+        }
+    }
+
+	.event-tickets-meta-row {
+		display: none;
+
+		&.event-tickets-meta-toggle-open {
+			display: table-row;
+		}
+
+		dl {
+			display: grid;
+			column-gap: 1rem;
+			color: var(--bs-body-color);
+		}
+
+		dt {
+			grid-row: 1;
+		}
+
+		dd {
+			grid-row: 2;
+			margin-bottom: 0;
+		}
+	}
+
+	.sortable,
+	.sorted {
+		a {
+			color: inherit;
+
+			&:hover {
+				color: var(--bs-link-color);
+			}
+		}
+
+		.sorting-indicators {
+			-moz-osx-font-smoothing: grayscale;
+		    -webkit-font-smoothing: antialiased;
+		    display: inline-block;
+			margin-left: 0.25rem;
+			font-family: "Font Awesome 5 Free";
+		    font-style: normal;
+			font-weight: 900;
+		    font-variant: normal;
+		    text-rendering: auto;
+		    line-height: 1;
+		}
+	}
+
+	.sortable {
+		.sorting-indicators {
+			display: inline-flex;
+			flex-direction: column;
+			line-height: 0.1;
+
+			.sorting-indicator {
+				&.asc::before {
+					content: "\f0de";
+				}
+
+				&.desc::before {
+					content: "\f0dd";
+				}
+			}
+		}
+	}
+
+	.sorted {
+		&.asc .sorting-indicator.asc {
+			vertical-align: bottom;
+
+			&::before {
+				content: "\f0de";
+			}
+		}
+
+		&.desc .sorting-indicator.desc {
+			vertical-align: 0.1em;
+
+			&::before {
+				content: "\f0dd";
+			}
+		}
+	}
+
+    .event-tickets-ticket-name {
+        color: var(--bs-body-color);
+        font-size: var(--enlightenment-body-font-size);
+        font-weight: 500;
+    }
+
+    .row-actions,
+    .purchaser_email {
+		@media (min-width: 1200px) {
+	        opacity: 0;
+
+			&:focus-within {
+				opacity: 1;
+			}
+		}
+    }
+
+    tr:hover,
+	.is-expanded {
+        .row-actions,
+        .purchaser_email {
+			@media (min-width: 1200px) {
+	            opacity: 1;
+			}
+        }
+    }
+
+    .row-actions {
+        display: inline-flex;
+        font-size: 0;
+        white-space: nowrap;
+
+		& > a,
+        & > span {
+			position: relative;
+            font-size: var(--enlightenment-font-size-sm);
+
+			& + a,
+            & + span {
+				margin-left: 0.75rem;
+
+                &::before {
+                    content: "|";
+					position: absolute;
+				    top: 0;
+				    left: -0.75rem;
+					display: inline-block;
+				    width: 0.75rem;
+                    padding-left: 0.25rem;
+                    padding-right: 0.25rem;
+			        color: rgba(var(--bs-emphasis-color-rgb), 0.15);
+				    text-align: center;
+					pointer-events: none;
+                }
+            }
+        }
+
+		.trash a {
+			color: #fd000d;
+
+			&:hover {
+				color: #bb2d3b;
+			}
+		}
+    }
+
+	a {
+		text-decoration-line: none;
+	}
+
+	.toggle-row {
+		appearance: none;
+	    padding: 0;
+		margin-left: .25rem;
+	    border: none;
+	    background: transparent;
+	}
+
+	.event-tickets-meta-toggle-hide {
+		display: none;
+	}
+
+	.event-tickets-meta-toggle-open {
+		.event-tickets-meta-toggle-view {
+			display: none;
+		}
+
+		.event-tickets-meta-toggle-hide {
+			display: inline;
+		}
+	}
+
+	.event-tickets-meta-data_website {
+		blockquote {
+			position: static;
+		    padding: 0;
+		    margin: 0;
+			font-family: inherit;
+		    font-size: inherit;
+		    font-style: inherit;
+
+			&::before {
+				content: "";
+			}
+		}
+	}
+}
+
+.tickets_uncheckin {
+    display: none;
+}
+
+.tickets_checked {
+    .tickets_checkin {
+        display: none;
+    }
+
+    .tickets_uncheckin {
+        display: inline;
+    }
+}
+
+.tribe-report-page {
+    .icon32-tickets-orders {
+        display: none;
+    }
+
+    .order-status.badge {
+        padding-top: .375em;
+        padding-bottom: .125em;
+        vertical-align: middle;
+    }
+}
+
+.tribe-menu-wrapper {
+	a {
+		text-decoration-line: none;
+	}
+}

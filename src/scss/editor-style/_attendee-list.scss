@@ -1,0 +1,39 @@
+.tribe-editor__event-attendees {
+    .tribe-editor__event-attendees__title-text {
+        margin-bottom: .5rem;
+
+        input {
+            min-width: 100%;
+            max-width: none;
+            min-height: unset;
+            padding: 0;
+            margin: 0;
+            background-color: transparent;
+            font-family: var(--enlightenment-body-font-family);
+            font-size: 2rem;
+            font-weight: 700;
+            line-height: 1.2;
+        }
+    }
+}
+
+.tribe-editor__event-attendees__subtitle {
+    p {
+        margin-top: 0;
+        margin-bottom: 1rem;
+    }
+}
+
+.tribe-editor__event-attendees__gravatars {
+    display: flex;
+    flex-wrap: wrap;
+    padding: 0;
+
+    svg {
+        margin-right: 0;
+
+        & + svg {
+            margin-left: .5rem;
+        }
+    }
+}

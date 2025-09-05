@@ -1,0 +1,23 @@
+.elementor-widget-heading {
+    &:not(:last-child) {
+        // margin-bottom: .5rem;
+
+        .elementor-widget-container {
+            margin-bottom: -.75rem;
+        }
+    }
+
+	.elementor-heading-title {
+		line-height: 1.2;
+
+		&[class*="elementor-size-"] > a {
+			&:hover {
+				color: var(--bs-link-color);
+			}
+
+			&:active {
+				color: var(--bs-link-hover-color);
+			}
+		}
+	}
+}

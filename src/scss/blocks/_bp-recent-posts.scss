@@ -1,0 +1,21 @@
+.wp-block-bp-recent-posts {
+	.widget-title {
+		font-size: 1.75rem;
+	}
+
+	.activity-list li + li {
+		margin-top: 2rem;
+	}
+
+	.activity-header::before {
+		content: none;
+	}
+}
+
+@media (min-width: 768px) {
+	.wp-block-bp-recent-posts {
+		.widget-title {
+			font-size: 2rem;
+		}
+	}
+}

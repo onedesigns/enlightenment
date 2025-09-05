@@ -1,0 +1,133 @@
+#jp-relatedposts.jp-relatedposts {
+    padding-top: 0;
+    margin: 3rem 0;
+    font-family: var(--enlightenment-body-font-family);
+
+    h3.jp-relatedposts-headline {
+        display: block;
+        float: none;
+        margin-bottom: .5rem;
+        font-size: 1.75rem;
+
+        em::before {
+            content: none;
+        }
+    }
+
+    .jp-relatedposts-items-visual {
+        display: flex;
+        flex-wrap: wrap;
+        align-items: flex-start;
+        margin-left: -10px;
+        margin-right: -10px;
+    }
+
+    .jp-relatedposts-items .jp-relatedposts-post {
+        display: flex;
+        flex-wrap: wrap;
+        align-items: flex-start;
+        width: 100%;
+
+        & > .jp-relatedposts-post-a {
+            flex: 0 0 100%;
+            display: block;
+            margin-bottom: .5rem;
+            background-color: #000;
+            overflow: hidden;
+        }
+
+        img.jp-relatedposts-post-img {
+            max-width: 100%;
+            transition: opacity .5s ease-out, transform .5s ease-out;
+        }
+
+        a:hover .jp-relatedposts-post-img {
+            opacity: .8;
+            transform: scale(1.05);
+        }
+
+        a:active .jp-relatedposts-post-img {
+            transition: opacity .15s ease-out, transform .5s ease-out;
+            opacity: .6;
+        }
+
+        .jp-relatedposts-post-title {
+            flex: 0 0 100%;
+
+            a {
+                color: inherit;
+                font-weight: inherit;
+
+                &:hover {
+                    color: var(--bs-link-color);
+                }
+
+                &:active {
+                    color: var(--bs-link-hover-color);
+                }
+            }
+        }
+
+        &:hover .jp-relatedposts-post-title {
+            a {
+                text-decoration-line: none;
+            }
+        }
+
+        .jp-relatedposts-post-excerpt {
+            flex: 0 0 100%;
+            margin: .25rem 0;
+        }
+
+        .jp-relatedposts-post-date,
+        .jp-relatedposts-post-context {
+            color: var(--enlightenment-accent-color);
+            opacity: 1;
+            font-weight: 300;
+        }
+
+        .jp-relatedposts-post-date + .jp-relatedposts-post-context {
+            margin-left: .25rem;
+        }
+    }
+
+    .jp-relatedposts-items-visual .jp-relatedposts-post {
+        padding-left: 10px;
+        padding-right: 10px;
+        margin: 0;
+        opacity: 1;
+
+        & + .jp-relatedposts-post {
+            margin-top: 1.5rem;
+        }
+
+        h4.jp-relatedposts-post-title {
+            font-size: 1.25rem;
+            line-height: 1.2;
+        }
+    }
+}
+
+@media (min-width: 768px) {
+    #jp-relatedposts.jp-relatedposts {
+        h3.jp-relatedposts-headline {
+            font-size: 1.25rem;
+        }
+
+        .jp-relatedposts-items .jp-relatedposts-post {
+            flex: 0 0 33.333333%;
+            max-width: 33.333333%;
+        }
+
+        .jp-relatedposts-items-visual .jp-relatedposts-post {
+            & + .jp-relatedposts-post {
+                    margin-top: 0;
+            }
+
+            h4.jp-relatedposts-post-title {
+                font-size: var(--enlightenment-body-font-size);
+                font-weight: 600;
+            }
+        }
+    }
+}

@@ -1,0 +1,87 @@
+.wp-block-jetpack-goodreads.wp-block-jetpack-goodreads {
+	[class^="gr_custom_container_"] {
+		padding: 0;
+		border: var(--bs-border-width) solid var(--bs-border-color-translucent);
+		border-radius: var(--bs-border-radius);
+	}
+
+	[class^="gr_grid_container"] {
+		display: flex;
+		flex-wrap: wrap;
+		gap: 1rem;
+
+		@media (max-width: 575.98px) {
+			justify-content: space-evenly;
+		}
+	}
+
+	[class^="gr_custom_header_"] {
+		padding: .5rem 1rem;
+		border-bottom: var(--bs-border-width) solid var(--bs-border-color-translucent);
+		background-color: rgba(var(--bs-body-color-rgb), 0.03);
+		font-size: 1.25rem;
+	}
+
+	h2 a {
+		color: inherit;
+
+		&:hover {
+			color: rgba(var(--bs-link-color-rgb));
+		}
+	}
+
+	[class^="gr_custom_each_container_"] {
+		padding: 1rem;
+		margin-bottom: 0;
+		border-bottom: var(--bs-border-width) solid var(--bs-border-color-translucent);
+
+		&::after {
+			content: "";
+			clear: both;
+			display: table;
+			width: 100%;
+		}
+	}
+
+	[class^="gr_custom_book_container_"] {
+		margin-right: .5rem;
+	}
+
+	[class^="gr_custom_title_"] {
+		font-weight: 700;
+
+		a {
+			color: inherit;
+
+			&:hover {
+				color: rgba(var(--bs-link-color-rgb));
+				text-decoration-line: none;
+			}
+		}
+	}
+
+	[class^="gr_custom_author_"] {
+		font-size: .75rem;
+		letter-spacing: -.1px;
+
+		a:hover {
+			text-decoration-line: none;
+		}
+	}
+
+	br {
+		display: none;
+	}
+
+	center {
+		padding: .5rem 1rem;
+		background-color: rgba(var(--bs-body-color-rgb), 0.03);
+	}
+
+	.gr_grid_branding {
+		@media (min-width: 576px) {
+			flex: 0 0 100%;
+			max-width: 100%;
+		}
+	}
+}

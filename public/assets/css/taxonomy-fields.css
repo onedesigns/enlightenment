@@ -1,0 +1,43 @@
+.term-image-position {
+    max-width: 84px;
+    margin-top: 0;
+    margin-left: -4px;
+    margin-right: -4px;
+}
+
+.featured-image-style .radio-button-control,
+.term-image-position .radio-button-control {
+    flex-basis: 33.3333333333%;
+    max-width: 33.3333333333%;
+}
+
+.term-image-position .radio-button-control {
+    padding-left: 4px;
+    padding-right: 4px;
+    margin-top: 8px;
+}
+
+.term-image-position .image-radio-button {
+    top: 6px;
+    left: 6px;
+}
+
+.term-image-position .image-radio-button-label {
+    display: flex;
+    padding: 0;
+    margin: 0 !important;
+    border: none;
+    color: #8c8f94;
+}
+
+.enlightenment-header-overlay::before {
+    content: "";
+    display: block;
+    height: 1em;
+}
+
+.term-enlightenment_header_image_overlay-wrap > td > label {
+    display: inline-block;
+    padding-top: 5px;
+    padding-bottom: 5px;
+}

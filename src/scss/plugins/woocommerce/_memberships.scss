@@ -1,0 +1,187 @@
+.woocommerce .wc-memberships-restriction-message {
+	margin-top: 1rem !important;
+	margin-bottom: 1rem !important;
+}
+
+.entries-list .woocommerce .wc-memberships-restriction-message {
+	margin-top: 0 !important;
+	margin-bottom: 2rem !important;
+}
+
+.entry-content,
+.entry-summary {
+	& > .woocommerce:last-child {
+		.wc-memberships-restriction-message {
+			margin-bottom: 0 !important;
+		}
+	}
+}
+
+.single-post .entry-content .wc-memberships-restriction-message {
+	font-family: var(--enlightenment-body-font-family);
+	font-size: var(--enlightenment-body-font-size);
+}
+
+.my_account_memberships a {
+	text-decoration-line: none;
+}
+
+.wc-memberships-members-area-sorting {
+	.sort-status {
+		position: relative;
+
+		a {
+			color: inherit;
+
+			&:hover {
+				&,
+				& + .sort-order-icons {
+					color: var(--bs-link-color);
+				}
+			}
+
+			&::after {
+				content: "";
+				position: absolute;
+				top: 0;
+				left: 0;
+				right: 0;
+				bottom: 0;
+			}
+		}
+
+		.sort-order-icons {
+			transition: color 0.25s ease;
+		}
+
+		.sort-order-icon {
+		    display: inline-block !important;
+			margin-left: 0.25rem;
+			font-family: "Font Awesome 5 Free";
+		    font-style: normal;
+			font-weight: 900;
+		    font-variant: normal;
+		    text-rendering: auto;
+			-moz-osx-font-smoothing: grayscale;
+		    -webkit-font-smoothing: antialiased;
+		}
+
+		&.unsorted {
+			.sort-order-icons {
+				display: inline-flex;
+				flex-direction: column;
+				line-height: 0.1;
+			}
+
+			.sort-order-icon {
+				& + .sort-order-icon {
+					margin-left: 0.25rem;
+				}
+
+				&.sort-asc::before {
+					content: "\f0de";
+				}
+
+				&.sort-desc::before {
+					content: "\f0dd";
+				}
+			}
+		}
+
+		&.sorted {
+			&.sort-asc .sort-order-icon.sort-asc {
+				vertical-align: bottom;
+
+				&::before {
+					content: "\f0de";
+				}
+			}
+
+			&.sort-desc .sort-order-icon.sort-desc {
+				vertical-align: 0.1em;
+
+				&::before {
+					content: "\f0dd";
+				}
+			}
+		}
+	}
+}
+
+.my_account_memberships {
+	display: block;
+
+	thead,
+	tbody {
+		display: block;
+
+		&:not(:first-child) {
+			border-top: none;
+		}
+	}
+
+	tr {
+		display: flex;
+		align-items: center;
+		border-bottom: var(--bs-border-width) var(--bs-border-style) var(--bs-border-color);
+	}
+
+	th,
+	td {
+		display: block;
+		flex-grow: 1;
+		flex-basis: 0;
+		max-width: 100%;
+		padding-left: 15px;
+	    padding-right: 15px;
+		border: none;
+
+		&:first-child {
+			padding-left: 0;
+		}
+
+		&:last-child {
+			padding-right: 0;
+		}
+	}
+
+	th {
+		padding-bottom: 16px;
+	    padding-top: 1.25rem;
+		font-size: .8125rem;
+	    line-height: .875rem;
+	    letter-spacing: .04375rem;
+	    text-transform: uppercase;
+	}
+
+	thead th {
+		border: none;
+	}
+
+	td {
+		padding-top: .75rem;
+	    padding-bottom: .75rem;
+	}
+}
+
+.woocommerce-account {
+	th,
+	td {
+		&.membership-discount-image,
+		&.membership-product-image {
+			min-width: auto;
+			max-width: 90px;
+		}
+	}
+}
+
+.woocommerce-account {
+	.membership-discount-image,
+	.membership-product-image {
+		img {
+			max-height: 75px;
+		    max-width: 75px;
+			object-fit: cover;
+		}
+	}
+}

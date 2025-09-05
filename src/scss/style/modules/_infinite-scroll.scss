@@ -1,0 +1,57 @@
+.infscr-loading,
+.ajax-navigation {
+	display: flex;
+	align-items: center;
+    justify-content: center;
+	margin-top: 5rem;
+
+	&::before,
+	&::after {
+	    content: "";
+	    display: block;
+	    flex: 1 0 auto;
+	    height: 1px;
+	    background-color: rgba(var(--bs-emphasis-color-rgb), 0.04);
+	}
+
+	&::before {
+		margin-right: 1rem;
+	}
+
+	&::after {
+		margin-left: 1rem;
+	}
+}
+
+.infscr-loading__spinner,
+.ajax-navigation__spinner {
+	display: flex;
+	color: rgba(var(--bs-emphasis-color-rgb), 0.3);
+	font-size: 1.5rem;
+	line-height: 1;
+}
+
+.infscr-loading__finished,
+.ajax-navigation__label {
+	display: inline-block;
+    padding-top: .25rem;
+    padding-bottom: .25rem;
+    line-height: 1;
+}
+
+.infscr-loading__finished {
+	color: var(--enlightenment-accent-color);
+}
+
+/* Globally hidden elements when Infinite Scroll is supported and in use. */
+.infinite-scroll .posts-navigation,
+.infinite-scroll.neverending .site-footer {
+	/* Theme Footer (when set to scrolling) */
+	display: none;
+}
+
+/* When Infinite Scroll has reached its end we need to re-display elements that
+were hidden (via .neverending) before. */
+.infinity-end.neverending .site-footer {
+	display: block;
+}
